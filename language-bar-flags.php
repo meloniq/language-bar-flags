@@ -1,10 +1,10 @@
 <?php
 /*
-	Plugin Name: Language Bar
-	Plugin URI: http://blog.meloniq.net/downloads/language-bar/
-	Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website. Developed by <a href="http://www.meloniq.net">MELONIQ.NET</a>.
+	Plugin Name: Language Bar Flags
+	Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
+	Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
 	Author: MELONIQ.NET
-	Version: 1.0.0
+	Version: 1.0.1
 	Author URI: http://blog.meloniq.net
 */
 
@@ -15,9 +15,9 @@ if (eregi(basename(__FILE__),$_SERVER['PHP_SELF'])) {
 }
 
 global $langbf_dbversion;
-$langbf_version = '1.0.0';
-define('LANGBF_VERSION', '1.0.0');
-$langbf_dbversion = '100';
+$langbf_version = '1.0.1';
+define('LANGBF_VERSION', '1.0.1');
+$langbf_dbversion = '101';
 // Init options & tables during activation & deregister init option
 register_activation_hook( plugin_basename(__FILE__), 'langbf_activate' );
 
@@ -96,7 +96,7 @@ add_action('admin_enqueue_scripts', 'langbf_load_admin_styles');
  * Print code in footer
  */
 function langbf_load_html() {
-	global $europe_native;
+	global $europe_native, $america_native;
   if(get_option('langbf_active') == 'yes'){
     add_filter( 'show_admin_bar', '__return_false' );
     remove_action( 'personal_options', '_admin_bar_preferences' ); 
@@ -108,9 +108,15 @@ function langbf_load_html() {
         $output .= '<li><a href="' . $langs[$code]['url'] . '" title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
       }
     }
+    foreach($america_native as $code => $country){
+      if($langs[$code]['active'] == 'yes'){
+        $output .= '<li><a href="' . $langs[$code]['url'] . '" title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
+      }
+    }
 ?>
     <div id="langbf_bar">
       <div class="langbf_links">
+        <?php if(get_option('langbf_title') != ''){ echo '<span class="langbf_title">' . get_option('langbf_title') . '</span>'; } ?>
         <ul>
           <?php echo $output; ?>
         </ul>
@@ -153,7 +159,7 @@ function langbf_add_menu_links() {
  * Create settings page in admin
  */
 function langbf_menu_settings() {
-	global $europe_english, $europe_native;
+	global $europe_english, $europe_native, $america_english, $america_native;
 	include_once (dirname (__FILE__) . '/admin_settings.php');
 }
 
@@ -171,23 +177,28 @@ function langbf_activate() {
 function langbf_install_options($langbf_dbversion) {
 	global $wpdb;
 	
-	$domain = str_replace('http://www.', '', get_option('siteurl'));
-	$domain = str_replace('https://www.', '', $domain);
-	$domain = str_replace('http://', '', $domain);
-	$domain = str_replace('https://', '', $domain);
-
-	$url_prefix = 'http://www.';
-
-	$active_langs = array();
-	$active_langs['pl']['url'] = $url_prefix . 'pl.' . $domain;
-	$active_langs['pl']['active'] = 'yes';
-	$active_langs['uk']['url'] = $url_prefix . 'uk.' . $domain;
-	$active_langs['uk']['active'] = 'yes';
-	$active_langs['ie']['url'] = $url_prefix . 'ie.' . $domain;
-	$active_langs['ie']['active'] = 'yes';
+	$langbf_saved_dbversion = get_option('langbf_db_version');
 	
-	update_option('langbf_active', 'yes');
-	update_option('langbf_langs', $active_langs);
+  //If fresh installation, save defaults
+	if(!$langbf_saved_dbversion){
+  	$domain = str_replace('http://www.', '', get_option('siteurl'));
+  	$domain = str_replace('https://www.', '', $domain);
+  	$domain = str_replace('http://', '', $domain);
+  	$domain = str_replace('https://', '', $domain);
+
+  	$url_prefix = 'http://www.';
+
+  	$active_langs = array();
+  	$active_langs['pl']['url'] = $url_prefix . 'pl.' . $domain;
+  	$active_langs['pl']['active'] = 'yes';
+  	$active_langs['uk']['url'] = $url_prefix . 'uk.' . $domain;
+  	$active_langs['uk']['active'] = 'yes';
+  	$active_langs['ie']['url'] = $url_prefix . 'ie.' . $domain;
+  	$active_langs['ie']['active'] = 'yes';
 	
+  	update_option('langbf_db_version', $langbf_dbversion);
+  	update_option('langbf_active', 'yes');
+  	update_option('langbf_langs', $active_langs);
+	}
 }		
 ?>

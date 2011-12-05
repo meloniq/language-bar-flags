@@ -6,6 +6,7 @@
   //Update options
   if( isset( $_POST['options_update']) ) {
     update_option('langbf_active', $_POST['langbf_active']);
+    update_option('langbf_title', $_POST['langbf_title']);
     $langs_array = array();
     // Europe part
     foreach($europe_english as $code => $country) {
@@ -17,7 +18,6 @@
       $langs_array[$code]['url'] = trim($_POST['europe'][$code]['url']);
     }
     // America part
-    /*
     foreach($america_english as $code => $country) {
       if ($_POST['america'][$code]['active'] == 'yes'){
         $langs_array[$code]['active'] = 'yes';
@@ -25,6 +25,27 @@
         $langs_array[$code]['active'] = 'no';
       }
       $langs_array[$code]['url'] = trim($_POST['america'][$code]['url']);
+    }
+    // Asia + Australia part
+    /*
+    foreach($asia_english as $code => $country) {
+      if ($_POST['asia'][$code]['active'] == 'yes'){
+        $langs_array[$code]['active'] = 'yes';
+      }else{
+        $langs_array[$code]['active'] = 'no';
+      }
+      $langs_array[$code]['url'] = trim($_POST['asia'][$code]['url']);
+    }
+    */
+    // Africa part
+    /*
+    foreach($africa_english as $code => $country) {
+      if ($_POST['africa'][$code]['active'] == 'yes'){
+        $langs_array[$code]['active'] = 'yes';
+      }else{
+        $langs_array[$code]['active'] = 'no';
+      }
+      $langs_array[$code]['url'] = trim($_POST['africa'][$code]['url']);
     }
     */
     update_option('langbf_langs', $langs_array);
@@ -70,17 +91,24 @@
               <td><?php _e('Activate bar?', 'mnet-langbf'); ?></td>
               <td>
                 <select name="langbf_active">
-                  <option value="no" selected="selected"><?php _e('No', 'mnet-langbf'); ?></option>
-                  <option value="yes" selected="selected"><?php _e('Yes', 'mnet-langbf'); ?></option>
+                  <option value="no" <?php if(get_option('langbf_active') == 'no'){ echo 'selected="selected"'; } ?> ><?php _e('No', 'mnet-langbf'); ?></option>
+                  <option value="yes" <?php if(get_option('langbf_active') == 'yes'){ echo 'selected="selected"'; } ?> ><?php _e('Yes', 'mnet-langbf'); ?></option>
                 </select>
-                <br /><span class="description"><?php _e('If "YES" is selected, then plugin will add a bar with language flags.', 'mnet-langbf'); ?></span>
+                <br /><small><?php _e('If "YES" is selected, then plugin will add a bar with language flags.', 'mnet-langbf'); ?></small>
+              </td>
+            </tr>
+            <tr>
+              <td><?php _e('Title of bar', 'mnet-langbf'); ?></td>
+              <td>
+                <input type="text" value="<?php echo get_option('langbf_title'); ?>" style="min-width:500px;" id="langbf_title" name="langbf_title" /><br />
+                <small><?php _e('Title will be displayed on a bar, right before flags.', 'mnet-langbf'); ?></small>
               </td>
             </tr>
           </tbody>
         </table>
 
       </div>
-
+      <!-- Europe -->
       <div id="tab2" class="">
         <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
           <thead>
@@ -106,7 +134,7 @@
           </tbody>
         </table>
       </div>
-
+      <!-- Americas -->
       <div id="tab3" class="">
         <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
           <thead>
@@ -117,11 +145,18 @@
             </tr>
           </thead>
           <tbody>
+          <?php foreach($america_english as $code => $country): ?>
             <tr>
-              <td colspan="3" class="">
-                <p><?php _e('Don\'t need it right now... but if users will need it, will create it later...', 'mnet-langbf'); ?></p>
+              <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
+              <td class="">
+                <input type="checkbox" value="yes" id="america_<?php echo $code; ?>_active" name="america[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+              </td>
+              <td class="">
+                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="america_<?php echo $code; ?>_url" name="america[<?php echo $code; ?>][url]" /><br />
+                <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $america_native[$code]; ?></i></small>
               </td>
             </tr>
+          <?php endforeach; ?>
           </tbody>
         </table>
       </div>

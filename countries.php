@@ -80,6 +80,76 @@
                           'uk' => __('United Kingdom', 'mnet-langbf')
                           );
 
-//TODO: America, Asia and Africa
+// Array of americas country codes with thier names in native language
+	$america_native = array( 'ar' => 'Argentina', 
+                          'bs' => 'Bahamas',
+                          'bb' => 'Barbados',
+                          'bz' => 'Belize',
+                          'bo' => 'Bolivia',
+                          'br' => 'Brasil',
+                          'ca' => 'Canada',
+                          'cl' => 'Chile',
+                          'co' => 'Colombia',
+                          'cr' => 'Costa Rica',
+                          'cu' => 'Cuba',
+                          'dm' => 'Dominique',
+                          'do' => 'República Dominicana',
+                          'ec' => 'Ecuador',
+                          'sv' => 'El Salvador',
+                          'gd' => 'Grenada',
+                          'gt' => 'Guatemala',
+                          'gy' => 'Guyana',
+                          'ht' => 'Haïti',
+                          'hn' => 'Honduras',
+                          'jm' => 'Jamaica',
+                          'mx' => 'México',
+                          'ni' => 'Nicaragua',
+                          'pa' => 'Panamá',
+                          'py' => 'Paraguay',
+                          'pe' => 'Perú',
+                          'pr' => 'Puerto Rico',
+                          'sr' => 'Suriname',
+                          'tt' => 'Trinidad and Tobago',
+                          'us' => 'United States',
+                          'uy' => 'Uruguay',
+                          've' => 'Venezuela'
+                          );
+
+// Array of americas country codes with thier names in english language, just for admin panel to manage it easy
+	$america_english = array( 'ar' => __('Argentina', 'mnet-langbf'), 
+                          'bs' => __('Bahamas', 'mnet-langbf'),
+                          'bb' => __('Barbados', 'mnet-langbf'),
+                          'bz' => __('Belize', 'mnet-langbf'),
+                          'bo' => __('Bolivia', 'mnet-langbf'),
+                          'br' => __('Brazil', 'mnet-langbf'),
+                          'ca' => __('Canada', 'mnet-langbf'),
+                          'cl' => __('Chile', 'mnet-langbf'),
+                          'co' => __('Colombia', 'mnet-langbf'),
+                          'cr' => __('Costa Rica', 'mnet-langbf'),
+                          'cu' => __('Cuba', 'mnet-langbf'),
+                          'dm' => __('Dominica', 'mnet-langbf'),
+                          'do' => __('Dominican Republic', 'mnet-langbf'),
+                          'ec' => __('Ecuador', 'mnet-langbf'),
+                          'sv' => __('El Salvador', 'mnet-langbf'),
+                          'gd' => __('Grenada', 'mnet-langbf'),
+                          'gt' => __('Guatemala', 'mnet-langbf'),
+                          'gy' => __('Guyana', 'mnet-langbf'),
+                          'ht' => __('Haiti', 'mnet-langbf'),
+                          'hn' => __('Honduras', 'mnet-langbf'),
+                          'jm' => __('Jamaica', 'mnet-langbf'),
+                          'mx' => __('Mexico', 'mnet-langbf'),
+                          'ni' => __('Nicaragua', 'mnet-langbf'),
+                          'pa' => __('Panama', 'mnet-langbf'),
+                          'py' => __('Paraguay', 'mnet-langbf'),
+                          'pe' => __('Peru', 'mnet-langbf'),
+                          'pr' => __('Puerto Rico', 'mnet-langbf'),
+                          'sr' => __('Suriname', 'mnet-langbf'),
+                          'tt' => __('Trinidad and Tobago', 'mnet-langbf'),
+                          'us' => __('United States', 'mnet-langbf'),
+                          'uy' => __('Uruguay', 'mnet-langbf'),
+                          've' => __('Venezuela', 'mnet-langbf')
+                          );
+
+//TODO: Asia + Australia and Africa
 
 ?>

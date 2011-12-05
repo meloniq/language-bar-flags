@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Language Bar 1.0.0\n"
 "Report-Msgid-Bugs-To: http://blog.meloniq.net/\n"
 "POT-Creation-Date: 2011-11-16 16:02:35+00:00\n"
-"PO-Revision-Date: 2011-11-16 17:01+0100\n"
+"PO-Revision-Date: 2011-12-03 20:19+0100\n"
 "Last-Translator: MELONIQ.NET <biuro@meloniq.net>\n"
 "Language-Team: http://www.meloniq.net\n"
 "MIME-Version: 1.0\n"
@@ -18,224 +18,375 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: mnet-language-bar/admin_settings.php:70
-msgid "Activate bar?"
-msgstr "Aktywować pasek?"
+#: admin_settings.php:3
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nie masz wystarczających uprawnień dostępu do tej strony."
 
-#: mnet-language-bar/admin_settings.php:153
-msgid "Active"
-msgstr "Aktywny"
-
-#: mnet-language-bar/admin_settings.php:57
-msgid "Africa"
-msgstr "Afryka"
-
-#: mnet-language-bar/admin_settings.php:55
-msgid "America"
-msgstr "Ameryka"
-
-#: mnet-language-bar/admin_settings.php:56
-msgid "Asia + Australia"
-msgstr "Azja + Australia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Austria"
-msgstr "Austria"
-
-#: mnet-language-bar/countries.php:1
-msgid "Belarus"
-msgstr "Białoruś"
-
-#: mnet-language-bar/countries.php:1
-msgid "Belgium"
-msgstr "Belgia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Bulgaria"
-msgstr "Bułgaria"
-
-#: mnet-language-bar/admin_settings.php:152
-msgid "Country"
-msgstr "Kraj"
-
-#: mnet-language-bar/admin_settings.php:102
-msgid "Country name will be dispayed as: "
-msgstr "Nazwa kraju będzie wyświetlana jako: "
-
-#: mnet-language-bar/countries.php:1
-msgid "Croatia"
-msgstr "Chorwacja"
-
-#: mnet-language-bar/countries.php:1
-msgid "Czech Republic"
-msgstr "Czechy"
-
-#: mnet-language-bar/countries.php:1
-msgid "Denmark"
-msgstr "Dania"
-
-#: mnet-language-bar/admin_settings.php:160
-msgid "Don't need it right now... but if users will need it, will create it later..."
-msgstr "Nie potrzebuje tego teraz... ale jeśli użytkownicy będą potrzebować, utworzę to później..."
-
-#: mnet-language-bar/countries.php:1
-msgid "Estonia"
-msgstr "Estonia"
-
-#: mnet-language-bar/admin_settings.php:54
-msgid "Europe"
-msgstr "Europa"
-
-#: mnet-language-bar/countries.php:1
-msgid "Finland"
-msgstr "Finlandia"
-
-#: mnet-language-bar/countries.php:1
-msgid "France"
-msgstr "Francja"
-
-#: mnet-language-bar/admin_settings.php:53
-#: mnet-language-bar/admin_settings.php:64
-msgid "General"
-msgstr "Ogólne"
-
-#: mnet-language-bar/admin_settings.php:47
-msgid "General Settings"
-msgstr "Ogólne ustawienia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Germany"
-msgstr "Niemcy"
-
-#: mnet-language-bar/countries.php:1
-msgid "Greece"
-msgstr "Grecja"
-
-#: mnet-language-bar/countries.php:1
-msgid "Hungary"
-msgstr "Węgry"
-
-#: mnet-language-bar/countries.php:1
-msgid "Iceland"
-msgstr "Islandia"
-
-#: mnet-language-bar/admin_settings.php:76
-msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
-msgstr "Jeśli jest wybrane \"TAK\", wtedy wtyczka doda pasek z flagami języków."
-
-#: mnet-language-bar/countries.php:1
-msgid "Ireland"
-msgstr "Irlandia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Italy"
-msgstr "Włochy"
-
-#: mnet-language-bar/mnet-language-bar.php:138
-msgid "Language Bar Flags"
-msgstr "Pasek z flagami języków"
-
-#: mnet-language-bar/countries.php:1
-msgid "Latvia"
-msgstr "Łotwa"
-
-#: mnet-language-bar/countries.php:1
-msgid "Liechtenstein"
-msgstr "Liechtenstein"
-
-#: mnet-language-bar/countries.php:1
-msgid "Lithuania"
-msgstr "Litwa"
-
-#: mnet-language-bar/countries.php:1
-msgid "Luxembourg"
-msgstr "Luksemburg"
-
-#: mnet-language-bar/countries.php:1
-msgid "Malta"
-msgstr "Malta"
-
-#: mnet-language-bar/countries.php:1
-msgid "Montenegro"
-msgstr "Czarnogóra"
-
-#: mnet-language-bar/countries.php:1
-msgid "Netherlands"
-msgstr "Holandia"
-
-#: mnet-language-bar/admin_settings.php:73
-msgid "No"
-msgstr "Nie"
-
-#: mnet-language-bar/countries.php:1
-msgid "Norway"
-msgstr "Norwegia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Poland"
-msgstr "Polska"
-
-#: mnet-language-bar/countries.php:1
-msgid "Portugal"
-msgstr "Portugalia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Romania"
-msgstr "Rumunia"
-
-#: mnet-language-bar/countries.php:1
-msgid "Russian Federation"
-msgstr "Rosja"
-
-#: mnet-language-bar/admin_settings.php:168
-msgid "Save Changes"
-msgstr "Zapisz zmiany"
-
-#: mnet-language-bar/countries.php:1
-msgid "Serbia"
-msgstr "Serbia"
-
-#: mnet-language-bar/admin_settings.php:1
+#: admin_settings.php:53
 msgid "Settings saved"
 msgstr "Ustawienia zapisane"
 
-#: mnet-language-bar/countries.php:1
-msgid "Slovakia"
-msgstr "Słowacja"
+#: admin_settings.php:68
+msgid "General Settings"
+msgstr "Ogólne ustawienia"
 
-#: mnet-language-bar/countries.php:1
-msgid "Slovenia"
-msgstr "Słowenia"
+#: admin_settings.php:74
+#: admin_settings.php:85
+msgid "General"
+msgstr "Ogólne"
 
-#: mnet-language-bar/countries.php:1
-msgid "Spain"
-msgstr "Hiszpania"
+#: admin_settings.php:75
+msgid "Europe"
+msgstr "Europa"
 
-#: mnet-language-bar/countries.php:1
-msgid "Sweden"
-msgstr "Szwecja"
+#: admin_settings.php:76
+msgid "America"
+msgstr "Ameryka"
 
-#: mnet-language-bar/countries.php:1
-msgid "Switzerland"
-msgstr "Szwajcaria"
+#: admin_settings.php:77
+msgid "Asia + Australia"
+msgstr "Azja + Australia"
 
-#: mnet-language-bar/countries.php:1
-msgid "Turkey"
-msgstr "Turcja"
+#: admin_settings.php:78
+msgid "Africa"
+msgstr "Afryka"
 
-#: mnet-language-bar/admin_settings.php:154
+#: admin_settings.php:91
+msgid "Activate bar?"
+msgstr "Aktywować pasek?"
+
+#: admin_settings.php:94
+msgid "No"
+msgstr "Nie"
+
+#: admin_settings.php:95
+msgid "Yes"
+msgstr "Tak"
+
+#: admin_settings.php:97
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr "Jeśli jest wybrane \"TAK\", wtedy wtyczka doda pasek z flagami języków."
+
+#: admin_settings.php:101
+msgid "Title of bar"
+msgstr "Tytuł paska"
+
+#: admin_settings.php:104
+msgid "Title will be displayed on a bar, right before flags."
+msgstr "Tytuł będzie wyświetlany na pasku, bezpośrednio przed flagami."
+
+#: admin_settings.php:116
+#: admin_settings.php:142
+#: admin_settings.php:168
+#: admin_settings.php:187
+msgid "Country"
+msgstr "Kraj"
+
+#: admin_settings.php:117
+#: admin_settings.php:143
+#: admin_settings.php:169
+#: admin_settings.php:188
+msgid "Active"
+msgstr "Aktywny"
+
+#: admin_settings.php:118
+#: admin_settings.php:144
+#: admin_settings.php:170
+#: admin_settings.php:189
 msgid "URL"
 msgstr "URL"
 
-#: mnet-language-bar/countries.php:1
+#: admin_settings.php:130
+#: admin_settings.php:156
+msgid "Country name will be dispayed as: "
+msgstr "Nazwa kraju będzie wyświetlana jako: "
+
+#: admin_settings.php:176
+#: admin_settings.php:195
+msgid "Don't need it right now... but if users will need it, will create it later..."
+msgstr "Nie potrzebuje tego teraz... ale jeśli użytkownicy będą potrzebować, utworzę to później..."
+
+#: admin_settings.php:203
+msgid "Save Changes"
+msgstr "Zapisz zmiany"
+
+#: countries.php:44
+msgid "Austria"
+msgstr "Austria"
+
+#: countries.php:45
+msgid "Belgium"
+msgstr "Belgia"
+
+#: countries.php:46
+msgid "Bulgaria"
+msgstr "Bułgaria"
+
+#: countries.php:47
+msgid "Belarus"
+msgstr "Białoruś"
+
+#: countries.php:48
+msgid "Switzerland"
+msgstr "Szwajcaria"
+
+#: countries.php:49
+msgid "Czech Republic"
+msgstr "Czechy"
+
+#: countries.php:50
+msgid "Germany"
+msgstr "Niemcy"
+
+#: countries.php:51
+msgid "Denmark"
+msgstr "Dania"
+
+#: countries.php:52
+msgid "Estonia"
+msgstr "Estonia"
+
+#: countries.php:53
+msgid "Spain"
+msgstr "Hiszpania"
+
+#: countries.php:54
+msgid "Finland"
+msgstr "Finlandia"
+
+#: countries.php:55
+msgid "France"
+msgstr "Francja"
+
+#: countries.php:56
+msgid "Greece"
+msgstr "Grecja"
+
+#: countries.php:57
+msgid "Croatia"
+msgstr "Chorwacja"
+
+#: countries.php:58
+msgid "Hungary"
+msgstr "Węgry"
+
+#: countries.php:59
+msgid "Ireland"
+msgstr "Irlandia"
+
+#: countries.php:60
+msgid "Iceland"
+msgstr "Islandia"
+
+#: countries.php:61
+msgid "Italy"
+msgstr "Włochy"
+
+#: countries.php:62
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: countries.php:63
+msgid "Lithuania"
+msgstr "Litwa"
+
+#: countries.php:64
+msgid "Luxembourg"
+msgstr "Luksemburg"
+
+#: countries.php:65
+msgid "Latvia"
+msgstr "Łotwa"
+
+#: countries.php:66
+msgid "Montenegro"
+msgstr "Czarnogóra"
+
+#: countries.php:67
+msgid "Malta"
+msgstr "Malta"
+
+#: countries.php:68
+msgid "Netherlands"
+msgstr "Holandia"
+
+#: countries.php:69
+msgid "Norway"
+msgstr "Norwegia"
+
+#: countries.php:70
+msgid "Poland"
+msgstr "Polska"
+
+#: countries.php:71
+msgid "Portugal"
+msgstr "Portugalia"
+
+#: countries.php:72
+msgid "Romania"
+msgstr "Rumunia"
+
+#: countries.php:73
+msgid "Serbia"
+msgstr "Serbia"
+
+#: countries.php:74
+msgid "Russian Federation"
+msgstr "Rosja"
+
+#: countries.php:75
+msgid "Sweden"
+msgstr "Szwecja"
+
+#: countries.php:76
+msgid "Slovenia"
+msgstr "Słowenia"
+
+#: countries.php:77
+msgid "Slovakia"
+msgstr "Słowacja"
+
+#: countries.php:78
+msgid "Turkey"
+msgstr "Turcja"
+
+#: countries.php:79
 msgid "Ukraine"
 msgstr "Ukraina"
 
-#: mnet-language-bar/countries.php:1
+#: countries.php:80
 msgid "United Kingdom"
 msgstr "Wielka Brytania"
 
-#: mnet-language-bar/admin_settings.php:74
-msgid "Yes"
-msgstr "Tak"
+#: countries.php:119
+msgid "Argentina"
+msgstr "Argentyna"
+
+#: countries.php:120
+msgid "Bahamas"
+msgstr "Bahamy"
+
+#: countries.php:121
+msgid "Barbados"
+msgstr "Barbados"
+
+#: countries.php:122
+msgid "Belize"
+msgstr "Belize"
+
+#: countries.php:123
+msgid "Bolivia"
+msgstr "Boliwia"
+
+#: countries.php:124
+msgid "Brazil"
+msgstr "Brazylia"
+
+#: countries.php:125
+msgid "Canada"
+msgstr "Kanada"
+
+#: countries.php:126
+msgid "Chile"
+msgstr "Chile"
+
+#: countries.php:127
+msgid "Colombia"
+msgstr "Kolumbia"
+
+#: countries.php:128
+msgid "Costa Rica"
+msgstr "Kostaryka"
+
+#: countries.php:129
+msgid "Cuba"
+msgstr "Kuba"
+
+#: countries.php:130
+msgid "Dominica"
+msgstr "Dominika"
+
+#: countries.php:131
+msgid "Dominican Republic"
+msgstr "Dominikana"
+
+#: countries.php:132
+msgid "Ecuador"
+msgstr "Ekwador"
+
+#: countries.php:133
+msgid "El Salvador"
+msgstr "Salwador"
+
+#: countries.php:134
+msgid "Grenada"
+msgstr "Grenada"
+
+#: countries.php:135
+msgid "Guatemala"
+msgstr "Gwatemala"
+
+#: countries.php:136
+msgid "Guyana"
+msgstr "Gujana"
+
+#: countries.php:137
+msgid "Haiti"
+msgstr "Haiti"
+
+#: countries.php:138
+msgid "Honduras"
+msgstr "Honduras"
+
+#: countries.php:139
+msgid "Jamaica"
+msgstr "Jamajka"
+
+#: countries.php:140
+msgid "Mexico"
+msgstr "Meksyk"
+
+#: countries.php:141
+msgid "Nicaragua"
+msgstr "Nikaragua"
+
+#: countries.php:142
+msgid "Panama"
+msgstr "Panama"
+
+#: countries.php:143
+msgid "Paraguay"
+msgstr "Paragwaj"
+
+#: countries.php:144
+msgid "Peru"
+msgstr "Peru"
+
+#: countries.php:145
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: countries.php:146
+msgid "Suriname"
+msgstr "Surinam"
+
+#: countries.php:147
+msgid "Trinidad and Tobago"
+msgstr "Trynidad i Tobago"
+
+#: countries.php:148
+msgid "United States"
+msgstr "Stany Zjednoczone"
+
+#: countries.php:149
+msgid "Uruguay"
+msgstr "Urugwaj"
+
+#: countries.php:150
+msgid "Venezuela"
+msgstr "Wenezuela"
+
+#: language-bar-flags.php:154
+msgid "Language Bar Flags"
+msgstr "Pasek z flagami języków"
 

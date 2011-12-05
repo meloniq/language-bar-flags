@@ -1,10 +1,10 @@
 === Language Bar Flags ===
 Contributors: meloniq
-Donate link: http://blog.meloniq.net
-Tags: bar, language, language bar, flags, europe, language selector
+Donate link: http://blog.meloniq.net/donate/
+Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -19,7 +19,7 @@ Example: Germany (in backend), Deutschland (in frontend)
 * Europe:
 Austria, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Estonia, Spain, Finland, France, Greece, Croatia, Hungary, Ireland, Iceland, Italy, Liechtenstein, Lithuania, Luxembourg, Latvia, Montenegro, Malta, Netherlands, Norway, Poland, Portugal, Romania, Serbia, Russian Federation, Sweden, Slovenia, Slovakia, Turkey, Ukraine, United Kingdom
 * America:
-none
+Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Cuba, Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Suriname, Trinidad and Tobago, United States, Uruguay, Venezuela
 * Asia + Australia:
 none
 * Africa:
@@ -30,16 +30,22 @@ none
 * Polish
 
 If You translated plugin to Your native language, please send it to me, and will attach it to next release.
+E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">contact page</a>.
 
 
 
 == Installation ==
 
-1. Upload the folder 'mnet-language-bar' to the '/wp-content/plugins/' directory
+1. Upload the folder 'language-bar-flags' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.0.1 =
+* Added support for Americas
+* Added optional title before flags
+* Changed name of main plugin file and path in installation instruction because of difference between origin project name and this given by WordPress
 
 = 1.0.0 =
 * Initial release
@@ -49,9 +55,14 @@ If You translated plugin to Your native language, please send it to me, and will
 
 == Frequently Asked Questions ==
 
-= Why it support just Europe? =
+= Why it support just Europe and Americas? =
 
-It's initial release, so please, be patient, next countries will be added soon.
+It's fresh plugin, so please, be patient, next countries will be added soon.
+
+= Will this plugin translate my website? =
+
+No, this plugin help to create cute links with flags to other versions of Your website.
+For multilanguage content support, check plugins like qTranslate, mLanguage etc.
 
 
 == Screenshots ==
