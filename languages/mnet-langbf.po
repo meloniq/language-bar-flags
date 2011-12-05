@@ -1,0 +1,235 @@
+# Copyright (C) 2011 MELONIQ.NET
+# This file is distributed under the same license as the Language Bar package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Language Bar 1.0.0\n"
+"Report-Msgid-Bugs-To: http://blog.meloniq.net/\n"
+"POT-Creation-Date: 2011-11-16 16:02:35+00:00\n"
+"PO-Revision-Date: 2011-11-16 16:42+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: MELONIQ.NET <biuro@meloniq.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: mnet-language-bar/admin_settings.php:70
+msgid "Activate bar?"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:153
+msgid "Active"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:57
+msgid "Africa"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:55
+msgid "America"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:56
+msgid "Asia + Australia"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Austria"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Belarus"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Belgium"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Bulgaria"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:152
+msgid "Country"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:102
+msgid "Country name will be dispayed as: "
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Croatia"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Czech Republic"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Denmark"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:160
+msgid "Don't need it right now... but if users will need it, will create it later..."
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Estonia"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:54
+msgid "Europe"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Finland"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "France"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:53
+#: mnet-language-bar/admin_settings.php:64
+msgid "General"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:47
+msgid "General Settings"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Germany"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Greece"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Hungary"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Iceland"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:76
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Ireland"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Italy"
+msgstr ""
+
+#: mnet-language-bar/mnet-language-bar.php:138
+msgid "Language Bar Flags"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Latvia"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Liechtenstein"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Lithuania"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Luxembourg"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Malta"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Montenegro"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Netherlands"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:73
+msgid "No"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Norway"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Poland"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Portugal"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Romania"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Russian Federation"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:168
+msgid "Save Changes"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Serbia"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:1
+msgid "Settings saved"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Slovakia"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Slovenia"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Spain"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Sweden"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Switzerland"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Turkey"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:154
+msgid "URL"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "Ukraine"
+msgstr ""
+
+#: mnet-language-bar/countries.php:1
+msgid "United Kingdom"
+msgstr ""
+
+#: mnet-language-bar/admin_settings.php:74
+msgid "Yes"
+msgstr ""
+
