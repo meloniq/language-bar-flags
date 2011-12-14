@@ -27,7 +27,6 @@
       $langs_array[$code]['url'] = trim($_POST['america'][$code]['url']);
     }
     // Asia + Australia part
-    /*
     foreach($asia_english as $code => $country) {
       if ($_POST['asia'][$code]['active'] == 'yes'){
         $langs_array[$code]['active'] = 'yes';
@@ -36,7 +35,6 @@
       }
       $langs_array[$code]['url'] = trim($_POST['asia'][$code]['url']);
     }
-    */
     // Africa part
     /*
     foreach($africa_english as $code => $country) {
@@ -74,7 +72,7 @@
         <li class=""><a href="#tab1"><?php _e('General', 'mnet-langbf'); ?></a></li>
         <li class=""><a href="#tab2"><?php _e('Europe', 'mnet-langbf'); ?></a></li>
         <li class=""><a href="#tab3"><?php _e('America', 'mnet-langbf'); ?></a></li>
-        <li class=""><a href="#tab4"><?php _e('Asia + Australia', 'mnet-langbf'); ?></a></li>
+        <li class=""><a href="#tab4"><?php _e('Asia + Oceania', 'mnet-langbf'); ?></a></li>
         <li class=""><a href="#tab5"><?php _e('Africa', 'mnet-langbf'); ?></a></li>
       </ul>
       
@@ -108,6 +106,7 @@
         </table>
 
       </div>
+
       <!-- Europe -->
       <div id="tab2" class="">
         <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
@@ -134,6 +133,7 @@
           </tbody>
         </table>
       </div>
+
       <!-- Americas -->
       <div id="tab3" class="">
         <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
@@ -161,6 +161,7 @@
         </table>
       </div>
 
+      <!-- Asia + Oceania -->
       <div id="tab4" class="">
         <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
           <thead>
@@ -171,15 +172,23 @@
             </tr>
           </thead>
           <tbody>
+          <?php foreach($asia_english as $code => $country): ?>
             <tr>
-              <td colspan="3" class="">
-                <p><?php _e('Don\'t need it right now... but if users will need it, will create it later...', 'mnet-langbf'); ?></p>
+              <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
+              <td class="">
+                <input type="checkbox" value="yes" id="asia_<?php echo $code; ?>_active" name="asia[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+              </td>
+              <td class="">
+                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="asia_<?php echo $code; ?>_url" name="asia[<?php echo $code; ?>][url]" /><br />
+                <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $asia_native[$code]; ?></i></small>
               </td>
             </tr>
+          <?php endforeach; ?>
           </tbody>
         </table>
       </div>
 
+      <!-- Africa -->
       <div id="tab5" class="">
         <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
           <thead>
