@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Language Bar 1.0.0\n"
 "Report-Msgid-Bugs-To: http://blog.meloniq.net/\n"
 "POT-Creation-Date: 2011-11-16 16:02:35+00:00\n"
-"PO-Revision-Date: 2011-12-03 20:19+0100\n"
+"PO-Revision-Date: 2011-12-14 20:21+0100\n"
 "Last-Translator: MELONIQ.NET <biuro@meloniq.net>\n"
 "Language-Team: http://www.meloniq.net\n"
 "MIME-Version: 1.0\n"
@@ -18,97 +18,9 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin_settings.php:3
-msgid "You do not have sufficient permissions to access this page."
-msgstr "Nie masz wystarczających uprawnień dostępu do tej strony."
-
-#: admin_settings.php:53
-msgid "Settings saved"
-msgstr "Ustawienia zapisane"
-
-#: admin_settings.php:68
-msgid "General Settings"
-msgstr "Ogólne ustawienia"
-
-#: admin_settings.php:74
-#: admin_settings.php:85
-msgid "General"
-msgstr "Ogólne"
-
-#: admin_settings.php:75
-msgid "Europe"
-msgstr "Europa"
-
-#: admin_settings.php:76
-msgid "America"
-msgstr "Ameryka"
-
-#: admin_settings.php:77
-msgid "Asia + Australia"
-msgstr "Azja + Australia"
-
-#: admin_settings.php:78
-msgid "Africa"
-msgstr "Afryka"
-
-#: admin_settings.php:91
-msgid "Activate bar?"
-msgstr "Aktywować pasek?"
-
-#: admin_settings.php:94
-msgid "No"
-msgstr "Nie"
-
-#: admin_settings.php:95
-msgid "Yes"
-msgstr "Tak"
-
-#: admin_settings.php:97
-msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
-msgstr "Jeśli jest wybrane \"TAK\", wtedy wtyczka doda pasek z flagami języków."
-
-#: admin_settings.php:101
-msgid "Title of bar"
-msgstr "Tytuł paska"
-
-#: admin_settings.php:104
-msgid "Title will be displayed on a bar, right before flags."
-msgstr "Tytuł będzie wyświetlany na pasku, bezpośrednio przed flagami."
-
-#: admin_settings.php:116
-#: admin_settings.php:142
-#: admin_settings.php:168
-#: admin_settings.php:187
-msgid "Country"
-msgstr "Kraj"
-
-#: admin_settings.php:117
-#: admin_settings.php:143
-#: admin_settings.php:169
-#: admin_settings.php:188
-msgid "Active"
-msgstr "Aktywny"
-
-#: admin_settings.php:118
-#: admin_settings.php:144
-#: admin_settings.php:170
-#: admin_settings.php:189
-msgid "URL"
-msgstr "URL"
-
-#: admin_settings.php:130
-#: admin_settings.php:156
-msgid "Country name will be dispayed as: "
-msgstr "Nazwa kraju będzie wyświetlana jako: "
-
-#: admin_settings.php:176
-#: admin_settings.php:195
-msgid "Don't need it right now... but if users will need it, will create it later..."
-msgstr "Nie potrzebuje tego teraz... ale jeśli użytkownicy będą potrzebować, utworzę to później..."
-
-#: admin_settings.php:203
-msgid "Save Changes"
-msgstr "Zapisz zmiany"
+#: language-bar-flags.php:159
+msgid "Language Bar Flags"
+msgstr "Pasek z flagami języków"
 
 #: countries.php:44
 msgid "Austria"
@@ -386,7 +298,299 @@ msgstr "Urugwaj"
 msgid "Venezuela"
 msgstr "Wenezuela"
 
-#: language-bar-flags.php:154
-msgid "Language Bar Flags"
-msgstr "Pasek z flagami języków"
+#: countries.php:208
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: countries.php:209
+msgid "Armenia"
+msgstr "Armenia"
+
+#: countries.php:210
+msgid "Australia"
+msgstr "Australia"
+
+#: countries.php:211
+msgid "Azerbaijan"
+msgstr "Azerbejdżan"
+
+#: countries.php:212
+msgid "Bahrain"
+msgstr "Bahrajn"
+
+#: countries.php:213
+msgid "Bangladesh"
+msgstr "Bangladesz"
+
+#: countries.php:214
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: countries.php:215
+msgid "Brunei"
+msgstr "Brunei"
+
+#: countries.php:216
+msgid "Cambodia"
+msgstr "Kambodża"
+
+#: countries.php:217
+msgid "China"
+msgstr "Chiny"
+
+#: countries.php:218
+msgid "Cyprus"
+msgstr "Cypr"
+
+#: countries.php:219
+msgid "Georgia"
+msgstr "Gruzja"
+
+#: countries.php:220
+msgid "Hong Kong"
+msgstr "Hongkong"
+
+#: countries.php:221
+msgid "India"
+msgstr "Indie"
+
+#: countries.php:222
+msgid "Indonesia"
+msgstr "Indonezja"
+
+#: countries.php:223
+msgid "Iran"
+msgstr "Iran"
+
+#: countries.php:224
+msgid "Iraq"
+msgstr "Irak"
+
+#: countries.php:225
+msgid "Israel"
+msgstr "Izrael"
+
+#: countries.php:226
+msgid "Japan"
+msgstr "Japonia"
+
+#: countries.php:227
+msgid "Jordan"
+msgstr "Jordania"
+
+#: countries.php:228
+msgid "Kazakhstan"
+msgstr "Kazachstan"
+
+#: countries.php:229
+msgid "Kuwait"
+msgstr "Kuwejt"
+
+#: countries.php:230
+msgid "Kyrgyzstan"
+msgstr "Kirgistan"
+
+#: countries.php:231
+msgid "Laos"
+msgstr "Laos"
+
+#: countries.php:232
+msgid "Lebanon"
+msgstr "Liban"
+
+#: countries.php:233
+msgid "Malaysia"
+msgstr "Malezja"
+
+#: countries.php:234
+msgid "Maldives"
+msgstr "Malediwy"
+
+#: countries.php:235
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: countries.php:236
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: countries.php:237
+msgid "Nepal"
+msgstr "Nepal"
+
+#: countries.php:238
+msgid "New Zealand"
+msgstr "Nowa Zelandia"
+
+#: countries.php:239
+msgid "North Korea"
+msgstr "Korea Północna"
+
+#: countries.php:240
+msgid "Oman"
+msgstr "Oman"
+
+#: countries.php:241
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: countries.php:242
+msgid "Papua New Guinea"
+msgstr "Papua-Nowa Gwinea"
+
+#: countries.php:243
+msgid "Philippines"
+msgstr "Filipiny"
+
+#: countries.php:244
+msgid "Qatar"
+msgstr "Katar"
+
+#: countries.php:245
+msgid "Saudi Arabia"
+msgstr "Arabia Saudyjska"
+
+#: countries.php:246
+msgid "Singapore"
+msgstr "Singapur"
+
+#: countries.php:247
+msgid "South Korea"
+msgstr "Korea Południowa"
+
+#: countries.php:248
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: countries.php:249
+msgid "Syria"
+msgstr "Syria"
+
+#: countries.php:250
+msgid "Taiwan"
+msgstr "Tajwan"
+
+#: countries.php:251
+msgid "Tajikistan"
+msgstr "Tadżykistan"
+
+#: countries.php:252
+msgid "Thailand"
+msgstr "Tajlandia"
+
+#: countries.php:253
+msgid "Timor-Leste"
+msgstr "Timor Wschodni"
+
+#: countries.php:254
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: countries.php:255
+msgid "United Arab Emirates"
+msgstr "Emiraty Arabskie"
+
+#: countries.php:256
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: countries.php:257
+msgid "Vietnam"
+msgstr "Wietnam"
+
+#: countries.php:258
+msgid "Yemen"
+msgstr "Jemen"
+
+#: admin_settings.php:3
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nie masz wystarczających uprawnień dostępu do tej strony."
+
+#: admin_settings.php:51
+msgid "Settings saved"
+msgstr "Ustawienia zapisane"
+
+#: admin_settings.php:66
+msgid "General Settings"
+msgstr "Ogólne ustawienia"
+
+#: admin_settings.php:72
+#: admin_settings.php:83
+msgid "General"
+msgstr "Ogólne"
+
+#: admin_settings.php:73
+msgid "Europe"
+msgstr "Europa"
+
+#: admin_settings.php:74
+msgid "America"
+msgstr "Ameryka"
+
+#: admin_settings.php:75
+msgid "Asia + Oceania"
+msgstr "Azja + Oceania"
+
+#: admin_settings.php:76
+msgid "Africa"
+msgstr "Afryka"
+
+#: admin_settings.php:89
+msgid "Activate bar?"
+msgstr "Aktywować pasek?"
+
+#: admin_settings.php:92
+msgid "No"
+msgstr "Nie"
+
+#: admin_settings.php:93
+msgid "Yes"
+msgstr "Tak"
+
+#: admin_settings.php:95
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr "Jeśli jest wybrane \"TAK\", wtedy wtyczka doda pasek z flagami języków."
+
+#: admin_settings.php:99
+msgid "Title of bar"
+msgstr "Tytuł paska"
+
+#: admin_settings.php:102
+msgid "Title will be displayed on a bar, right before flags."
+msgstr "Tytuł będzie wyświetlany na pasku, bezpośrednio przed flagami."
+
+#: admin_settings.php:115
+#: admin_settings.php:142
+#: admin_settings.php:169
+#: admin_settings.php:196
+msgid "Country"
+msgstr "Kraj"
+
+#: admin_settings.php:116
+#: admin_settings.php:143
+#: admin_settings.php:170
+#: admin_settings.php:197
+msgid "Active"
+msgstr "Aktywny"
+
+#: admin_settings.php:117
+#: admin_settings.php:144
+#: admin_settings.php:171
+#: admin_settings.php:198
+msgid "URL"
+msgstr "URL"
+
+#: admin_settings.php:129
+#: admin_settings.php:156
+#: admin_settings.php:183
+msgid "Country name will be dispayed as: "
+msgstr "Nazwa kraju będzie wyświetlana jako: "
+
+#: admin_settings.php:204
+msgid "Don't need it right now... but if users will need it, will create it later..."
+msgstr "Nie potrzebuje tego teraz... ale jeśli użytkownicy będą potrzebować, utworzę to później..."
+
+#: admin_settings.php:212
+msgid "Save Changes"
+msgstr "Zapisz zmiany"
 

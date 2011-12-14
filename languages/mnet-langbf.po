@@ -3,9 +3,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Language Bar Flags 1.0.1\n"
+"Project-Id-Version: Language Bar Flags 1.0.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/language-bar-flags\n"
-"POT-Creation-Date: 2011-12-03 18:55:22+00:00\n"
+"POT-Creation-Date: 2011-12-14 12:42:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,88 +14,8 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 
-#: admin_settings.php:3
-msgid "You do not have sufficient permissions to access this page."
-msgstr ""
-
-#: admin_settings.php:53
-msgid "Settings saved"
-msgstr ""
-
-#: admin_settings.php:68
-msgid "General Settings"
-msgstr ""
-
-#: admin_settings.php:74 admin_settings.php:85
-msgid "General"
-msgstr ""
-
-#: admin_settings.php:75
-msgid "Europe"
-msgstr ""
-
-#: admin_settings.php:76
-msgid "America"
-msgstr ""
-
-#: admin_settings.php:77
-msgid "Asia + Australia"
-msgstr ""
-
-#: admin_settings.php:78
-msgid "Africa"
-msgstr ""
-
-#: admin_settings.php:91
-msgid "Activate bar?"
-msgstr ""
-
-#: admin_settings.php:94
-msgid "No"
-msgstr ""
-
-#: admin_settings.php:95
-msgid "Yes"
-msgstr ""
-
-#: admin_settings.php:97
-msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
-msgstr ""
-
-#: admin_settings.php:101
-msgid "Title of bar"
-msgstr ""
-
-#: admin_settings.php:104
-msgid "Title will be displayed on a bar, right before flags."
-msgstr ""
-
-#: admin_settings.php:116 admin_settings.php:142 admin_settings.php:168
-#: admin_settings.php:187
-msgid "Country"
-msgstr ""
-
-#: admin_settings.php:117 admin_settings.php:143 admin_settings.php:169
-#: admin_settings.php:188
-msgid "Active"
-msgstr ""
-
-#: admin_settings.php:118 admin_settings.php:144 admin_settings.php:170
-#: admin_settings.php:189
-msgid "URL"
-msgstr ""
-
-#: admin_settings.php:130 admin_settings.php:156
-msgid "Country name will be dispayed as: "
-msgstr ""
-
-#: admin_settings.php:176 admin_settings.php:195
-msgid ""
-"Don't need it right now... but if users will need it, will create it later..."
-msgstr ""
-
-#: admin_settings.php:203
-msgid "Save Changes"
+#: language-bar-flags.php:159
+msgid "Language Bar Flags"
 msgstr ""
 
 #: countries.php:44
@@ -374,7 +294,291 @@ msgstr ""
 msgid "Venezuela"
 msgstr ""
 
-#: language-bar-flags.php:154
-msgid "Language Bar Flags"
+#: countries.php:208
+msgid "Afghanistan"
+msgstr ""
+
+#: countries.php:209
+msgid "Armenia"
+msgstr ""
+
+#: countries.php:210
+msgid "Australia"
+msgstr ""
+
+#: countries.php:211
+msgid "Azerbaijan"
+msgstr ""
+
+#: countries.php:212
+msgid "Bahrain"
+msgstr ""
+
+#: countries.php:213
+msgid "Bangladesh"
+msgstr ""
+
+#: countries.php:214
+msgid "Bhutan"
+msgstr ""
+
+#: countries.php:215
+msgid "Brunei"
+msgstr ""
+
+#: countries.php:216
+msgid "Cambodia"
+msgstr ""
+
+#: countries.php:217
+msgid "China"
+msgstr ""
+
+#: countries.php:218
+msgid "Cyprus"
+msgstr ""
+
+#: countries.php:219
+msgid "Georgia"
+msgstr ""
+
+#: countries.php:220
+msgid "Hong Kong"
+msgstr ""
+
+#: countries.php:221
+msgid "India"
+msgstr ""
+
+#: countries.php:222
+msgid "Indonesia"
+msgstr ""
+
+#: countries.php:223
+msgid "Iran"
+msgstr ""
+
+#: countries.php:224
+msgid "Iraq"
+msgstr ""
+
+#: countries.php:225
+msgid "Israel"
+msgstr ""
+
+#: countries.php:226
+msgid "Japan"
+msgstr ""
+
+#: countries.php:227
+msgid "Jordan"
+msgstr ""
+
+#: countries.php:228
+msgid "Kazakhstan"
+msgstr ""
+
+#: countries.php:229
+msgid "Kuwait"
+msgstr ""
+
+#: countries.php:230
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: countries.php:231
+msgid "Laos"
+msgstr ""
+
+#: countries.php:232
+msgid "Lebanon"
+msgstr ""
+
+#: countries.php:233
+msgid "Malaysia"
+msgstr ""
+
+#: countries.php:234
+msgid "Maldives"
+msgstr ""
+
+#: countries.php:235
+msgid "Mongolia"
+msgstr ""
+
+#: countries.php:236
+msgid "Myanmar"
+msgstr ""
+
+#: countries.php:237
+msgid "Nepal"
+msgstr ""
+
+#: countries.php:238
+msgid "New Zealand"
+msgstr ""
+
+#: countries.php:239
+msgid "North Korea"
+msgstr ""
+
+#: countries.php:240
+msgid "Oman"
+msgstr ""
+
+#: countries.php:241
+msgid "Pakistan"
+msgstr ""
+
+#: countries.php:242
+msgid "Papua New Guinea"
+msgstr ""
+
+#: countries.php:243
+msgid "Philippines"
+msgstr ""
+
+#: countries.php:244
+msgid "Qatar"
+msgstr ""
+
+#: countries.php:245
+msgid "Saudi Arabia"
+msgstr ""
+
+#: countries.php:246
+msgid "Singapore"
+msgstr ""
+
+#: countries.php:247
+msgid "South Korea"
+msgstr ""
+
+#: countries.php:248
+msgid "Sri Lanka"
+msgstr ""
+
+#: countries.php:249
+msgid "Syria"
+msgstr ""
+
+#: countries.php:250
+msgid "Taiwan"
+msgstr ""
+
+#: countries.php:251
+msgid "Tajikistan"
+msgstr ""
+
+#: countries.php:252
+msgid "Thailand"
+msgstr ""
+
+#: countries.php:253
+msgid "Timor-Leste"
+msgstr ""
+
+#: countries.php:254
+msgid "Turkmenistan"
+msgstr ""
+
+#: countries.php:255
+msgid "United Arab Emirates"
+msgstr ""
+
+#: countries.php:256
+msgid "Uzbekistan"
+msgstr ""
+
+#: countries.php:257
+msgid "Vietnam"
+msgstr ""
+
+#: countries.php:258
+msgid "Yemen"
+msgstr ""
+
+#: admin_settings.php:3
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: admin_settings.php:51
+msgid "Settings saved"
+msgstr ""
+
+#: admin_settings.php:66
+msgid "General Settings"
+msgstr ""
+
+#: admin_settings.php:72 admin_settings.php:83
+msgid "General"
+msgstr ""
+
+#: admin_settings.php:73
+msgid "Europe"
+msgstr ""
+
+#: admin_settings.php:74
+msgid "America"
+msgstr ""
+
+#: admin_settings.php:75
+msgid "Asia + Oceania"
+msgstr ""
+
+#: admin_settings.php:76
+msgid "Africa"
+msgstr ""
+
+#: admin_settings.php:89
+msgid "Activate bar?"
+msgstr ""
+
+#: admin_settings.php:92
+msgid "No"
+msgstr ""
+
+#: admin_settings.php:93
+msgid "Yes"
+msgstr ""
+
+#: admin_settings.php:95
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr ""
+
+#: admin_settings.php:99
+msgid "Title of bar"
+msgstr ""
+
+#: admin_settings.php:102
+msgid "Title will be displayed on a bar, right before flags."
+msgstr ""
+
+#: admin_settings.php:115 admin_settings.php:142 admin_settings.php:169
+#: admin_settings.php:196
+msgid "Country"
+msgstr ""
+
+#: admin_settings.php:116 admin_settings.php:143 admin_settings.php:170
+#: admin_settings.php:197
+msgid "Active"
+msgstr ""
+
+#: admin_settings.php:117 admin_settings.php:144 admin_settings.php:171
+#: admin_settings.php:198
+msgid "URL"
+msgstr ""
+
+#: admin_settings.php:129 admin_settings.php:156 admin_settings.php:183
+msgid "Country name will be dispayed as: "
+msgstr ""
+
+#: admin_settings.php:204
+msgid ""
+"Don't need it right now... but if users will need it, will create it later..."
+msgstr ""
+
+#: admin_settings.php:212
+msgid "Save Changes"
 msgstr ""
 

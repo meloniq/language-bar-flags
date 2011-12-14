@@ -3,8 +3,8 @@ Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 1.0.1
+Tested up to: 3.3
+Stable tag: 1.0.2
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -20,13 +20,14 @@ Example: Germany (in backend), Deutschland (in frontend)
 Austria, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Estonia, Spain, Finland, France, Greece, Croatia, Hungary, Ireland, Iceland, Italy, Liechtenstein, Lithuania, Luxembourg, Latvia, Montenegro, Malta, Netherlands, Norway, Poland, Portugal, Romania, Serbia, Russian Federation, Sweden, Slovenia, Slovakia, Turkey, Ukraine, United Kingdom
 * America:
 Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Cuba, Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Suriname, Trinidad and Tobago, United States, Uruguay, Venezuela
-* Asia + Australia:
-none
+* Asia + Oceania:
+Afghanistan, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh, Bhutan, Brunei, Cambodia, China, Cyprus, Georgia, Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan, Kazakhstan, Kuwait, Kyrgyzstan, Laos, Lebanon, Malaysia, Maldives, Mongolia, Myanmar, Nepal, New Zealand, North Korea, Oman, Pakistan, Papua New Guinea, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Syria, Taiwan, Tajikistan, Thailand, Timor-Leste, Turkmenistan, United Arab Emirates, Uzbekistan, Vietnam, Yemen
 * Africa:
 none
 
 = Supported languages =
 * English
+* French (by Frédéric Serva)
 * Polish
 
 If You translated plugin to Your native language, please send it to me, and will attach it to next release.
@@ -42,6 +43,11 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 == Changelog ==
 
+= 1.0.2 =
+* Added support for Asia and Oceania
+* Added French language (Thanks to Frédéric Serva)
+* CSS tooltip fix (Thanks to Frédéric Serva)
+
 = 1.0.1 =
 * Added support for Americas
 * Added optional title before flags
@@ -55,9 +61,13 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 == Frequently Asked Questions ==
 
-= Why it support just Europe and Americas? =
+= Why Africa is not supported? =
 
 It's fresh plugin, so please, be patient, next countries will be added soon.
+
+= My country name is translated wrong, what to do? =
+
+Report it with details on <a href="http://wordpress.org/tags/language-bar-flags">support forum</a>.
 
 = Will this plugin translate my website? =
 
