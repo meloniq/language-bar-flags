@@ -16,11 +16,11 @@ if ( ! function_exists( 'add_action' ) )
 	die( 'Whoops! You shouldn\'t be doing that.' );
 
 
-global $langbf_dbversion;
-$langbf_version = '1.0.4';
+/**
+ * Plugin version and textdomain constants
+ */
 define( 'LANGBF_VERSION', '1.0.4' );
 define( 'LANGBF_TD', 'language-bar-flags' );
-$langbf_dbversion = '104';
 
 
 /**
@@ -94,34 +94,35 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_styles' );
 function langbf_load_html() {
 	global $europe_native, $america_native, $asia_native, $africa_native;
 
-  if(get_option('langbf_active') == 'yes') {
+	if ( get_option('langbf_active') != 'yes' )
+		return;
 
-		if(get_option('langbf_disable_wpbar') == 'yes') {
-			add_filter( 'show_admin_bar', '__return_false' );
-			remove_action( 'personal_options', '_admin_bar_preferences' );
+	if ( get_option('langbf_disable_wpbar') == 'yes' ) {
+		add_filter( 'show_admin_bar', '__return_false' );
+		remove_action( 'personal_options', '_admin_bar_preferences' );
+	}
+
+	$target = ( get_option('langbf_new_window') == 'yes' ) ? 'target="_blank"' : '';
+	$bar_title = get_option('langbf_title');
+
+	$langs = get_option('langbf_langs');
+	$native_names = array_merge((array)$europe_native, (array)$america_native, (array)$asia_native, (array)$africa_native);
+	$output = '';
+	foreach ( $native_names as $code => $country ) {
+		if ( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ) {
+			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
 		}
-		
-		if(get_option('langbf_new_window') == 'yes') $target = 'target="_blank"'; else $target = '';
-
-    $langs = get_option('langbf_langs');
-    $native_names = array_merge((array)$europe_native, (array)$america_native, (array)$asia_native, (array)$africa_native);
-    $output = '';
-    foreach($native_names as $code => $country){
-      if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){
-        $output .= '<li><a href="' . $langs[$code]['url'] . '" ' . $target . ' title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
-      }
-    }
+	}
 ?>
-    <div id="langbf_bar">
-      <div class="langbf_links">
-        <?php if(get_option('langbf_title') != ''){ echo '<span class="langbf_title">' . get_option('langbf_title') . '</span>'; } ?>
-        <ul>
-          <?php echo $output; ?>
-        </ul>
-      </div>
-    </div><!-- #langbf_bar -->
+	<div id="langbf_bar">
+		<div class="langbf_links">
+			<?php if ( ! empty( $bar_title ) ) { echo '<span class="langbf_title">' . $bar_title . '</span>'; } ?>
+			<ul>
+				<?php echo $output; ?>
+			</ul>
+		</div>
+	</div><!-- #langbf_bar -->
 <?php
-  }
 }
 add_action( 'wp_footer', 'langbf_load_html' );
 
@@ -130,28 +131,29 @@ add_action( 'wp_footer', 'langbf_load_html' );
  * Print css in footer
  */
 function langbf_load_css() {
-  if(get_option('langbf_active') == 'yes') {
-		if( is_admin_bar_showing() ) {
-			$margin_top = 52;
-			$top = 26;
-		} else {
-			$margin_top = 26;
-			$top = 0;
-		}
-?>
-<style type="text/css">
-html {
-	margin-top: <?php echo $margin_top ?>px !important;
-}
-* html body { 
-	margin-top: <?php echo $margin_top ?>px !important;
-}
-#langbf_bar {
-	top: <?php echo $top ?>px !important;
-}
-</style>
-<?php
+	if ( get_option('langbf_active') != 'yes' )
+		return;
+
+	if ( is_admin_bar_showing() ) {
+		$margin_top = 52;
+		$top = 26;
+	} else {
+		$margin_top = 26;
+		$top = 0;
 	}
+?>
+	<style type="text/css">
+	html {
+		margin-top: <?php echo $margin_top ?>px !important;
+	}
+	* html body { 
+		margin-top: <?php echo $margin_top ?>px !important;
+	}
+	#langbf_bar {
+		top: <?php echo $top ?>px !important;
+	}
+	</style>
+<?php
 }
 add_action( 'wp_footer', 'langbf_load_css' );
 
@@ -160,21 +162,21 @@ add_action( 'wp_footer', 'langbf_load_css' );
  * Print css in footer
  */
 function langbf_load_js() {
-  if(get_option('langbf_active') == 'yes') {
+	if ( get_option('langbf_active') != 'yes' )
+		return;
 ?>
-<script type="text/javascript">
-// <![CDATA[
-  jQuery(document).ready(function() {
-    jQuery("#langbf_bar a[title]").tooltip({
-      offset: [10, 0],
-      position: 'bottom center',
-      effect: 'slide'
-});
-  });
-// ]]>
-</script>
+	<script type="text/javascript">
+	// <![CDATA[
+	jQuery(document).ready( function(){
+		jQuery("#langbf_bar a[title]").tooltip({
+			offset: [10, 0],
+			position: 'bottom center',
+			effect: 'slide'
+		} );
+	} );
+	// ]]>
+	</script>
 <?php
-	}
 }
 add_action( 'wp_footer', 'langbf_load_js' );
 
@@ -201,13 +203,38 @@ function langbf_menu_settings() {
  * Create announcement on langbf setting page
  */
 function langbf_announcement() {
-	global $app_theme;
-	if(get_option('langbf_announcement') == false && !isset($app_theme)) {
+
+	if ( get_option( 'langbf_announcement' ) )
+		return;
+
+	if ( ! langbf_is_theme_provider( 'appthemes' ) ) {
 		echo '<div class="update-nag">';
 		_e( 'You are not using any of AppThemes Premium Themes, check what You are missing.', LANGBF_TD );
 		printf( __( ' <a target="_blank" href="%s">Show me themes!</a>', LANGBF_TD ), 'http://bit.ly/s23oNj' );
 		echo '</div>';
 	}
+
+}
+
+
+/**
+ * Check theme provider, used for announcement
+ */
+function langbf_is_theme_provider( $provider ) {
+
+	if ( $provider == 'appthemes' ) {
+		// All modern versions
+		if ( defined( 'APP_TD' ) )
+			return true;
+		// ClassiPress, Clipper, JobRoller
+		if ( defined( 'APP_POST_TYPE' ) )
+			return true;
+		// Vantage, Quality Control, Ideas
+		if ( defined( 'VA_VERSION' ) || defined( 'QC_VERSION' ) || defined( 'IDEAX_VERSION' ) )
+			return true;
+	}
+
+	return false;
 }
 
 
@@ -215,51 +242,46 @@ function langbf_announcement() {
  * Action on plugin activate
  */
 function langbf_activate() {
-	global $wpdb, $langbf_dbversion;
-	langbf_install_options($langbf_dbversion);
+	// install default options
+	langbf_install_options();
 }
+
 
 /**
  * Install default options
  */
-function langbf_install_options($langbf_dbversion) {
-	global $wpdb;
-	
-	$langbf_saved_dbversion = get_option('langbf_db_version');
-	
-  //If fresh installation, save defaults
-	if(!$langbf_saved_dbversion){
+function langbf_install_options() {
 
-  	$domain = str_replace( 'http://www.', '', home_url( '/' ) );
-  	$domain = str_replace( 'https://www.', '', $domain );
-  	$domain = str_replace( 'http://', '', $domain );
-  	$domain = str_replace( 'https://', '', $domain );
+	$previous_version = get_option( 'langbf_db_version' );
 
-  	$url_prefix = 'http://www.';
+	// fresh install
+	if ( ! $previous_version ) {
+		$domain = str_replace( 'http://www.', '', home_url( '/' ) );
+		$domain = str_replace( 'https://www.', '', $domain );
+		$domain = str_replace( 'http://', '', $domain );
+		$domain = str_replace( 'https://', '', $domain );
 
-  	$active_langs = array();
-  	$active_langs['pl']['url'] = $url_prefix . 'pl.' . $domain;
-  	$active_langs['pl']['active'] = 'yes';
-  	$active_langs['uk']['url'] = $url_prefix . 'uk.' . $domain;
-  	$active_langs['uk']['active'] = 'yes';
-  	$active_langs['ie']['url'] = $url_prefix . 'ie.' . $domain;
-  	$active_langs['ie']['active'] = 'yes';
+		$url_prefix = 'http://www.';
 
-  	update_option('langbf_db_version', $langbf_dbversion);
-  	update_option('langbf_active', 'yes');
-  	update_option('langbf_langs', $active_langs);
-  	update_option('langbf_disable_wpbar', 'yes');
-  	update_option('langbf_new_window', 'no');
+		$active_langs = array();
+		$active_langs['pl']['url'] = $url_prefix . 'pl.' . $domain;
+		$active_langs['pl']['active'] = 'yes';
+		$active_langs['uk']['url'] = $url_prefix . 'uk.' . $domain;
+		$active_langs['uk']['active'] = 'yes';
+		$active_langs['ie']['url'] = $url_prefix . 'ie.' . $domain;
+		$active_langs['ie']['active'] = 'yes';
 
-	} else if($langbf_saved_dbversion < 104) {
-
-  	update_option('langbf_disable_wpbar', 'yes');
-  	update_option('langbf_new_window', 'no');
-
+		update_option( 'langbf_active', 'yes' );
+		update_option( 'langbf_langs', $active_langs );
 	}
 
-  //Update DB version
-  update_option('langbf_db_version', $langbf_dbversion);
-  delete_option('langbf_announcement');
-}		
-?>
+	if ( version_compare( $previous_version, '1.0.4', '<' ) ) {
+		update_option( 'langbf_disable_wpbar', 'yes' );
+		update_option( 'langbf_new_window', 'no' );
+	}
+
+	//Update DB version
+	update_option( 'langbf_db_version', LANGBF_VERSION );
+	delete_option( 'langbf_announcement' );
+}
+
