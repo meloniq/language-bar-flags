@@ -44,6 +44,10 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 == Changelog ==
 
+= 1.0.5 =
+* Added Slovak translation
+* Removed WP 2.8 compatibility constants
+
 = 1.0.4 =
 * Added compatibility with WP Admin bar, can use both
 * Added option to open links in new window

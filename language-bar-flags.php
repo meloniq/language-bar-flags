@@ -8,89 +8,84 @@
 	Author URI: http://blog.meloniq.net
 */
 
-// Avoid calling page directly
-if (eregi(basename(__FILE__),$_SERVER['PHP_SELF'])) {
-	echo "Whoops! You shouldn't be doing that.";
-	exit;
-}
+
+/**
+ * Avoid calling file directly
+ */
+if ( ! function_exists( 'add_action' ) )
+	die( 'Whoops! You shouldn\'t be doing that.' );
+
 
 global $langbf_dbversion;
 $langbf_version = '1.0.4';
 define('LANGBF_VERSION', '1.0.4');
 $langbf_dbversion = '104';
-// Init options & tables during activation & deregister init option
-register_activation_hook( plugin_basename(__FILE__), 'langbf_activate' );
 
-/* PLUGIN and WP-CONTENT directory constants if not already defined */
-if ( ! defined( 'WP_PLUGIN_URL' ) )
-	define( 'WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' );
-if ( ! defined( 'WP_PLUGIN_DIR' ) )
-	define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' );
-if ( ! defined( 'WP_CONTENT_URL' ) )
-	define( 'WP_CONTENT_URL', get_option( 'siteurl' ) . '/wp-content' );
-if ( ! defined( 'WP_CONTENT_DIR' ) )
-	define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
 
-if ( ! defined( 'LANGBF_PLUGIN_BASENAME' ) )
-	define( 'LANGBF_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
-if ( ! defined( 'LANGBF_PLUGIN_NAME' ) )
-	define( 'LANGBF_PLUGIN_NAME', trim( dirname( LANGBF_PLUGIN_BASENAME ), '/' ) );
-if ( ! defined( 'LANGBF_PLUGIN_DIR' ) )
-	define( 'LANGBF_PLUGIN_DIR', WP_PLUGIN_DIR . '/' . LANGBF_PLUGIN_NAME );
-if ( ! defined( 'LANGBF_PLUGIN_URL' ) )
-	define( 'LANGBF_PLUGIN_URL', WP_PLUGIN_URL . '/' . LANGBF_PLUGIN_NAME );
-	
-	
+/**
+ * Process actions on plugin activation
+ */
+register_activation_hook( plugin_basename( __FILE__ ), 'langbf_activate' );
+
+
 /**
  * Load Text-Domain
  */
 load_plugin_textdomain( 'mnet-langbf', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
+
 /**
  * Load Countries arrays
  */
-include_once (dirname (__FILE__) . '/countries.php');
+include_once( dirname( __FILE__ ) . '/countries.php' );
+
 
 /**
  * Initialize admin menu
  */
-if ( is_admin() ) {	
-	add_action('admin_menu', 'langbf_add_menu_links');
-} else {
-	// Add a author to the header
-	//add_action('wp_head', create_function('', 'echo "\n<meta name=\'Language Bar\' content=\'http://www.meloniq.net\' />\n";') );
+if ( is_admin() ) {
+	add_action( 'admin_menu', 'langbf_add_menu_links' );
 }
 
+
 /**
- * Load scripts
+ * Load front-end scripts
  */
 function langbf_load_scripts() {
-  wp_enqueue_script('jquery');
-	wp_register_script('langbf_tooltip', plugins_url(LANGBF_PLUGIN_NAME.'/js/tooltip.slide.js'), array('jquery'));
-	wp_enqueue_script('langbf_tooltip');	
-	//wp_print_scripts('langbf_tooltip');
-}		
-add_action('wp_print_scripts', 'langbf_load_scripts');
-
-function langbf_load_admin_scripts() {
-  wp_enqueue_script('jquery-ui-tabs'); 
+	wp_register_script( 'langbf_tooltip', plugins_url( '/js/tooltip.slide.js', __FILE__ ), array( 'jquery' ) );
+	wp_enqueue_script( 'langbf_tooltip' );
 }
-add_action('admin_enqueue_scripts', 'langbf_load_admin_scripts');			
+add_action( 'wp_print_scripts', 'langbf_load_scripts' );
+
 
 /**
- * Load styles
+ * Load back-end scripts
+ */
+function langbf_load_admin_scripts() {
+  wp_enqueue_script( 'jquery-ui-tabs' );
+}
+add_action( 'admin_enqueue_scripts', 'langbf_load_admin_scripts' );
+
+
+/**
+ * Load front-end styles
  */
 function langbf_load_styles() {
-	wp_register_style('langbf_style', plugins_url(LANGBF_PLUGIN_NAME.'/style.css'));
-	wp_enqueue_style('langbf_style');	
-}		
-add_action('wp_print_styles', 'langbf_load_styles');
-
-function langbf_load_admin_styles() {
-	wp_register_style('langbf_admin_style', plugins_url(LANGBF_PLUGIN_NAME.'/admin-style.css'));
-	wp_enqueue_style('langbf_admin_style');	
+	wp_register_style( 'langbf_style', plugins_url( 'style.css', __FILE__ ) );
+	wp_enqueue_style( 'langbf_style' );
 }
-add_action('admin_enqueue_scripts', 'langbf_load_admin_styles');			
+add_action( 'wp_print_styles', 'langbf_load_styles' );
+
+
+/**
+ * Load back-end styles
+ */
+function langbf_load_admin_styles() {
+	wp_register_style( 'langbf_admin_style', plugins_url( 'admin-style.css', __FILE__ ) );
+	wp_enqueue_style( 'langbf_admin_style' );
+}
+add_action( 'admin_enqueue_scripts', 'langbf_load_admin_styles' );
+
 
 /**
  * Print code in footer
@@ -127,7 +122,8 @@ function langbf_load_html() {
 <?php
   }
 }
-add_action('wp_footer', 'langbf_load_html');			
+add_action( 'wp_footer', 'langbf_load_html' );
+
 
 /**
  * Print css in footer
@@ -156,7 +152,8 @@ html {
 <?php
 	}
 }
-add_action('wp_footer', 'langbf_load_css');			
+add_action( 'wp_footer', 'langbf_load_css' );
+
 
 /**
  * Print css in footer
@@ -178,7 +175,8 @@ function langbf_load_js() {
 <?php
 	}
 }
-add_action('wp_footer', 'langbf_load_js');			
+add_action( 'wp_footer', 'langbf_load_js' );
+
 
 /**
  * Populate administration menu of the plugin
@@ -188,14 +186,16 @@ function langbf_add_menu_links() {
 		add_options_page(__('Language Bar Flags','mnet-langbf'), __('Language Bar Flags','mnet-langbf'), 'administrator', 'langbf', 'langbf_menu_settings' );
 	}
 }
-		
+
+
 /**
  * Create settings page in admin
  */
 function langbf_menu_settings() {
 	global $europe_english, $europe_native, $america_english, $america_native, $asia_english, $asia_native, $africa_english, $africa_native;
-	include_once (dirname (__FILE__) . '/admin_settings.php');
+	include_once( dirname( __FILE__ ) . '/admin_settings.php' );
 }
+
 
 /**
  * Create announcement on langbf setting page
@@ -209,6 +209,7 @@ function langbf_announcement() {
 		echo '</div>';
 	}
 }
+
 
 /**
  * Action on plugin activate
@@ -229,10 +230,10 @@ function langbf_install_options($langbf_dbversion) {
   //If fresh installation, save defaults
 	if(!$langbf_saved_dbversion){
 
-  	$domain = str_replace('http://www.', '', get_option('siteurl'));
-  	$domain = str_replace('https://www.', '', $domain);
-  	$domain = str_replace('http://', '', $domain);
-  	$domain = str_replace('https://', '', $domain);
+  	$domain = str_replace( 'http://www.', '', home_url( '/' ) );
+  	$domain = str_replace( 'https://www.', '', $domain );
+  	$domain = str_replace( 'http://', '', $domain );
+  	$domain = str_replace( 'https://', '', $domain );
 
   	$url_prefix = 'http://www.';
 
@@ -243,7 +244,7 @@ function langbf_install_options($langbf_dbversion) {
   	$active_langs['uk']['active'] = 'yes';
   	$active_langs['ie']['url'] = $url_prefix . 'ie.' . $domain;
   	$active_langs['ie']['active'] = 'yes';
-	
+
   	update_option('langbf_db_version', $langbf_dbversion);
   	update_option('langbf_active', 'yes');
   	update_option('langbf_langs', $active_langs);
