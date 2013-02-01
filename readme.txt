@@ -48,6 +48,7 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 * Added Slovak translation
 * Removed WP 2.8 compatibility constants
 * Changed textdomain to 'language-bar-flags', represented by constant LANGBF_TD
+* Added filter 'langbf_countries' on countries array
 
 = 1.0.4 =
 * Added compatibility with WP Admin bar, can use both

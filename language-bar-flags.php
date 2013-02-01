@@ -92,7 +92,6 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_styles' );
  * Print code in footer
  */
 function langbf_load_html() {
-	global $europe_native, $america_native, $asia_native, $africa_native;
 
 	if ( get_option('langbf_active') != 'yes' )
 		return;
@@ -106,7 +105,7 @@ function langbf_load_html() {
 	$bar_title = get_option('langbf_title');
 
 	$langs = get_option('langbf_langs');
-	$native_names = array_merge((array)$europe_native, (array)$america_native, (array)$asia_native, (array)$africa_native);
+	$native_names = langbf_get_countries( 'all', 'native' );
 	$output = '';
 	foreach ( $native_names as $code => $country ) {
 		if ( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ) {
@@ -194,7 +193,7 @@ function langbf_add_menu_links() {
  * Create settings page in admin
  */
 function langbf_menu_settings() {
-	global $europe_english, $europe_native, $america_english, $america_native, $asia_english, $asia_native, $africa_english, $africa_native;
+
 	include_once( dirname( __FILE__ ) . '/admin_settings.php' );
 }
 

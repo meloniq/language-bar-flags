@@ -1,5 +1,20 @@
 <?php
 
+/**
+ * Returns countries for given criteria
+ * 
+ * @param string $region
+ * @param string $language
+ * @return array
+ */
+function langbf_get_countries( $region, $language ) {
+
+	$supported_regions = array( 'europe', 'america', 'asia', 'africa', 'all' );
+	$supported_languages = array( 'native', 'english' );
+
+	if ( ! in_array( $region, $supported_regions ) || ! in_array( $language, $supported_languages ) )
+		return array();
+
 	// Array of europe country codes with thier names in native language
 	$europe_native = array(
 		'at' => 'Österreich',
@@ -571,3 +586,14 @@
 		'sh' => __( 'Saint Helena', LANGBF_TD ),
 		'ss' => __( 'South Sudan', LANGBF_TD ),
 */
+
+
+	if ( $region == 'all' ) {
+		$countries = array_merge( ${'europe_' . $language}, ${'america_' . $language}, ${'asia_' . $language}, ${'africa_' . $language} );
+	} else {
+		$countries = ${$region . '_' . $language};
+	}
+
+	return apply_filters( 'langbf_countries', $countries, $region, $language );
+}
+
