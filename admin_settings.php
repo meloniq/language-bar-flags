@@ -1,7 +1,7 @@
 <?php
 
-  if ( ! current_user_can( 'manage_options' ) )
-    wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	if ( ! current_user_can( 'manage_options' ) )
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 
 
 	// update options
@@ -23,7 +23,7 @@
 			$langs_array[ $code ]['url'] = trim( $_POST[ $code ]['url'] );
 		}
 
-    update_option( 'langbf_langs', $langs_array );
+		update_option( 'langbf_langs', $langs_array );
 
 		echo '<div class="updated"><p><strong>' . __( 'Settings saved', LANGBF_TD ) . '</strong></p></div>';
 	}
@@ -124,117 +124,118 @@
 				</div>
 
 				<!-- Europe -->
-      <div id="tab2" class="">
-        <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
-          <thead>
-            <tr>
-              <th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-              <th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
-              <th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
-            </tr>
-          </thead>
-          <tbody>
-          <?php foreach($europe_english as $code => $country): ?>
-            <tr>
-              <td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
-              <td class="">
-                <input type="checkbox" value="yes" id="europe_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
-              </td>
-              <td class="">
-                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="europe_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
-                <small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $europe_native[$code]; ?></i></small>
-              </td>
-            </tr>
-          <?php endforeach; ?>
-          </tbody>
-        </table>
-      </div>
+				<div id="tab2" class="">
+					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+						<thead>
+							<tr>
+								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
+								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
+							</tr>
+						</thead>
+						<tbody>
+						<?php foreach($europe_english as $code => $country): ?>
+							<tr>
+								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
+								<td class="">
+									<input type="checkbox" value="yes" id="europe_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+								</td>
+								<td class="">
+									<input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="europe_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
+									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $europe_native[$code]; ?></i></small>
+								</td>
+							</tr>
+						<?php endforeach; ?>
+						</tbody>
+					</table>
+				</div>
 
-      <!-- Americas -->
-      <div id="tab3" class="">
-        <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
-          <thead>
-            <tr>
-              <th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-              <th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
-              <th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
-            </tr>
-          </thead>
-          <tbody>
-          <?php foreach($america_english as $code => $country): ?>
-            <tr>
-              <td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
-              <td class="">
-                <input type="checkbox" value="yes" id="america_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
-              </td>
-              <td class="">
-                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="america_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
-                <small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $america_native[$code]; ?></i></small>
-              </td>
-            </tr>
-          <?php endforeach; ?>
-          </tbody>
-        </table>
-      </div>
+				<!-- Americas -->
+				<div id="tab3" class="">
+					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+						<thead>
+							<tr>
+								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
+								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
+							</tr>
+						</thead>
+						<tbody>
+						<?php foreach($america_english as $code => $country): ?>
+							<tr>
+								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
+								<td class="">
+									<input type="checkbox" value="yes" id="america_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+								</td>
+								<td class="">
+									<input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="america_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
+									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $america_native[$code]; ?></i></small>
+								</td>
+							</tr>
+						<?php endforeach; ?>
+						</tbody>
+					</table>
+				</div>
 
-      <!-- Asia + Oceania -->
-      <div id="tab4" class="">
-        <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
-          <thead>
-            <tr>
-              <th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-              <th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
-              <th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
-            </tr>
-          </thead>
-          <tbody>
-          <?php foreach($asia_english as $code => $country): ?>
-            <tr>
-              <td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
-              <td class="">
-                <input type="checkbox" value="yes" id="asia_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
-              </td>
-              <td class="">
-                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="asia_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
-                <small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $asia_native[$code]; ?></i></small>
-              </td>
-            </tr>
-          <?php endforeach; ?>
-          </tbody>
-        </table>
-      </div>
+				<!-- Asia + Oceania -->
+				<div id="tab4" class="">
+					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+						<thead>
+							<tr>
+								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
+								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
+							</tr>
+						</thead>
+						<tbody>
+						<?php foreach($asia_english as $code => $country): ?>
+							<tr>
+								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
+								<td class="">
+									<input type="checkbox" value="yes" id="asia_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+								</td>
+								<td class="">
+									<input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="asia_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
+									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $asia_native[$code]; ?></i></small>
+								</td>
+							</tr>
+						<?php endforeach; ?>
+						</tbody>
+					</table>
+				</div>
 
-      <!-- Africa -->
-      <div id="tab5" class="">
-        <table class="widefat fixed" style="width:850px; margin-bottom:20px;">
-          <thead>
-            <tr>
-              <th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-              <th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
-              <th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
-            </tr>
-          </thead>
-          <tbody>
-          <?php foreach($africa_english as $code => $country): ?>
-            <tr>
-              <td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
-              <td class="">
-                <input type="checkbox" value="yes" id="africa_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
-              </td>
-              <td class="">
-                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="africa_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
-                <small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $africa_native[$code]; ?></i></small>
-              </td>
-            </tr>
-          <?php endforeach; ?>
-          </tbody>
-        </table>
-      </div>
+				<!-- Africa -->
+				<div id="tab5" class="">
+					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+						<thead>
+							<tr>
+								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
+								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
+							</tr>
+						</thead>
+						<tbody>
+						<?php foreach($africa_english as $code => $country): ?>
+							<tr>
+								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo $country; ?></td>
+								<td class="">
+									<input type="checkbox" value="yes" id="africa_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+								</td>
+								<td class="">
+									<input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="africa_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
+									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo $africa_native[$code]; ?></i></small>
+								</td>
+							</tr>
+						<?php endforeach; ?>
+						</tbody>
+					</table>
+				</div>
 
-    <p class="submit">
-      <input type="submit" name="Submit" class="button-primary" value="<?php _e( 'Save Changes', LANGBF_TD ); ?>" />
-    </p>
+				<p class="submit">
+					<input type="submit" name="Submit" class="button-primary" value="<?php _e( 'Save Changes', LANGBF_TD ); ?>" />
+				</p>
 
-  </form>
-</div>    
-<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+	<div class="clear"></div>
