@@ -28,6 +28,7 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 = Supported languages =
 * English
 * French (by Frédéric Serva)
+* Slovak (by Branco Radenovich from <a href="http://webhostinggeeks.com/user-reviews/">WebHostingGeeks</a>)
 * Polish
 
 If You translated plugin to Your native language, please send it to me, and will attach it to next release.
