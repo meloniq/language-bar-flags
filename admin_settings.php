@@ -7,42 +7,19 @@
   if( isset( $_POST['options_update']) ) {
     update_option('langbf_active', $_POST['langbf_active']);
     update_option('langbf_title', $_POST['langbf_title']);
+    update_option('langbf_disable_wpbar', $_POST['langbf_disable_wpbar']);
+    update_option('langbf_new_window', $_POST['langbf_new_window']);
+
     $langs_array = array();
-    // Europe part
-    foreach($europe_english as $code => $country) {
-      if ($_POST['europe'][$code]['active'] == 'yes'){
+    $english_names = array_merge((array)$europe_english, (array)$america_english, (array)$asia_english, (array)$africa_english);
+
+    foreach($english_names as $code => $country) {
+      if (isset($_POST[$code]['active']) && $_POST[$code]['active'] == 'yes'){
         $langs_array[$code]['active'] = 'yes';
       }else{
         $langs_array[$code]['active'] = 'no';
       }
-      $langs_array[$code]['url'] = trim($_POST['europe'][$code]['url']);
-    }
-    // America part
-    foreach($america_english as $code => $country) {
-      if ($_POST['america'][$code]['active'] == 'yes'){
-        $langs_array[$code]['active'] = 'yes';
-      }else{
-        $langs_array[$code]['active'] = 'no';
-      }
-      $langs_array[$code]['url'] = trim($_POST['america'][$code]['url']);
-    }
-    // Asia + Oceania part
-    foreach($asia_english as $code => $country) {
-      if ($_POST['asia'][$code]['active'] == 'yes'){
-        $langs_array[$code]['active'] = 'yes';
-      }else{
-        $langs_array[$code]['active'] = 'no';
-      }
-      $langs_array[$code]['url'] = trim($_POST['asia'][$code]['url']);
-    }
-    // Africa part
-    foreach($africa_english as $code => $country) {
-      if ($_POST['africa'][$code]['active'] == 'yes'){
-        $langs_array[$code]['active'] = 'yes';
-      }else{
-        $langs_array[$code]['active'] = 'no';
-      }
-      $langs_array[$code]['url'] = trim($_POST['africa'][$code]['url']);
+      $langs_array[$code]['url'] = trim($_POST[$code]['url']);
     }
 
     update_option('langbf_langs', $langs_array);
@@ -52,6 +29,7 @@
 
   //load saved data
   $langs = get_option('langbf_langs');
+	langbf_announcement();
 	?>	
 <script type="text/javascript">
 // <![CDATA[
@@ -101,6 +79,26 @@
                 <small><?php _e('Title will be displayed on a bar, right before flags.', 'mnet-langbf'); ?></small>
               </td>
             </tr>
+            <tr>
+              <td><?php _e('Disable WP bar?', 'mnet-langbf'); ?></td>
+              <td>
+                <select name="langbf_disable_wpbar">
+                  <option value="no" <?php if(get_option('langbf_disable_wpbar') == 'no'){ echo 'selected="selected"'; } ?> ><?php _e('No', 'mnet-langbf'); ?></option>
+                  <option value="yes" <?php if(get_option('langbf_disable_wpbar') == 'yes'){ echo 'selected="selected"'; } ?> ><?php _e('Yes', 'mnet-langbf'); ?></option>
+                </select>
+                <br /><small><?php _e('If "YES" is selected, then plugin will disable WordPress Admin bar.', 'mnet-langbf'); ?></small>
+              </td>
+            </tr>
+            <tr>
+              <td><?php _e('Open links in new window?', 'mnet-langbf'); ?></td>
+              <td>
+                <select name="langbf_new_window">
+                  <option value="no" <?php if(get_option('langbf_new_window') == 'no'){ echo 'selected="selected"'; } ?> ><?php _e('No', 'mnet-langbf'); ?></option>
+                  <option value="yes" <?php if(get_option('langbf_new_window') == 'yes'){ echo 'selected="selected"'; } ?> ><?php _e('Yes', 'mnet-langbf'); ?></option>
+                </select>
+                <br /><small><?php _e('If "YES" is selected, then links on site will be open in new window.', 'mnet-langbf'); ?></small>
+              </td>
+            </tr>
           </tbody>
         </table>
 
@@ -121,10 +119,10 @@
             <tr>
               <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
               <td class="">
-                <input type="checkbox" value="yes" id="europe_<?php echo $code; ?>_active" name="europe[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+                <input type="checkbox" value="yes" id="europe_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
               </td>
               <td class="">
-                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="europe_<?php echo $code; ?>_url" name="europe[<?php echo $code; ?>][url]" /><br />
+                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="europe_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
                 <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $europe_native[$code]; ?></i></small>
               </td>
             </tr>
@@ -148,10 +146,10 @@
             <tr>
               <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
               <td class="">
-                <input type="checkbox" value="yes" id="america_<?php echo $code; ?>_active" name="america[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+                <input type="checkbox" value="yes" id="america_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
               </td>
               <td class="">
-                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="america_<?php echo $code; ?>_url" name="america[<?php echo $code; ?>][url]" /><br />
+                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="america_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
                 <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $america_native[$code]; ?></i></small>
               </td>
             </tr>
@@ -175,10 +173,10 @@
             <tr>
               <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
               <td class="">
-                <input type="checkbox" value="yes" id="asia_<?php echo $code; ?>_active" name="asia[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+                <input type="checkbox" value="yes" id="asia_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
               </td>
               <td class="">
-                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="asia_<?php echo $code; ?>_url" name="asia[<?php echo $code; ?>][url]" /><br />
+                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="asia_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
                 <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $asia_native[$code]; ?></i></small>
               </td>
             </tr>
@@ -202,10 +200,10 @@
             <tr>
               <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
               <td class="">
-                <input type="checkbox" value="yes" id="africa_<?php echo $code; ?>_active" name="africa[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+                <input type="checkbox" value="yes" id="africa_<?php echo $code; ?>_active" name="<?php echo $code; ?>[active]" <?php if(isset($langs[$code]['active']) && $langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
               </td>
               <td class="">
-                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="africa_<?php echo $code; ?>_url" name="africa[<?php echo $code; ?>][url]" /><br />
+                <input type="text" value="<?php if(isset($langs[$code]['url'])) echo $langs[$code]['url']; ?>" style="min-width:500px;" id="africa_<?php echo $code; ?>_url" name="<?php echo $code; ?>[url]" /><br />
                 <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $africa_native[$code]; ?></i></small>
               </td>
             </tr>

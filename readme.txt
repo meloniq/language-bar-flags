@@ -3,21 +3,21 @@ Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 3.0
-Tested up to: 3.3
-Stable tag: 1.0.3
+Tested up to: 3.3.1
+Stable tag: 1.0.4
 
 Displays bar with configurable language flags to other language versions of Your website.
 
 == Description ==
 
-This plugin replace (or disable) standard WordPress bar in the top of website, and display similar bar but with configurable language flags to other language versions of Your website. 
+This plugin disable standard WordPress bar in the top of website, and display similar bar but with configurable language flags to other language versions of Your website (or display both bars). 
 
 In administrative panel You see names of countries in English (or Your native language), but on Your website names of countries are displayed in thier native language.
 Example: Germany (in backend), Deutschland (in frontend)
 
 = Supported countries =
 * Europe:
-Austria, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Estonia, Spain, Finland, France, Greece, Croatia, Hungary, Ireland, Iceland, Italy, Liechtenstein, Lithuania, Luxembourg, Latvia, Montenegro, Malta, Netherlands, Norway, Poland, Portugal, Romania, Serbia, Russian Federation, Sweden, Slovenia, Slovakia, Turkey, Ukraine, United Kingdom
+Albania, Austria, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Estonia, Spain, Finland, France, Greece, Croatia, Hungary, Ireland, Iceland, Italy, Liechtenstein, Lithuania, Luxembourg, Latvia, Montenegro, Malta, Netherlands, Norway, Poland, Portugal, Romania, Serbia, Russian Federation, Sweden, Slovenia, Slovakia, Turkey, Ukraine, United Kingdom
 * America:
 Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Cuba, Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Suriname, Trinidad and Tobago, United States, Uruguay, Venezuela
 * Asia + Oceania:
@@ -42,6 +42,15 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.0.4 =
+* Added compatibility with WP Admin bar, can use both
+* Added option to open links in new window
+* Added Albania flag
+* Fixed undefinied index notices
+* Replaced CSS to separate function
+* Replaced JS to separate function
+* Updated French language (Thanks to Frédéric Serva)
 
 = 1.0.3 =
 * Added support for Africa

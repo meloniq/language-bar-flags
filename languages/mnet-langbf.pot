@@ -1,0 +1,838 @@
+# Copyright (C) 2012 MELONIQ.NET
+# This file is distributed under the same license as the Language Bar Flags package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Language Bar Flags 1.0.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/language-bar-flags\n"
+"POT-Creation-Date: 2012-04-09 13:48:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+
+#: admin_settings.php:3
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: admin_settings.php:27
+msgid "Settings saved"
+msgstr ""
+
+#: admin_settings.php:43
+msgid "General Settings"
+msgstr ""
+
+#: admin_settings.php:49 admin_settings.php:60
+msgid "General"
+msgstr ""
+
+#: admin_settings.php:50
+msgid "Europe"
+msgstr ""
+
+#: admin_settings.php:51
+msgid "America"
+msgstr ""
+
+#: admin_settings.php:52
+msgid "Asia + Oceania"
+msgstr ""
+
+#: admin_settings.php:53
+msgid "Africa"
+msgstr ""
+
+#: admin_settings.php:66
+msgid "Activate bar?"
+msgstr ""
+
+#: admin_settings.php:69 admin_settings.php:86 admin_settings.php:96
+msgid "No"
+msgstr ""
+
+#: admin_settings.php:70 admin_settings.php:87 admin_settings.php:97
+msgid "Yes"
+msgstr ""
+
+#: admin_settings.php:72
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr ""
+
+#: admin_settings.php:76
+msgid "Title of bar"
+msgstr ""
+
+#: admin_settings.php:79
+msgid "Title will be displayed on a bar, right before flags."
+msgstr ""
+
+#: admin_settings.php:83
+msgid "Disable WP bar?"
+msgstr ""
+
+#: admin_settings.php:89
+msgid "If \"YES\" is selected, then plugin will disable WordPress Admin bar."
+msgstr ""
+
+#: admin_settings.php:93
+msgid "Open links in new window?"
+msgstr ""
+
+#: admin_settings.php:99
+msgid "If \"YES\" is selected, then links on site will be open in new window."
+msgstr ""
+
+#: admin_settings.php:112 admin_settings.php:139 admin_settings.php:166
+#: admin_settings.php:193
+msgid "Country"
+msgstr ""
+
+#: admin_settings.php:113 admin_settings.php:140 admin_settings.php:167
+#: admin_settings.php:194
+msgid "Active"
+msgstr ""
+
+#: admin_settings.php:114 admin_settings.php:141 admin_settings.php:168
+#: admin_settings.php:195
+msgid "URL"
+msgstr ""
+
+#: admin_settings.php:126 admin_settings.php:153 admin_settings.php:180
+#: admin_settings.php:207
+msgid "Country name will be dispayed as: "
+msgstr ""
+
+#: admin_settings.php:216
+msgid "Save Changes"
+msgstr ""
+
+#: countries.php:66
+msgid "Austria"
+msgstr ""
+
+#: countries.php:67
+msgid "Belgium"
+msgstr ""
+
+#: countries.php:68
+msgid "Bulgaria"
+msgstr ""
+
+#: countries.php:69
+msgid "Belarus"
+msgstr ""
+
+#: countries.php:70
+msgid "Switzerland"
+msgstr ""
+
+#: countries.php:71
+msgid "Czech Republic"
+msgstr ""
+
+#: countries.php:72
+msgid "Germany"
+msgstr ""
+
+#: countries.php:73
+msgid "Denmark"
+msgstr ""
+
+#: countries.php:74
+msgid "Estonia"
+msgstr ""
+
+#: countries.php:75
+msgid "Spain"
+msgstr ""
+
+#: countries.php:76
+msgid "Finland"
+msgstr ""
+
+#: countries.php:77
+msgid "France"
+msgstr ""
+
+#: countries.php:78
+msgid "Greece"
+msgstr ""
+
+#: countries.php:79
+msgid "Croatia"
+msgstr ""
+
+#: countries.php:80
+msgid "Hungary"
+msgstr ""
+
+#: countries.php:81
+msgid "Ireland"
+msgstr ""
+
+#: countries.php:82
+msgid "Iceland"
+msgstr ""
+
+#: countries.php:83
+msgid "Italy"
+msgstr ""
+
+#: countries.php:84
+msgid "Liechtenstein"
+msgstr ""
+
+#: countries.php:85
+msgid "Lithuania"
+msgstr ""
+
+#: countries.php:86
+msgid "Luxembourg"
+msgstr ""
+
+#: countries.php:87
+msgid "Latvia"
+msgstr ""
+
+#: countries.php:88
+msgid "Montenegro"
+msgstr ""
+
+#: countries.php:89
+msgid "Malta"
+msgstr ""
+
+#: countries.php:90
+msgid "Netherlands"
+msgstr ""
+
+#: countries.php:91
+msgid "Norway"
+msgstr ""
+
+#: countries.php:92
+msgid "Poland"
+msgstr ""
+
+#: countries.php:93
+msgid "Portugal"
+msgstr ""
+
+#: countries.php:94
+msgid "Romania"
+msgstr ""
+
+#: countries.php:95
+msgid "Serbia"
+msgstr ""
+
+#: countries.php:96
+msgid "Russian Federation"
+msgstr ""
+
+#: countries.php:97
+msgid "Sweden"
+msgstr ""
+
+#: countries.php:98
+msgid "Slovenia"
+msgstr ""
+
+#: countries.php:99
+msgid "Slovakia"
+msgstr ""
+
+#: countries.php:100
+msgid "Turkey"
+msgstr ""
+
+#: countries.php:101
+msgid "Ukraine"
+msgstr ""
+
+#: countries.php:102
+msgid "United Kingdom"
+msgstr ""
+
+#: countries.php:190
+msgid "Argentina"
+msgstr ""
+
+#: countries.php:191
+msgid "Bahamas"
+msgstr ""
+
+#: countries.php:192
+msgid "Barbados"
+msgstr ""
+
+#: countries.php:193
+msgid "Belize"
+msgstr ""
+
+#: countries.php:194
+msgid "Bolivia"
+msgstr ""
+
+#: countries.php:195
+msgid "Brazil"
+msgstr ""
+
+#: countries.php:196
+msgid "Canada"
+msgstr ""
+
+#: countries.php:197
+msgid "Chile"
+msgstr ""
+
+#: countries.php:198
+msgid "Colombia"
+msgstr ""
+
+#: countries.php:199
+msgid "Costa Rica"
+msgstr ""
+
+#: countries.php:200
+msgid "Cuba"
+msgstr ""
+
+#: countries.php:201
+msgid "Dominica"
+msgstr ""
+
+#: countries.php:202
+msgid "Dominican Republic"
+msgstr ""
+
+#: countries.php:203
+msgid "Ecuador"
+msgstr ""
+
+#: countries.php:204
+msgid "El Salvador"
+msgstr ""
+
+#: countries.php:205
+msgid "Grenada"
+msgstr ""
+
+#: countries.php:206
+msgid "Guatemala"
+msgstr ""
+
+#: countries.php:207
+msgid "Guyana"
+msgstr ""
+
+#: countries.php:208
+msgid "Haiti"
+msgstr ""
+
+#: countries.php:209
+msgid "Honduras"
+msgstr ""
+
+#: countries.php:210
+msgid "Jamaica"
+msgstr ""
+
+#: countries.php:211
+msgid "Mexico"
+msgstr ""
+
+#: countries.php:212
+msgid "Nicaragua"
+msgstr ""
+
+#: countries.php:213
+msgid "Panama"
+msgstr ""
+
+#: countries.php:214
+msgid "Paraguay"
+msgstr ""
+
+#: countries.php:215
+msgid "Peru"
+msgstr ""
+
+#: countries.php:216
+msgid "Puerto Rico"
+msgstr ""
+
+#: countries.php:217
+msgid "Suriname"
+msgstr ""
+
+#: countries.php:218
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: countries.php:219
+msgid "United States"
+msgstr ""
+
+#: countries.php:220
+msgid "Uruguay"
+msgstr ""
+
+#: countries.php:221
+msgid "Venezuela"
+msgstr ""
+
+#: countries.php:337
+msgid "Afghanistan"
+msgstr ""
+
+#: countries.php:338
+msgid "Armenia"
+msgstr ""
+
+#: countries.php:339
+msgid "Australia"
+msgstr ""
+
+#: countries.php:340
+msgid "Azerbaijan"
+msgstr ""
+
+#: countries.php:341
+msgid "Bahrain"
+msgstr ""
+
+#: countries.php:342
+msgid "Bangladesh"
+msgstr ""
+
+#: countries.php:343
+msgid "Bhutan"
+msgstr ""
+
+#: countries.php:344
+msgid "Brunei"
+msgstr ""
+
+#: countries.php:345
+msgid "Cambodia"
+msgstr ""
+
+#: countries.php:346
+msgid "China"
+msgstr ""
+
+#: countries.php:347
+msgid "Cyprus"
+msgstr ""
+
+#: countries.php:348
+msgid "Georgia"
+msgstr ""
+
+#: countries.php:349
+msgid "Hong Kong"
+msgstr ""
+
+#: countries.php:350
+msgid "India"
+msgstr ""
+
+#: countries.php:351
+msgid "Indonesia"
+msgstr ""
+
+#: countries.php:352
+msgid "Iran"
+msgstr ""
+
+#: countries.php:353
+msgid "Iraq"
+msgstr ""
+
+#: countries.php:354
+msgid "Israel"
+msgstr ""
+
+#: countries.php:355
+msgid "Japan"
+msgstr ""
+
+#: countries.php:356
+msgid "Jordan"
+msgstr ""
+
+#: countries.php:357
+msgid "Kazakhstan"
+msgstr ""
+
+#: countries.php:358
+msgid "Kuwait"
+msgstr ""
+
+#: countries.php:359
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: countries.php:360
+msgid "Laos"
+msgstr ""
+
+#: countries.php:361
+msgid "Lebanon"
+msgstr ""
+
+#: countries.php:362
+msgid "Malaysia"
+msgstr ""
+
+#: countries.php:363
+msgid "Maldives"
+msgstr ""
+
+#: countries.php:364
+msgid "Mongolia"
+msgstr ""
+
+#: countries.php:365
+msgid "Myanmar"
+msgstr ""
+
+#: countries.php:366
+msgid "Nepal"
+msgstr ""
+
+#: countries.php:367
+msgid "New Zealand"
+msgstr ""
+
+#: countries.php:368
+msgid "North Korea"
+msgstr ""
+
+#: countries.php:369
+msgid "Oman"
+msgstr ""
+
+#: countries.php:370
+msgid "Pakistan"
+msgstr ""
+
+#: countries.php:371
+msgid "Papua New Guinea"
+msgstr ""
+
+#: countries.php:372
+msgid "Philippines"
+msgstr ""
+
+#: countries.php:373
+msgid "Qatar"
+msgstr ""
+
+#: countries.php:374
+msgid "Saudi Arabia"
+msgstr ""
+
+#: countries.php:375
+msgid "Singapore"
+msgstr ""
+
+#: countries.php:376
+msgid "South Korea"
+msgstr ""
+
+#: countries.php:377
+msgid "Sri Lanka"
+msgstr ""
+
+#: countries.php:378
+msgid "Syria"
+msgstr ""
+
+#: countries.php:379
+msgid "Taiwan"
+msgstr ""
+
+#: countries.php:380
+msgid "Tajikistan"
+msgstr ""
+
+#: countries.php:381
+msgid "Thailand"
+msgstr ""
+
+#: countries.php:382
+msgid "Timor-Leste"
+msgstr ""
+
+#: countries.php:383
+msgid "Turkmenistan"
+msgstr ""
+
+#: countries.php:384
+msgid "United Arab Emirates"
+msgstr ""
+
+#: countries.php:385
+msgid "Uzbekistan"
+msgstr ""
+
+#: countries.php:386
+msgid "Vietnam"
+msgstr ""
+
+#: countries.php:387
+msgid "Yemen"
+msgstr ""
+
+#: countries.php:487
+msgid "Algeria"
+msgstr ""
+
+#: countries.php:488
+msgid "Angola"
+msgstr ""
+
+#: countries.php:489
+msgid "Benin"
+msgstr ""
+
+#: countries.php:490
+msgid "Botswana"
+msgstr ""
+
+#: countries.php:491
+msgid "Burkina Faso"
+msgstr ""
+
+#: countries.php:492
+msgid "Burundi"
+msgstr ""
+
+#: countries.php:493
+msgid "Cameroon"
+msgstr ""
+
+#: countries.php:494
+msgid "Cape Verde"
+msgstr ""
+
+#: countries.php:495
+msgid "Central African Republic"
+msgstr ""
+
+#: countries.php:496
+msgid "Chad"
+msgstr ""
+
+#: countries.php:497
+msgid "Comoros"
+msgstr ""
+
+#: countries.php:498
+msgid "Republic of the Congo"
+msgstr ""
+
+#: countries.php:499
+msgid "Democratic Republic of the Congo"
+msgstr ""
+
+#: countries.php:500
+msgid "Côte d'Ivoire"
+msgstr ""
+
+#: countries.php:501
+msgid "Djibouti"
+msgstr ""
+
+#: countries.php:502
+msgid "Egypt"
+msgstr ""
+
+#: countries.php:503
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: countries.php:504
+msgid "Eritrea"
+msgstr ""
+
+#: countries.php:505
+msgid "Ethiopia"
+msgstr ""
+
+#: countries.php:506
+msgid "Gabon"
+msgstr ""
+
+#: countries.php:507
+msgid "Gambia"
+msgstr ""
+
+#: countries.php:508
+msgid "Ghana"
+msgstr ""
+
+#: countries.php:509
+msgid "Guinea"
+msgstr ""
+
+#: countries.php:510
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: countries.php:511
+msgid "Kenya"
+msgstr ""
+
+#: countries.php:512
+msgid "Lesotho"
+msgstr ""
+
+#: countries.php:513
+msgid "Liberia"
+msgstr ""
+
+#: countries.php:514
+msgid "Libya"
+msgstr ""
+
+#: countries.php:515
+msgid "Madagascar"
+msgstr ""
+
+#: countries.php:516
+msgid "Malawi"
+msgstr ""
+
+#: countries.php:517
+msgid "Mali"
+msgstr ""
+
+#: countries.php:518
+msgid "Mauritania"
+msgstr ""
+
+#: countries.php:519
+msgid "Mauritius"
+msgstr ""
+
+#: countries.php:520
+msgid "Morocco"
+msgstr ""
+
+#: countries.php:521
+msgid "Mozambique"
+msgstr ""
+
+#: countries.php:522
+msgid "Namibia"
+msgstr ""
+
+#: countries.php:523
+msgid "Niger"
+msgstr ""
+
+#: countries.php:524
+msgid "Nigeria"
+msgstr ""
+
+#: countries.php:525
+msgid "Rwanda"
+msgstr ""
+
+#: countries.php:526
+msgid "São Tomé and Príncipe"
+msgstr ""
+
+#: countries.php:527
+msgid "Senegal"
+msgstr ""
+
+#: countries.php:528
+msgid "Seychelles"
+msgstr ""
+
+#: countries.php:529
+msgid "Sierra Leone"
+msgstr ""
+
+#: countries.php:530
+msgid "Somalia"
+msgstr ""
+
+#: countries.php:531
+msgid "South Africa"
+msgstr ""
+
+#: countries.php:532
+msgid "Sudan"
+msgstr ""
+
+#: countries.php:533
+msgid "Swaziland"
+msgstr ""
+
+#: countries.php:534
+msgid "Tanzania"
+msgstr ""
+
+#: countries.php:535
+msgid "Togo"
+msgstr ""
+
+#: countries.php:536
+msgid "Tunisia"
+msgstr ""
+
+#: countries.php:537
+msgid "Uganda"
+msgstr ""
+
+#: countries.php:538
+msgid "Zambia"
+msgstr ""
+
+#: countries.php:539
+msgid "Zimbabwe"
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (Language Bar Flags 1.0.4)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: language-bar-flags.php:188
+msgid "Language Bar Flags"
+msgstr ""
+
+#: language-bar-flags.php:207
+msgid ""
+"You are not using any of AppThemes Premium Themes, check what You are "
+"missing."
+msgstr ""
+
+#: language-bar-flags.php:208
+msgid " <a target=\"_blank\" href=\"%s\">Show me themes!</a>"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://blog.meloniq.net/2011/11/28/language-bar-flags/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Replace or disable standard WordPress bar in the top of website and display "
+"similar bar but with configurable language flags to other language versions "
+"of Your website."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "MELONIQ.NET"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://blog.meloniq.net"
+msgstr ""
