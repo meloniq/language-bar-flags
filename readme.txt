@@ -4,7 +4,7 @@ Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -23,7 +23,7 @@ Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Canada, Chile, Colombia, 
 * Asia + Oceania:
 Afghanistan, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh, Bhutan, Brunei, Cambodia, China, Cyprus, Georgia, Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan, Kazakhstan, Kuwait, Kyrgyzstan, Laos, Lebanon, Malaysia, Maldives, Mongolia, Myanmar, Nepal, New Zealand, North Korea, Oman, Pakistan, Papua New Guinea, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Syria, Taiwan, Tajikistan, Thailand, Timor-Leste, Turkmenistan, United Arab Emirates, Uzbekistan, Vietnam, Yemen
 * Africa:
-none
+Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Republic of the Congo, Democratic Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe
 
 = Supported languages =
 * English
@@ -43,6 +43,9 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 == Changelog ==
 
+= 1.0.3 =
+* Added support for Africa
+
 = 1.0.2 =
 * Added support for Asia and Oceania
 * Added French language (Thanks to Frédéric Serva)
@@ -61,9 +64,9 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 == Frequently Asked Questions ==
 
-= Why Africa is not supported? =
+= Why my country is not supported? =
 
-It's fresh plugin, so please, be patient, next countries will be added soon.
+Report it with details on <a href="http://wordpress.org/tags/language-bar-flags">support forum</a>.
 
 = My country name is translated wrong, what to do? =
 

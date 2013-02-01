@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Language Bar package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Language Bar 1.0.0\n"
+"Project-Id-Version: Language Bar 1.0.3\n"
 "Report-Msgid-Bugs-To: http://blog.meloniq.net/\n"
-"POT-Creation-Date: 2011-11-16 16:02:35+00:00\n"
-"PO-Revision-Date: 2011-12-14 20:21+0100\n"
+"POT-Creation-Date: 2011-12-27 14:54:10+00:00\n"
+"PO-Revision-Date: 2011-12-27 16:22+0100\n"
 "Last-Translator: MELONIQ.NET <biuro@meloniq.net>\n"
 "Language-Team: http://www.meloniq.net\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,8 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: language-bar-flags.php:159
+#. Plugin Name of the plugin/theme
+#: language-bar-flags.php:164
 msgid "Language Bar Flags"
 msgstr "Pasek z flagami języków"
 
@@ -502,95 +503,320 @@ msgstr "Wietnam"
 msgid "Yemen"
 msgstr "Jemen"
 
+#: countries.php:319
+msgid "Algeria"
+msgstr "Algieria"
+
+#: countries.php:320
+msgid "Angola"
+msgstr "Angola"
+
+#: countries.php:321
+msgid "Benin"
+msgstr "Benin"
+
+#: countries.php:322
+msgid "Botswana"
+msgstr "Botswana"
+
+#: countries.php:323
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: countries.php:324
+msgid "Burundi"
+msgstr "Burundi"
+
+#: countries.php:325
+msgid "Cameroon"
+msgstr "Kamerun"
+
+#: countries.php:326
+msgid "Cape Verde"
+msgstr "Wyspy Zielonego Przylądka"
+
+#: countries.php:327
+msgid "Central African Republic"
+msgstr "Republika Środkowej Afryki"
+
+#: countries.php:328
+msgid "Chad"
+msgstr "Czad"
+
+#: countries.php:329
+msgid "Comoros"
+msgstr "Komory"
+
+#: countries.php:330
+msgid "Republic of the Congo"
+msgstr "Republika Kongo"
+
+#: countries.php:331
+msgid "Democratic Republic of the Congo"
+msgstr "Demokratyczna Republika Kongo"
+
+#: countries.php:332
+msgid "Côte d'Ivoire"
+msgstr "Wybrzeże Kości Słoniowej"
+
+#: countries.php:333
+msgid "Djibouti"
+msgstr "Dżibuti"
+
+#: countries.php:334
+msgid "Egypt"
+msgstr "Egipt"
+
+#: countries.php:335
+msgid "Equatorial Guinea"
+msgstr "Gwinea Równikowa"
+
+#: countries.php:336
+msgid "Eritrea"
+msgstr "Erytrea"
+
+#: countries.php:337
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: countries.php:338
+msgid "Gabon"
+msgstr "Gabon"
+
+#: countries.php:339
+msgid "Gambia"
+msgstr "Gambia"
+
+#: countries.php:340
+msgid "Ghana"
+msgstr "Ghana"
+
+#: countries.php:341
+msgid "Guinea"
+msgstr "Gwinea"
+
+#: countries.php:342
+msgid "Guinea-Bissau"
+msgstr "Gwinea Bissau"
+
+#: countries.php:343
+msgid "Kenya"
+msgstr "Kenia"
+
+#: countries.php:344
+msgid "Lesotho"
+msgstr "Lesoto"
+
+#: countries.php:345
+msgid "Liberia"
+msgstr "Liberia"
+
+#: countries.php:346
+msgid "Libya"
+msgstr "Libia"
+
+#: countries.php:347
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: countries.php:348
+msgid "Malawi"
+msgstr "Malawi"
+
+#: countries.php:349
+msgid "Mali"
+msgstr "Mali"
+
+#: countries.php:350
+msgid "Mauritania"
+msgstr "Mauretania"
+
+#: countries.php:351
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: countries.php:352
+msgid "Morocco"
+msgstr "Maroko"
+
+#: countries.php:353
+msgid "Mozambique"
+msgstr "Mozambik"
+
+#: countries.php:354
+msgid "Namibia"
+msgstr "Namibia"
+
+#: countries.php:355
+msgid "Niger"
+msgstr "Niger"
+
+#: countries.php:356
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: countries.php:357
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: countries.php:358
+msgid "São Tomé and Príncipe"
+msgstr "Wyspy Świętego Tomasza i Książęca"
+
+#: countries.php:359
+msgid "Senegal"
+msgstr "Senegal"
+
+#: countries.php:360
+msgid "Seychelles"
+msgstr "Seszele"
+
+#: countries.php:361
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: countries.php:362
+msgid "Somalia"
+msgstr "Somalia"
+
+#: countries.php:363
+msgid "South Africa"
+msgstr "Republika Południowej Afryki"
+
+#: countries.php:364
+msgid "Sudan"
+msgstr "Sudan"
+
+#: countries.php:365
+msgid "Swaziland"
+msgstr "Suazi"
+
+#: countries.php:366
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: countries.php:367
+msgid "Togo"
+msgstr "Togo"
+
+#: countries.php:368
+msgid "Tunisia"
+msgstr "Tunezja"
+
+#: countries.php:369
+msgid "Uganda"
+msgstr "Uganda"
+
+#: countries.php:370
+msgid "Zambia"
+msgstr "Zambia"
+
+#: countries.php:371
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
 #: admin_settings.php:3
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Nie masz wystarczających uprawnień dostępu do tej strony."
 
-#: admin_settings.php:51
+#: admin_settings.php:50
 msgid "Settings saved"
 msgstr "Ustawienia zapisane"
 
-#: admin_settings.php:66
+#: admin_settings.php:65
 msgid "General Settings"
 msgstr "Ogólne ustawienia"
 
-#: admin_settings.php:72
-#: admin_settings.php:83
+#: admin_settings.php:71
+#: admin_settings.php:82
 msgid "General"
 msgstr "Ogólne"
 
-#: admin_settings.php:73
+#: admin_settings.php:72
 msgid "Europe"
 msgstr "Europa"
 
-#: admin_settings.php:74
+#: admin_settings.php:73
 msgid "America"
 msgstr "Ameryka"
 
-#: admin_settings.php:75
+#: admin_settings.php:74
 msgid "Asia + Oceania"
 msgstr "Azja + Oceania"
 
-#: admin_settings.php:76
+#: admin_settings.php:75
 msgid "Africa"
 msgstr "Afryka"
 
-#: admin_settings.php:89
+#: admin_settings.php:88
 msgid "Activate bar?"
 msgstr "Aktywować pasek?"
 
-#: admin_settings.php:92
+#: admin_settings.php:91
 msgid "No"
 msgstr "Nie"
 
-#: admin_settings.php:93
+#: admin_settings.php:92
 msgid "Yes"
 msgstr "Tak"
 
-#: admin_settings.php:95
+#: admin_settings.php:94
 msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
 msgstr "Jeśli jest wybrane \"TAK\", wtedy wtyczka doda pasek z flagami języków."
 
-#: admin_settings.php:99
+#: admin_settings.php:98
 msgid "Title of bar"
 msgstr "Tytuł paska"
 
-#: admin_settings.php:102
+#: admin_settings.php:101
 msgid "Title will be displayed on a bar, right before flags."
 msgstr "Tytuł będzie wyświetlany na pasku, bezpośrednio przed flagami."
+
+#: admin_settings.php:114
+#: admin_settings.php:141
+#: admin_settings.php:168
+#: admin_settings.php:195
+msgid "Country"
+msgstr "Kraj"
 
 #: admin_settings.php:115
 #: admin_settings.php:142
 #: admin_settings.php:169
 #: admin_settings.php:196
-msgid "Country"
-msgstr "Kraj"
+msgid "Active"
+msgstr "Aktywny"
 
 #: admin_settings.php:116
 #: admin_settings.php:143
 #: admin_settings.php:170
 #: admin_settings.php:197
-msgid "Active"
-msgstr "Aktywny"
-
-#: admin_settings.php:117
-#: admin_settings.php:144
-#: admin_settings.php:171
-#: admin_settings.php:198
 msgid "URL"
 msgstr "URL"
 
-#: admin_settings.php:129
-#: admin_settings.php:156
-#: admin_settings.php:183
+#: admin_settings.php:128
+#: admin_settings.php:155
+#: admin_settings.php:182
+#: admin_settings.php:209
 msgid "Country name will be dispayed as: "
 msgstr "Nazwa kraju będzie wyświetlana jako: "
 
-#: admin_settings.php:204
-msgid "Don't need it right now... but if users will need it, will create it later..."
-msgstr "Nie potrzebuje tego teraz... ale jeśli użytkownicy będą potrzebować, utworzę to później..."
-
-#: admin_settings.php:212
+#: admin_settings.php:218
 msgid "Save Changes"
 msgstr "Zapisz zmiany"
+
+#. Plugin URI of the plugin/theme
+msgid "http://blog.meloniq.net/2011/11/28/language-bar-flags/"
+msgstr "http://blog.meloniq.net/2011/11/28/language-bar-flags/"
+
+#. Description of the plugin/theme
+msgid "Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website."
+msgstr "Podmienia lub wyłącza standardowy pasek WordPressa na górze strony i w jego miejscu wyświetla pasek z flagami krajów do innych wersji językowych Twojej strony."
+
+#. Author of the plugin/theme
+msgid "MELONIQ.NET"
+msgstr "MELONIQ.NET"
+
+#. Author URI of the plugin/theme
+msgid "http://blog.meloniq.net"
+msgstr "http://blog.meloniq.net"
 

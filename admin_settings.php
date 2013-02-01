@@ -26,7 +26,7 @@
       }
       $langs_array[$code]['url'] = trim($_POST['america'][$code]['url']);
     }
-    // Asia + Australia part
+    // Asia + Oceania part
     foreach($asia_english as $code => $country) {
       if ($_POST['asia'][$code]['active'] == 'yes'){
         $langs_array[$code]['active'] = 'yes';
@@ -36,7 +36,6 @@
       $langs_array[$code]['url'] = trim($_POST['asia'][$code]['url']);
     }
     // Africa part
-    /*
     foreach($africa_english as $code => $country) {
       if ($_POST['africa'][$code]['active'] == 'yes'){
         $langs_array[$code]['active'] = 'yes';
@@ -45,7 +44,7 @@
       }
       $langs_array[$code]['url'] = trim($_POST['africa'][$code]['url']);
     }
-    */
+
     update_option('langbf_langs', $langs_array);
     
     echo '<div class="updated"><p><strong>' . __('Settings saved', 'mnet-langbf') . '</strong></p></div>';
@@ -199,11 +198,18 @@
             </tr>
           </thead>
           <tbody>
+          <?php foreach($africa_english as $code => $country): ?>
             <tr>
-              <td colspan="3" class="">
-                <p><?php _e('Don\'t need it right now... but if users will need it, will create it later...', 'mnet-langbf'); ?></p>
+              <td class=""><div class="langbf_img"><img src="<?php echo LANGBF_PLUGIN_URL . '/images/flag_' . $code . '.png'; ?>" width="24" /></div> <?php echo $country; ?></td>
+              <td class="">
+                <input type="checkbox" value="yes" id="africa_<?php echo $code; ?>_active" name="africa[<?php echo $code; ?>][active]" <?php if($langs[$code]['active'] == 'yes'){ echo 'checked="checked"'; }; ?> /><br />
+              </td>
+              <td class="">
+                <input type="text" value="<?php echo $langs[$code]['url']; ?>" style="min-width:500px;" id="africa_<?php echo $code; ?>_url" name="africa[<?php echo $code; ?>][url]" /><br />
+                <small><?php _e('Country name will be dispayed as: ', 'mnet-langbf'); ?><i><?php echo $africa_native[$code]; ?></i></small>
               </td>
             </tr>
+          <?php endforeach; ?>
           </tbody>
         </table>
       </div>
