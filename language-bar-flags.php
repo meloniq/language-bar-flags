@@ -18,7 +18,8 @@ if ( ! function_exists( 'add_action' ) )
 
 global $langbf_dbversion;
 $langbf_version = '1.0.4';
-define('LANGBF_VERSION', '1.0.4');
+define( 'LANGBF_VERSION', '1.0.4' );
+define( 'LANGBF_TD', 'language-bar-flags' );
 $langbf_dbversion = '104';
 
 
@@ -31,7 +32,7 @@ register_activation_hook( plugin_basename( __FILE__ ), 'langbf_activate' );
 /**
  * Load Text-Domain
  */
-load_plugin_textdomain( 'mnet-langbf', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+load_plugin_textdomain( LANGBF_TD, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 
 /**
@@ -182,9 +183,8 @@ add_action( 'wp_footer', 'langbf_load_js' );
  * Populate administration menu of the plugin
  */
 function langbf_add_menu_links() {
-	if (function_exists('add_options_page')) {
-		add_options_page(__('Language Bar Flags','mnet-langbf'), __('Language Bar Flags','mnet-langbf'), 'administrator', 'langbf', 'langbf_menu_settings' );
-	}
+
+	add_options_page( __( 'Language Bar Flags', LANGBF_TD ), __( 'Language Bar Flags', LANGBF_TD ), 'administrator', 'langbf', 'langbf_menu_settings' );
 }
 
 
@@ -204,8 +204,8 @@ function langbf_announcement() {
 	global $app_theme;
 	if(get_option('langbf_announcement') == false && !isset($app_theme)) {
 		echo '<div class="update-nag">';
-		_e('You are not using any of AppThemes Premium Themes, check what You are missing.', 'mnet-langbf');
-		printf(__(' <a target="_blank" href="%s">Show me themes!</a>', 'mnet-langbf'), 'http://bit.ly/s23oNj');
+		_e( 'You are not using any of AppThemes Premium Themes, check what You are missing.', LANGBF_TD );
+		printf( __( ' <a target="_blank" href="%s">Show me themes!</a>', LANGBF_TD ), 'http://bit.ly/s23oNj' );
 		echo '</div>';
 	}
 }

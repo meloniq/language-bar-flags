@@ -2,8 +2,8 @@
 Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
-Requires at least: 3.0
-Tested up to: 3.3.1
+Requires at least: 3.3
+Tested up to: 3.5.1
 Stable tag: 1.0.4
 
 Displays bar with configurable language flags to other language versions of Your website.
@@ -47,6 +47,7 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 = 1.0.5 =
 * Added Slovak translation
 * Removed WP 2.8 compatibility constants
+* Changed textdomain to 'language-bar-flags', represented by constant LANGBF_TD
 
 = 1.0.4 =
 * Added compatibility with WP Admin bar, can use both
