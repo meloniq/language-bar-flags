@@ -23,6 +23,7 @@
 				$langs_array[ $code ]['active'] = 'no';
 			}
 			$langs_array[ $code ]['url'] = trim( stripslashes( $_POST[ $code ]['url'] ) );
+			$langs_array[ $code ]['country'] = trim( stripslashes( $_POST[ $code ]['country'] ) );
 		}
 
 		update_option( 'langbf_langs', $langs_array );
@@ -147,11 +148,12 @@
 
 				<!-- Europe -->
 				<div id="tab2" class="">
-					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+					<table class="widefat fixed" style="margin-bottom:20px;">
 						<thead>
 							<tr>
 								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
 								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="300px" scope="col"><?php _e( 'Alternative Name', LANGBF_TD ); ?></th>
 								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
 							</tr>
 						</thead>
@@ -163,8 +165,12 @@
 									<input type="checkbox" value="yes" id="<?php echo 'europe_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
 								<td class="">
-									<input type="text" value="<?php if ( isset( $langs[ $code ]['url'] ) ) echo esc_attr( $langs[ $code ]['url'] ); ?>" style="min-width:500px;" id="<?php echo 'europe_' . $code . '_url'; ?>" name="<?php echo $code . '[url]'; ?>" /><br />
-									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo esc_html( $europe_native[ $code ] ); ?></i></small>
+									<input type="text" value="<?php if ( isset( $langs[ $code ]['country'] ) ) echo esc_attr( $langs[ $code ]['country'] ); ?>" style="min-width:230px;" id="<?php echo 'europe_' . $code . '_country'; ?>" name="<?php echo $code . '[country]'; ?>" /><br />
+									<small><?php _e( 'Alternative country name. Default is: ', LANGBF_TD ); ?><i><?php echo esc_html( $europe_native[ $code ] ); ?></i></small>
+								</td>
+								<td class="">
+									<input type="text" value="<?php if ( isset( $langs[ $code ]['url'] ) ) echo esc_attr( $langs[ $code ]['url'] ); ?>" style="min-width:400px;" id="<?php echo 'europe_' . $code . '_url'; ?>" name="<?php echo $code . '[url]'; ?>" /><br />
+									<small><?php _e( 'URL address where link should point to.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
 						<?php } ?>
@@ -174,11 +180,12 @@
 
 				<!-- Americas -->
 				<div id="tab3" class="">
-					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+					<table class="widefat fixed" style="margin-bottom:20px;">
 						<thead>
 							<tr>
 								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="70px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="300px" scope="col"><?php _e( 'Alternative Name', LANGBF_TD ); ?></th>
 								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
 							</tr>
 						</thead>
@@ -190,8 +197,12 @@
 									<input type="checkbox" value="yes" id="<?php echo 'america_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
 								<td class="">
+									<input type="text" value="<?php if ( isset( $langs[ $code ]['country'] ) ) echo esc_attr( $langs[ $code ]['country'] ); ?>" style="min-width:230px;" id="<?php echo 'america_' . $code . '_country'; ?>" name="<?php echo $code . '[country]'; ?>" /><br />
+									<small><?php _e( 'Alternative country name. Default is: ', LANGBF_TD ); ?><i><?php echo esc_html( $america_native[ $code ] ); ?></i></small>
+								</td>
+								<td class="">
 									<input type="text" value="<?php if ( isset( $langs[ $code ]['url'] ) ) echo esc_attr( $langs[ $code ]['url'] ); ?>" style="min-width:500px;" id="<?php echo 'america_' . $code . '_url'; ?>" name="<?php echo $code . '[url]'; ?>" /><br />
-									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo esc_html( $america_native[ $code ] ); ?></i></small>
+									<small><?php _e( 'URL address where link should point to.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
 						<?php } ?>
@@ -201,11 +212,12 @@
 
 				<!-- Asia + Oceania -->
 				<div id="tab4" class="">
-					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+					<table class="widefat fixed" style="margin-bottom:20px;">
 						<thead>
 							<tr>
 								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="70px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="300px" scope="col"><?php _e( 'Alternative Name', LANGBF_TD ); ?></th>
 								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
 							</tr>
 						</thead>
@@ -217,8 +229,12 @@
 									<input type="checkbox" value="yes" id="<?php echo 'asia_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
 								<td class="">
+									<input type="text" value="<?php if ( isset( $langs[ $code ]['country'] ) ) echo esc_attr( $langs[ $code ]['country'] ); ?>" style="min-width:230px;" id="<?php echo 'asia_' . $code . '_country'; ?>" name="<?php echo $code . '[country]'; ?>" /><br />
+									<small><?php _e( 'Alternative country name. Default is: ', LANGBF_TD ); ?><i><?php echo esc_html( $asia_native[ $code ] ); ?></i></small>
+								</td>
+								<td class="">
 									<input type="text" value="<?php if ( isset( $langs[ $code ]['url'] ) ) echo esc_attr( $langs[ $code ]['url'] ); ?>" style="min-width:500px;" id="<?php echo 'asia_' . $code . '_url'; ?>" name="<?php echo $code . '[url]'; ?>" /><br />
-									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo esc_html( $asia_native[ $code ] ); ?></i></small>
+									<small><?php _e( 'URL address where link should point to.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
 						<?php } ?>
@@ -228,11 +244,12 @@
 
 				<!-- Africa -->
 				<div id="tab5" class="">
-					<table class="widefat fixed" style="width:850px; margin-bottom:20px;">
+					<table class="widefat fixed" style="margin-bottom:20px;">
 						<thead>
 							<tr>
 								<th width="150px" scope="col"><?php _e( 'Country', LANGBF_TD ); ?></th>
-								<th width="100px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="70px" scope="col"><?php _e( 'Active', LANGBF_TD ); ?></th>
+								<th width="300px" scope="col"><?php _e( 'Alternative Name', LANGBF_TD ); ?></th>
 								<th scope="col"><?php _e( 'URL', LANGBF_TD ); ?></th>
 							</tr>
 						</thead>
@@ -244,8 +261,12 @@
 									<input type="checkbox" value="yes" id="<?php echo 'africa_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
 								<td class="">
+									<input type="text" value="<?php if ( isset( $langs[ $code ]['country'] ) ) echo esc_attr( $langs[ $code ]['country'] ); ?>" style="min-width:230px;" id="<?php echo 'africa_' . $code . '_country'; ?>" name="<?php echo $code . '[country]'; ?>" /><br />
+									<small><?php _e( 'Alternative country name. Default is: ', LANGBF_TD ); ?><i><?php echo esc_html( $africa_native[ $code ] ); ?></i></small>
+								</td>
+								<td class="">
 									<input type="text" value="<?php if ( isset( $langs[ $code ]['url'] ) ) echo esc_attr( $langs[ $code ]['url'] ); ?>" style="min-width:500px;" id="<?php echo 'africa_' . $code . '_url'; ?>" name="<?php echo $code . '[url]'; ?>" /><br />
-									<small><?php _e( 'Country name will be dispayed as: ', LANGBF_TD ); ?><i><?php echo esc_html( $africa_native[ $code ] ); ?></i></small>
+									<small><?php _e( 'URL address where link should point to.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
 						<?php } ?>

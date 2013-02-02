@@ -110,6 +110,8 @@ function langbf_load_html() {
 	$output = '';
 	foreach ( $native_names as $code => $country ) {
 		if ( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ) {
+			if ( ! empty( $langs[ $code ]['country'] ) )
+				$country = $langs[ $code ]['country'];
 			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
 		}
 	}
