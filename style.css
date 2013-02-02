@@ -57,19 +57,25 @@
   line-height: 24px;
   margin: 0 5px 0 0;
 }
-.tooltip {
+.langbf_tooltip_top, .langbf_tooltip_bottom {
 	display: none;
-	background: url("images/black_arrow_bottom.png") no-repeat scroll center center transparent;
 	font-size: 14px;
 	font-style: italic;
 	width: 145px;
 	height: 30px;
 	line-height: 30px;
-	padding: 27px 25px 15px;
 	color: #f7f7f7;
 	text-align: center;
 	vertical-align: middle;
   z-index: 99999;
+}
+.langbf_tooltip_top {
+	background: url("images/black_arrow_bottom.png") no-repeat scroll center center transparent;
+	padding: 27px 25px 15px;
+}
+.langbf_tooltip_bottom {
+	background: url("images/black_arrow_top.png") no-repeat scroll center center transparent;
+	padding: 15px 25px 27px;
 }
 
 

@@ -133,26 +133,41 @@ function langbf_load_css() {
 	if ( get_option('langbf_active') != 'yes' )
 		return;
 
-	if ( is_admin_bar_showing() ) {
-		$margin_top = 52;
-		$top = 26;
-	} else {
-		$margin_top = 26;
-		$top = 0;
-	}
+	if ( get_option('langbf_position') == 'top' ) {
+
+		if ( is_admin_bar_showing() ) {
+			$margin_top = 52;
+			$top = 26;
+		} else {
+			$margin_top = 26;
+			$top = 0;
+		}
 ?>
-	<style type="text/css">
-	html {
-		margin-top: <?php echo $margin_top ?>px !important;
-	}
-	* html body { 
-		margin-top: <?php echo $margin_top ?>px !important;
-	}
-	#langbf_bar {
-		top: <?php echo $top ?>px !important;
-	}
-	</style>
+		<style type="text/css">
+		html {
+			margin-top: <?php echo $margin_top ?>px !important;
+		}
+		* html body { 
+			margin-top: <?php echo $margin_top ?>px !important;
+		}
+		#langbf_bar {
+			top: <?php echo $top ?>px !important;
+		}
+		</style>
 <?php
+	} else {
+?>
+		<style type="text/css">
+		html {
+			padding-bottom: 26px !important;
+		}
+		#langbf_bar {
+			top: auto !important;
+			bottom: 0px !important;
+		}
+		</style>
+<?php
+	}
 }
 add_action( 'wp_footer', 'langbf_load_css' );
 
@@ -163,14 +178,32 @@ add_action( 'wp_footer', 'langbf_load_css' );
 function langbf_load_js() {
 	if ( get_option('langbf_active') != 'yes' )
 		return;
+
+	if ( get_option('langbf_position') == 'top' ) {
+		$tooltip = array(
+			'offset' => '10, 0',
+			'position' => 'bottom center',
+			'effect' => 'slide',
+			'class' => 'langbf_tooltip_top',
+		);
+	} else {
+		$tooltip = array(
+			'offset' => '10, 0',
+			'position' => 'top center',
+			'effect' => 'slide',
+			'class' => 'langbf_tooltip_bottom',
+		);
+	}
+	$tooltip = apply_filters( 'langbf_tooltip', $tooltip, get_option('langbf_position') );
 ?>
 	<script type="text/javascript">
 	// <![CDATA[
 	jQuery(document).ready( function(){
-		jQuery("#langbf_bar a[title]").tooltip({
-			offset: [10, 0],
-			position: 'bottom center',
-			effect: 'slide'
+		jQuery("#langbf_bar a[title]").tooltip( {
+			offset: [<?php echo esc_js( $tooltip['offset'] ); ?>],
+			position: '<?php echo esc_js( $tooltip['position'] ); ?>',
+			effect: '<?php echo esc_js( $tooltip['effect'] ); ?>',
+			tipClass: '<?php echo esc_js( $tooltip['class'] ); ?>'
 		} );
 	} );
 	// ]]>
@@ -277,6 +310,10 @@ function langbf_install_options() {
 	if ( version_compare( $previous_version, '1.0.4', '<' ) ) {
 		update_option( 'langbf_disable_wpbar', 'yes' );
 		update_option( 'langbf_new_window', 'no' );
+	}
+
+	if ( version_compare( $previous_version, '1.0.5', '<' ) ) {
+		update_option( 'langbf_position', 'top' );
 	}
 
 	//Update DB version

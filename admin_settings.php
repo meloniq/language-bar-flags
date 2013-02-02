@@ -10,6 +10,7 @@
 		update_option( 'langbf_title', stripslashes( $_POST['langbf_title'] ) );
 		update_option( 'langbf_disable_wpbar', stripslashes( $_POST['langbf_disable_wpbar'] ) );
 		update_option( 'langbf_new_window', stripslashes( $_POST['langbf_new_window'] ) );
+		update_option( 'langbf_position', stripslashes( $_POST['langbf_position'] ) );
 
 		$langs_array = array();
 		$english_names = langbf_get_countries( 'all', 'english' );
@@ -97,6 +98,16 @@
 								<td>
 									<input type="text" value="<?php echo esc_attr( get_option('langbf_title') ); ?>" style="min-width:500px;" id="langbf_title" name="langbf_title" /><br />
 									<small><?php _e( 'Title will be displayed on a bar, right before flags.', LANGBF_TD ); ?></small>
+								</td>
+							</tr>
+							<tr>
+								<td><?php _e( 'Position of bar', LANGBF_TD ); ?></td>
+								<td>
+									<select name="langbf_position">
+										<option value="top" <?php selected( get_option('langbf_position'), 'top' ); ?> ><?php _e( 'Top', LANGBF_TD ); ?></option>
+										<option value="bottom" <?php selected( get_option('langbf_position'), 'bottom' ); ?> ><?php _e( 'Bottom', LANGBF_TD ); ?></option>
+									</select>
+									<br /><small><?php _e( 'Choose position where the bar should appear. The top of page or on the bottom.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
 							<tr>
