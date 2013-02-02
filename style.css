@@ -2,7 +2,6 @@
   background: none repeat scroll 0 0 #313131;
   border-bottom: 2px solid #515150;
   color: #DDDDDD;
-  direction: ltr;
   font: 12px/28px Arial,Helvetica,sans-serif;
   height: 24px;
   left: 0;
@@ -30,6 +29,7 @@
   overflow: hidden;
 }
 .langbf_links ul {
+	float:left;
   list-style: none outside none;
   margin: 0;
 }
@@ -56,6 +56,12 @@
   font-weight: bold;
   line-height: 24px;
   margin: 0 5px 0 0;
+}
+.langbf_left {
+	float:left;
+}
+.langbf_right {
+	float:right;
 }
 .langbf_tooltip_top, .langbf_tooltip_bottom {
 	display: none;

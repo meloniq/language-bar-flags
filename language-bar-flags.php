@@ -101,6 +101,7 @@ function langbf_load_html() {
 		remove_action( 'personal_options', '_admin_bar_preferences' );
 	}
 
+	$side_class = ( get_option('langbf_side') == 'left' ) ? 'langbf_left' : 'langbf_right';
 	$target = ( get_option('langbf_new_window') == 'yes' ) ? 'target="_blank"' : '';
 	$bar_title = get_option('langbf_title');
 
@@ -115,10 +116,12 @@ function langbf_load_html() {
 ?>
 	<div id="langbf_bar">
 		<div class="langbf_links">
-			<?php if ( ! empty( $bar_title ) ) { echo '<span class="langbf_title">' . $bar_title . '</span>'; } ?>
-			<ul>
-				<?php echo $output; ?>
-			</ul>
+			<div class="<?php echo $side_class; ?>">
+				<?php if ( ! empty( $bar_title ) ) { echo '<span class="langbf_title">' . $bar_title . '</span>'; } ?>
+				<ul>
+					<?php echo $output; ?>
+				</ul>
+			</div>
 		</div>
 	</div><!-- #langbf_bar -->
 <?php
@@ -314,6 +317,7 @@ function langbf_install_options() {
 
 	if ( version_compare( $previous_version, '1.0.5', '<' ) ) {
 		update_option( 'langbf_position', 'top' );
+		update_option( 'langbf_side', 'left' );
 	}
 
 	//Update DB version

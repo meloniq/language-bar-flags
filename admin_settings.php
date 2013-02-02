@@ -11,6 +11,7 @@
 		update_option( 'langbf_disable_wpbar', stripslashes( $_POST['langbf_disable_wpbar'] ) );
 		update_option( 'langbf_new_window', stripslashes( $_POST['langbf_new_window'] ) );
 		update_option( 'langbf_position', stripslashes( $_POST['langbf_position'] ) );
+		update_option( 'langbf_side', stripslashes( $_POST['langbf_side'] ) );
 
 		$langs_array = array();
 		$english_names = langbf_get_countries( 'all', 'english' );
@@ -108,6 +109,16 @@
 										<option value="bottom" <?php selected( get_option('langbf_position'), 'bottom' ); ?> ><?php _e( 'Bottom', LANGBF_TD ); ?></option>
 									</select>
 									<br /><small><?php _e( 'Choose position where the bar should appear. The top of page or on the bottom.', LANGBF_TD ); ?></small>
+								</td>
+							</tr>
+							<tr>
+								<td><?php _e( 'Side of flags', LANGBF_TD ); ?></td>
+								<td>
+									<select name="langbf_side">
+										<option value="left" <?php selected( get_option('langbf_side'), 'left' ); ?> ><?php _e( 'Left', LANGBF_TD ); ?></option>
+										<option value="right" <?php selected( get_option('langbf_side'), 'right' ); ?> ><?php _e( 'Right', LANGBF_TD ); ?></option>
+									</select>
+									<br /><small><?php _e( 'Choose side of the bar where flags should appear. Left or right side of bar.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
 							<tr>

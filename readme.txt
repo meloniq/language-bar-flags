@@ -46,6 +46,7 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 = 1.0.5 =
 * Added option to change position of bar, top or bottom of page
+* Added option to change side of flags, left or right of bar
 * Added Slovak translation
 * Removed WP 2.8 compatibility constants
 * Changed textdomain to 'language-bar-flags', represented by constant LANGBF_TD
