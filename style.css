@@ -1,61 +1,61 @@
 #langbf_bar {
-  background: none repeat scroll 0 0 #313131;
-  border-bottom: 2px solid #515150;
-  color: #DDDDDD;
-  font: 12px/28px Arial,Helvetica,sans-serif;
-  height: 24px;
-  left: 0;
-  min-width: 980px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99999;
+	background: none repeat scroll 0 0 #313131;
+	border-bottom: 2px solid #515150;
+	color: #DDDDDD;
+	font: 12px/28px Arial,Helvetica,sans-serif;
+	height: 24px;
+	left: 0;
+	min-width: 980px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
 }
 
 #langbf_bar ul, #langbf_bar ul li {
-  background: none repeat scroll 0 0 transparent;
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 99999;
+	background: none repeat scroll 0 0 transparent;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 99999;
 }
 
 .langbf_links {
-  width: 980px;
-  height: 24px;
-  margin: 0 auto;
-  overflow: hidden;
+	width: 980px;
+	height: 24px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 .langbf_links ul {
 	float:left;
-  list-style: none outside none;
-  margin: 0;
+	list-style: none outside none;
+	margin: 0;
 }
 .langbf_links li {
-  float: left;
+	float: left;
 }
 .langbf_links a {
-  display: block;
-  float: left;
-  width: 24px;
-  height: 24px;
-  margin: 0 2px;
-  padding: 0;
-  text-indent: -9999px;
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin: 0 2px;
+	padding: 0;
+	text-indent: -9999px;
 }
 .langbf_links a:hover {
-  margin: 2px 2px -2px 2px;
+	margin: 2px 2px -2px 2px;
 }
 .langbf_title {
-  display:block;
-  float:left;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
-  line-height: 24px;
-  margin: 0 5px 0 0;
+	display:block;
+	float:left;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0 5px 0 0;
 }
 .langbf_left {
 	float:left;
@@ -73,7 +73,7 @@
 	color: #f7f7f7;
 	text-align: center;
 	vertical-align: middle;
-  z-index: 99999;
+	z-index: 99999;
 }
 .langbf_tooltip_top {
 	background: url("images/black_arrow_bottom.png") no-repeat scroll center center transparent;
