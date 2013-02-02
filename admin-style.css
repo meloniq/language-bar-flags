@@ -1,3 +1,6 @@
+/* Import css of countries flags */
+@import url("countries.css");
+
 #tabs-wrap ul.tabs {
 	margin: 25px 20px 0;
 	max-width: 810px;
@@ -50,3 +53,4 @@
 	display: inline-block;
 	margin: 0 5px -6px 0;
 }
+

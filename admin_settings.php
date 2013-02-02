@@ -160,7 +160,7 @@
 						<tbody>
 						<?php foreach ( $europe_english as $code => $country ) { ?>
 							<tr>
-								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo esc_html( $country ); ?></td>
+								<td class=""><div class="langbf_img <?php echo 'langbf_' . $code; ?>"></div> <?php echo esc_html( $country ); ?></td>
 								<td class="">
 									<input type="checkbox" value="yes" id="<?php echo 'europe_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
@@ -192,7 +192,7 @@
 						<tbody>
 						<?php foreach ( $america_english as $code => $country ) { ?>
 							<tr>
-								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo esc_html( $country ); ?></td>
+								<td class=""><div class="langbf_img <?php echo 'langbf_' . $code; ?>"></div> <?php echo esc_html( $country ); ?></td>
 								<td class="">
 									<input type="checkbox" value="yes" id="<?php echo 'america_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
@@ -224,7 +224,7 @@
 						<tbody>
 						<?php foreach ( $asia_english as $code => $country ) { ?>
 							<tr>
-								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo esc_html( $country ); ?></td>
+								<td class=""><div class="langbf_img <?php echo 'langbf_' . $code; ?>"></div> <?php echo esc_html( $country ); ?></td>
 								<td class="">
 									<input type="checkbox" value="yes" id="<?php echo 'asia_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
@@ -256,7 +256,7 @@
 						<tbody>
 						<?php foreach ( $africa_english as $code => $country ) { ?>
 							<tr>
-								<td class=""><div class="langbf_img"><img src="<?php echo plugins_url( '/images/flag_' . $code . '.png', __FILE__ ); ?>" width="24" /></div> <?php echo esc_html( $country ); ?></td>
+								<td class=""><div class="langbf_img <?php echo 'langbf_' . $code; ?>"></div> <?php echo esc_html( $country ); ?></td>
 								<td class="">
 									<input type="checkbox" value="yes" id="<?php echo 'africa_' . $code . '_active'; ?>" name="<?php echo $code . '[active]'; ?>" <?php checked( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ); ?> /><br />
 								</td>
