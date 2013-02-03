@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Language Bar Flags 1.0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/language-bar-flags\n"
-"POT-Creation-Date: 2013-02-02 22:30+0100\n"
-"PO-Revision-Date: 2013-02-02 22:38+0100\n"
-"Last-Translator: MELONIQ.NET <biuro@meloniq.net>\n"
+"POT-Creation-Date: 2013-02-03 18:44+0100\n"
+"PO-Revision-Date: 2013-02-03 18:45+0100\n"
+"Last-Translator: MELONIQ.NET\n"
 "Language-Team: MELONIQ.NET\n"
 "Language: English\n"
 "MIME-Version: 1.0\n"
@@ -864,13 +864,30 @@ msgstr ""
 msgid "Language Bar Flags"
 msgstr ""
 
-#: ../language-bar-flags.php:249
+#: ../language-bar-flags.php:252
 msgid ""
 "You are not using any of AppThemes Premium Themes, check what You are "
 "missing."
 msgstr ""
 
-#: ../language-bar-flags.php:250
+#: ../language-bar-flags.php:253 ../language-bar-flags.php:261
 #, php-format
 msgid " <a target=\"_blank\" href=\"%s\">Show me themes!</a>"
+msgstr ""
+
+#: ../language-bar-flags.php:260
+msgid ""
+"You are not using any of Elegant Premium Themes, check what You are missing."
+msgstr ""
+
+#: ../includes/wp-app-store.php:155
+msgid ""
+"Sorry, we could not reach the WP App Store to setup the auto installer. "
+"Please try again later."
+msgstr ""
+
+#: ../includes/wp-app-store.php:156
+msgid ""
+"In the meantime, you can try checking us out at <a href=\"http://wpappstore."
+"com/\">http://wpappstore.com/</a>."
 msgstr ""
