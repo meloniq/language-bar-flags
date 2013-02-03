@@ -4,7 +4,7 @@ Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 
 Displays bar with configurable language flags to other language versions of Your website.
 
