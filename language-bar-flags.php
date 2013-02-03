@@ -4,7 +4,7 @@
 	Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
 	Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
 	Author: MELONIQ.NET
-	Version: 1.0.4
+	Version: 1.0.5
 	Author URI: http://blog.meloniq.net
 */
 
@@ -19,7 +19,7 @@ if ( ! function_exists( 'add_action' ) )
 /**
  * Plugin version and textdomain constants
  */
-define( 'LANGBF_VERSION', '1.0.4' );
+define( 'LANGBF_VERSION', '1.0.5' );
 define( 'LANGBF_TD', 'language-bar-flags' );
 
 
@@ -244,11 +244,23 @@ function langbf_announcement() {
 	if ( get_option( 'langbf_announcement' ) )
 		return;
 
-	if ( ! langbf_is_theme_provider( 'appthemes' ) ) {
+	$enabled = array( true, false );
+	shuffle( $enabled );
+
+	if ( ! langbf_is_theme_provider( 'appthemes' ) && $enabled[0] ) {
 		echo '<div class="update-nag">';
 		_e( 'You are not using any of AppThemes Premium Themes, check what You are missing.', LANGBF_TD );
 		printf( __( ' <a target="_blank" href="%s">Show me themes!</a>', LANGBF_TD ), 'http://bit.ly/s23oNj' );
 		echo '</div>';
+		return;
+	}
+
+	if ( ! langbf_is_theme_provider( 'elegantthemes' ) && $enabled[1] ) {
+		echo '<div class="update-nag">';
+		_e( 'You are not using any of Elegant Premium Themes, check what You are missing.', LANGBF_TD );
+		printf( __( ' <a target="_blank" href="%s">Show me themes!</a>', LANGBF_TD ), 'http://bit.ly/11A8EmR' );
+		echo '</div>';
+		return;
 	}
 
 }
@@ -259,20 +271,30 @@ function langbf_announcement() {
  */
 function langbf_is_theme_provider( $provider ) {
 
-	if ( $provider == 'appthemes' ) {
-		// All modern versions
-		if ( defined( 'APP_TD' ) )
-			return true;
-		// ClassiPress, Clipper, JobRoller
-		if ( defined( 'APP_POST_TYPE' ) )
-			return true;
-		// Vantage, Quality Control, Ideas
-		if ( defined( 'VA_VERSION' ) || defined( 'QC_VERSION' ) || defined( 'IDEAX_VERSION' ) )
-			return true;
-	}
+	if ( $provider == 'appthemes' )
+		return ( function_exists( 'appthemes_init' ) );
+
+	if ( $provider == 'elegantthemes' )
+		return ( function_exists( 'et_setup_theme' ) );
 
 	return false;
 }
+
+
+/**
+ * Initialize WP App Store Installer
+ */
+function langbf_wpappstore_init() {
+	if ( ! is_admin() )
+		return;
+
+	if ( class_exists( 'WP_App_Store_Installer' ) )
+		return;
+
+	require_once( 'includes/wp-app-store.php' );
+	$wp_app_store_installer = new WP_App_Store_Installer( 3788 );
+}
+add_action( 'init', 'langbf_wpappstore_init', 9 );
 
 
 /**
