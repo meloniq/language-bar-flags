@@ -56,7 +56,7 @@ function langbf_load_scripts() {
 	wp_register_script( 'langbf_tooltip', plugins_url( '/js/tooltip.slide.js', __FILE__ ), array( 'jquery' ) );
 	wp_enqueue_script( 'langbf_tooltip' );
 }
-add_action( 'wp_print_scripts', 'langbf_load_scripts' );
+add_action( 'wp_enqueue_scripts', 'langbf_load_scripts' );
 
 
 /**
@@ -75,7 +75,7 @@ function langbf_load_styles() {
 	wp_register_style( 'langbf_style', plugins_url( 'style.css', __FILE__ ) );
 	wp_enqueue_style( 'langbf_style' );
 }
-add_action( 'wp_print_styles', 'langbf_load_styles' );
+add_action( 'wp_enqueue_scripts', 'langbf_load_styles' );
 
 
 /**
