@@ -282,22 +282,6 @@ function langbf_is_theme_provider( $provider ) {
 
 
 /**
- * Initialize WP App Store Installer
- */
-function langbf_wpappstore_init() {
-	if ( ! is_admin() )
-		return;
-
-	if ( class_exists( 'WP_App_Store_Installer' ) )
-		return;
-
-	require_once( 'includes/wp-app-store.php' );
-	$wp_app_store_installer = new WP_App_Store_Installer( 3788 );
-}
-add_action( 'init', 'langbf_wpappstore_init', 9 );
-
-
-/**
  * Action on plugin activate
  */
 function langbf_activate() {
