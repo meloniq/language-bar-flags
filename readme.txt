@@ -2,9 +2,9 @@
 Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
-Requires at least: 3.3
-Tested up to: 3.5.1
-Stable tag: 1.0.5
+Requires at least: 3.5
+Tested up to: 3.9
+Stable tag: 1.0.6
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -25,9 +25,10 @@ Afghanistan, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh, Bhutan, Brunei
 * Africa:
 Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Republic of the Congo, Democratic Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe
 
-= Supported languages =
+= Available languages =
 * English
 * French (by Frédéric Serva)
+* Serbo-Croatian (by Borisa Djuraskovic from <a href="http://www.webhostinghub.com/">WebHostingHub</a>)
 * Slovak (by Branco Radenovich from <a href="http://webhostinggeeks.com/user-reviews/">WebHostingGeeks</a>)
 * Polish
 
@@ -43,6 +44,11 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.0.6 =
+* Added Serbo-Croatian translation
+* Fixed display issues of bar on some themes
+* Minor code styling corrections
 
 = 1.0.5 =
 * Added option to change position of bar, top or bottom of page

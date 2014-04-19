@@ -4,7 +4,7 @@
 	Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
 	Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
 	Author: MELONIQ.NET
-	Version: 1.0.5
+	Version: 1.0.6
 	Author URI: http://blog.meloniq.net
 */
 
@@ -12,14 +12,15 @@
 /**
  * Avoid calling file directly
  */
-if ( ! function_exists( 'add_action' ) )
+if ( ! function_exists( 'add_action' ) ) {
 	die( 'Whoops! You shouldn\'t be doing that.' );
+}
 
 
 /**
  * Plugin version and textdomain constants
  */
-define( 'LANGBF_VERSION', '1.0.5' );
+define( 'LANGBF_VERSION', '1.0.6' );
 define( 'LANGBF_TD', 'language-bar-flags' );
 
 
@@ -93,25 +94,22 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_styles' );
  */
 function langbf_load_html() {
 
-	if ( get_option('langbf_active') != 'yes' )
+	if ( get_option( 'langbf_active' ) != 'yes' ) {
 		return;
-
-	if ( get_option('langbf_disable_wpbar') == 'yes' ) {
-		add_filter( 'show_admin_bar', '__return_false' );
-		remove_action( 'personal_options', '_admin_bar_preferences' );
 	}
 
-	$side_class = ( get_option('langbf_side') == 'left' ) ? 'langbf_left' : 'langbf_right';
-	$target = ( get_option('langbf_new_window') == 'yes' ) ? 'target="_blank"' : '';
-	$bar_title = get_option('langbf_title');
+	$side_class = ( get_option( 'langbf_side' ) == 'left' ) ? 'langbf_left' : 'langbf_right';
+	$target = ( get_option( 'langbf_new_window' ) == 'yes' ) ? 'target="_blank"' : '';
+	$bar_title = get_option( 'langbf_title' );
 
-	$langs = get_option('langbf_langs');
+	$langs = get_option( 'langbf_langs' );
 	$native_names = langbf_get_countries( 'all', 'native' );
 	$output = '';
 	foreach ( $native_names as $code => $country ) {
 		if ( isset( $langs[ $code ]['active'] ) && $langs[ $code ]['active'] == 'yes' ) {
-			if ( ! empty( $langs[ $code ]['country'] ) )
+			if ( ! empty( $langs[ $code ]['country'] ) ) {
 				$country = $langs[ $code ]['country'];
+			}
 			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
 		}
 	}
@@ -135,30 +133,53 @@ add_action( 'wp_footer', 'langbf_load_html' );
  * Print css in footer
  */
 function langbf_load_css() {
-	if ( get_option('langbf_active') != 'yes' )
+	if ( get_option( 'langbf_active' ) != 'yes' )
 		return;
 
-	if ( get_option('langbf_position') == 'top' ) {
+	if ( get_option( 'langbf_position' ) == 'top' ) {
 
 		if ( is_admin_bar_showing() ) {
-			$margin_top = 52;
-			$top = 26;
+?>
+			<style type="text/css">
+			html {
+				margin-top: 52px !important;
+			}
+			* html body { 
+				margin-top: 52px !important;
+			}
+			#langbf_bar {
+				top: 32px !important;
+			}
+			@media screen and ( max-width: 782px ) {
+				html {
+					margin-top: 72px !important;
+				}
+				* html body { 
+					margin-top: 72px !important;
+				}
+				#langbf_bar {
+					top: 46px !important;
+					z-index: 500 !important;
+				}
+			}
+			</style>
+<?php
 		} else {
-			$margin_top = 26;
-			$top = 0;
+?>
+			<style type="text/css">
+			html {
+				margin-top: 26px !important;
+			}
+			* html body { 
+				margin-top: 26px !important;
+			}
+			#langbf_bar {
+				top: 0px !important;
+			}
+			</style>
+<?php
 		}
 ?>
-		<style type="text/css">
-		html {
-			margin-top: <?php echo $margin_top ?>px !important;
-		}
-		* html body { 
-			margin-top: <?php echo $margin_top ?>px !important;
-		}
-		#langbf_bar {
-			top: <?php echo $top ?>px !important;
-		}
-		</style>
 <?php
 	} else {
 ?>
@@ -181,10 +202,11 @@ add_action( 'wp_footer', 'langbf_load_css' );
  * Print css in footer
  */
 function langbf_load_js() {
-	if ( get_option('langbf_active') != 'yes' )
+	if ( get_option( 'langbf_active' ) != 'yes' ) {
 		return;
+	}
 
-	if ( get_option('langbf_position') == 'top' ) {
+	if ( get_option( 'langbf_position' ) == 'top' ) {
 		$tooltip = array(
 			'offset' => '10, 0',
 			'position' => 'bottom center',
@@ -199,7 +221,7 @@ function langbf_load_js() {
 			'class' => 'langbf_tooltip_bottom',
 		);
 	}
-	$tooltip = apply_filters( 'langbf_tooltip', $tooltip, get_option('langbf_position') );
+	$tooltip = apply_filters( 'langbf_tooltip', $tooltip, get_option( 'langbf_position' ) );
 ?>
 	<script type="text/javascript">
 	// <![CDATA[
@@ -237,12 +259,30 @@ function langbf_menu_settings() {
 
 
 /**
+ * Disable WP admin bar
+ */
+function langbf_disable_admin_bar() {
+
+	if ( get_option( 'langbf_active' ) != 'yes' ) {
+		return;
+	}
+
+	if ( get_option( 'langbf_disable_wpbar' ) == 'yes' ) {
+		add_filter( 'show_admin_bar', '__return_false' );
+		remove_action( 'personal_options', '_admin_bar_preferences' );
+	}
+}
+add_action( 'init', 'langbf_disable_admin_bar' );
+
+
+/**
  * Create announcement on langbf setting page
  */
 function langbf_announcement() {
 
-	if ( get_option( 'langbf_announcement' ) )
+	if ( get_option( 'langbf_announcement' ) ) {
 		return;
+	}
 
 	$enabled = array( true, false );
 	shuffle( $enabled );
@@ -271,11 +311,13 @@ function langbf_announcement() {
  */
 function langbf_is_theme_provider( $provider ) {
 
-	if ( $provider == 'appthemes' )
+	if ( $provider == 'appthemes' ) {
 		return ( function_exists( 'appthemes_init' ) );
+	}
 
-	if ( $provider == 'elegantthemes' )
+	if ( $provider == 'elegantthemes' ) {
 		return ( function_exists( 'et_setup_theme' ) );
+	}
 
 	return false;
 }
@@ -328,7 +370,7 @@ function langbf_install_options() {
 		update_option( 'langbf_side', 'left' );
 	}
 
-	//Update DB version
+	// Update DB version
 	update_option( 'langbf_db_version', LANGBF_VERSION );
 	delete_option( 'langbf_announcement' );
 }

@@ -4,6 +4,9 @@
 #langbf_bar {
 	background: none repeat scroll 0 0 #313131;
 	border-bottom: 2px solid #515150;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 	color: #DDDDDD;
 	font: 12px/28px Arial,Helvetica,sans-serif;
 	height: 24px;
@@ -32,7 +35,7 @@
 	overflow: hidden;
 }
 .langbf_links ul {
-	float:left;
+	float: left;
 	list-style: none outside none;
 	margin: 0;
 }
@@ -52,8 +55,8 @@
 	margin: 2px 2px -2px 2px;
 }
 .langbf_title {
-	display:block;
-	float:left;
+	display: block;
+	float: left;
 	font-size: 12px;
 	font-style: italic;
 	font-weight: bold;
@@ -61,19 +64,24 @@
 	margin: 0 5px 0 0;
 }
 .langbf_left {
-	float:left;
+	float: left;
+	padding-left: 8px;
 }
 .langbf_right {
-	float:right;
+	float: right;
+	padding-right: 8px;
 }
 .langbf_tooltip_top, .langbf_tooltip_bottom {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	color: #f7f7f7;
 	display: none;
 	font-size: 14px;
 	font-style: italic;
 	width: 145px;
 	height: 30px;
 	line-height: 30px;
-	color: #f7f7f7;
 	text-align: center;
 	vertical-align: middle;
 	z-index: 99999;

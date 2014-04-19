@@ -12,8 +12,9 @@ function langbf_get_countries( $region, $language ) {
 	$supported_regions = array( 'europe', 'america', 'asia', 'africa', 'all' );
 	$supported_languages = array( 'native', 'english' );
 
-	if ( ! in_array( $region, $supported_regions ) || ! in_array( $language, $supported_languages ) )
+	if ( ! in_array( $region, $supported_regions ) || ! in_array( $language, $supported_languages ) ) {
 		return array();
+	}
 
 	// Array of europe country codes with thier names in native language
 	$europe_native = array(

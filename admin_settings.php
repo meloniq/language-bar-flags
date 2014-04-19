@@ -1,7 +1,8 @@
 <?php
 
-	if ( ! current_user_can( 'manage_options' ) )
-		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	if ( ! current_user_can( 'manage_options' ) ) {
+		wp_die( __( 'You do not have sufficient permissions to access this page.', LANGBF_TD ) );
+	}
 
 
 	// update options
@@ -33,7 +34,7 @@
 
 
 	// load saved data
-	$langs = get_option('langbf_langs');
+	$langs = get_option( 'langbf_langs' );
 
 	// load countries data
 	$europe_native = langbf_get_countries( 'europe', 'native' );
@@ -89,8 +90,8 @@
 								<td><?php _e( 'Activate bar?', LANGBF_TD ); ?></td>
 								<td>
 									<select name="langbf_active">
-										<option value="no" <?php selected( get_option('langbf_active'), 'no' ); ?> ><?php _e( 'No', LANGBF_TD ); ?></option>
-										<option value="yes" <?php selected( get_option('langbf_active'), 'yes' ); ?> ><?php _e( 'Yes', LANGBF_TD ); ?></option>
+										<option value="no" <?php selected( get_option( 'langbf_active' ), 'no' ); ?> ><?php _e( 'No', LANGBF_TD ); ?></option>
+										<option value="yes" <?php selected( get_option( 'langbf_active' ), 'yes' ); ?> ><?php _e( 'Yes', LANGBF_TD ); ?></option>
 									</select>
 									<br /><small><?php _e( 'If "YES" is selected, then plugin will add a bar with language flags.', LANGBF_TD ); ?></small>
 								</td>
@@ -98,7 +99,7 @@
 							<tr>
 								<td><?php _e( 'Title of bar', LANGBF_TD ); ?></td>
 								<td>
-									<input type="text" value="<?php echo esc_attr( get_option('langbf_title') ); ?>" style="min-width:500px;" id="langbf_title" name="langbf_title" /><br />
+									<input type="text" value="<?php echo esc_attr( get_option( 'langbf_title' ) ); ?>" style="min-width:500px;" id="langbf_title" name="langbf_title" /><br />
 									<small><?php _e( 'Title will be displayed on a bar, right before flags.', LANGBF_TD ); ?></small>
 								</td>
 							</tr>
@@ -106,8 +107,8 @@
 								<td><?php _e( 'Position of bar', LANGBF_TD ); ?></td>
 								<td>
 									<select name="langbf_position">
-										<option value="top" <?php selected( get_option('langbf_position'), 'top' ); ?> ><?php _e( 'Top', LANGBF_TD ); ?></option>
-										<option value="bottom" <?php selected( get_option('langbf_position'), 'bottom' ); ?> ><?php _e( 'Bottom', LANGBF_TD ); ?></option>
+										<option value="top" <?php selected( get_option( 'langbf_position' ), 'top' ); ?> ><?php _e( 'Top', LANGBF_TD ); ?></option>
+										<option value="bottom" <?php selected( get_option( 'langbf_position' ), 'bottom' ); ?> ><?php _e( 'Bottom', LANGBF_TD ); ?></option>
 									</select>
 									<br /><small><?php _e( 'Choose position where the bar should appear. The top of page or on the bottom.', LANGBF_TD ); ?></small>
 								</td>
@@ -116,8 +117,8 @@
 								<td><?php _e( 'Side of flags', LANGBF_TD ); ?></td>
 								<td>
 									<select name="langbf_side">
-										<option value="left" <?php selected( get_option('langbf_side'), 'left' ); ?> ><?php _e( 'Left', LANGBF_TD ); ?></option>
-										<option value="right" <?php selected( get_option('langbf_side'), 'right' ); ?> ><?php _e( 'Right', LANGBF_TD ); ?></option>
+										<option value="left" <?php selected( get_option( 'langbf_side' ), 'left' ); ?> ><?php _e( 'Left', LANGBF_TD ); ?></option>
+										<option value="right" <?php selected( get_option( 'langbf_side' ), 'right' ); ?> ><?php _e( 'Right', LANGBF_TD ); ?></option>
 									</select>
 									<br /><small><?php _e( 'Choose side of the bar where flags should appear. Left or right side of bar.', LANGBF_TD ); ?></small>
 								</td>
@@ -126,8 +127,8 @@
 								<td><?php _e( 'Disable WP bar?', LANGBF_TD ); ?></td>
 								<td>
 									<select name="langbf_disable_wpbar">
-										<option value="no" <?php selected( get_option('langbf_disable_wpbar'), 'no' ); ?> ><?php _e( 'No', LANGBF_TD ); ?></option>
-										<option value="yes" <?php selected( get_option('langbf_disable_wpbar'), 'yes' ); ?> ><?php _e( 'Yes', LANGBF_TD ); ?></option>
+										<option value="no" <?php selected( get_option( 'langbf_disable_wpbar' ), 'no' ); ?> ><?php _e( 'No', LANGBF_TD ); ?></option>
+										<option value="yes" <?php selected( get_option( 'langbf_disable_wpbar' ), 'yes' ); ?> ><?php _e( 'Yes', LANGBF_TD ); ?></option>
 									</select>
 									<br /><small><?php _e( 'If "YES" is selected, then plugin will disable WordPress Admin bar.', LANGBF_TD ); ?></small>
 								</td>
@@ -136,8 +137,8 @@
 								<td><?php _e( 'Open links in new window?', LANGBF_TD ); ?></td>
 								<td>
 									<select name="langbf_new_window">
-										<option value="no" <?php selected( get_option('langbf_new_window'), 'no' ); ?> ><?php _e( 'No', LANGBF_TD ); ?></option>
-										<option value="yes" <?php selected( get_option('langbf_new_window'), 'yes' ); ?> ><?php _e( 'Yes', LANGBF_TD ); ?></option>
+										<option value="no" <?php selected( get_option( 'langbf_new_window' ), 'no' ); ?> ><?php _e( 'No', LANGBF_TD ); ?></option>
+										<option value="yes" <?php selected( get_option( 'langbf_new_window' ), 'yes' ); ?> ><?php _e( 'Yes', LANGBF_TD ); ?></option>
 									</select>
 									<br /><small><?php _e( 'If "YES" is selected, then links on site will be open in new window.', LANGBF_TD ); ?></small>
 								</td>
