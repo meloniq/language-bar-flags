@@ -1,0 +1,905 @@
+# Copyright (C) 2013 MELONIQ.NET
+# This file is distributed under the same license as the Language Bar Flags package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Language Bar Flags 1.0.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/language-bar-flags\n"
+"POT-Creation-Date: 2013-02-03 18:44+0100\n"
+"PO-Revision-Date: 2014-05-22 14:05+0200\n"
+"Last-Translator: Michael Yunat <Michael.Yunat@gmail.com>\n"
+"Language-Team: http://getvoip.com/\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_nx:1,2;_x:1,2c;_ex:1,2c;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:1,2,3c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin_settings.php:4
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Ви не маєте достатньо прав для доступу до цієї сторінки."
+
+#: ../admin_settings.php:31
+msgid "Settings saved"
+msgstr "Налаштування, збережені"
+
+#: ../admin_settings.php:65
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: ../admin_settings.php:71 ../admin_settings.php:83
+msgid "General"
+msgstr "Загальний"
+
+#: ../admin_settings.php:72
+msgid "Europe"
+msgstr "Європа"
+
+#: ../admin_settings.php:73
+msgid "America"
+msgstr "Америка"
+
+#: ../admin_settings.php:74
+msgid "Asia + Oceania"
+msgstr "Азія + Океанія"
+
+#: ../admin_settings.php:75
+msgid "Africa"
+msgstr "Африка"
+
+#: ../admin_settings.php:89
+msgid "Activate bar?"
+msgstr "Активуйте бар?"
+
+#: ../admin_settings.php:92 ../admin_settings.php:129
+#: ../admin_settings.php:139
+msgid "No"
+msgstr "Ні"
+
+#: ../admin_settings.php:93 ../admin_settings.php:130
+#: ../admin_settings.php:140
+msgid "Yes"
+msgstr "Так"
+
+#: ../admin_settings.php:95
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr ""
+"Якщо \"Так \" обраний, то плагін буде додати панель з мовними прапорів."
+
+#: ../admin_settings.php:99
+msgid "Title of bar"
+msgstr "Назва бару"
+
+#: ../admin_settings.php:102
+msgid "Title will be displayed on a bar, right before flags."
+msgstr "Назва буде відображатися на панелі, прямо перед прапорами."
+
+#: ../admin_settings.php:106
+msgid "Position of bar"
+msgstr "Положення бар"
+
+#: ../admin_settings.php:109
+msgid "Top"
+msgstr "Топ"
+
+#: ../admin_settings.php:110
+msgid "Bottom"
+msgstr "Дно"
+
+#: ../admin_settings.php:112
+msgid ""
+"Choose position where the bar should appear. The top of page or on the "
+"bottom."
+msgstr ""
+"Виберіть позицію, в якій повинен з'явитися в барі. Вгорі сторінки або на "
+
+#: ../admin_settings.php:116
+msgid "Side of flags"
+msgstr "Сторона прапорів"
+
+#: ../admin_settings.php:119
+msgid "Left"
+msgstr "Зліва"
+
+#: ../admin_settings.php:120
+msgid "Right"
+msgstr "Право"
+
+#: ../admin_settings.php:122
+msgid ""
+"Choose side of the bar where flags should appear. Left or right side of bar."
+msgstr ""
+"Виберіть сторону бару, де прапори повинні з'явитися. Лівою або правій "
+"стороні бару."
+
+#: ../admin_settings.php:126
+msgid "Disable WP bar?"
+msgstr "Відключення WP бар?"
+
+#: ../admin_settings.php:132
+msgid "If \"YES\" is selected, then plugin will disable WordPress Admin bar."
+msgstr "Якщо \"Так \" обраний, то плагін буде відключити бар WordPress Admin."
+
+#: ../admin_settings.php:136
+msgid "Open links in new window?"
+msgstr "Відкривати посилання в новому вікні?"
+
+#: ../admin_settings.php:142
+msgid "If \"YES\" is selected, then links on site will be open in new window."
+msgstr ""
+"Якщо  \"Так \" обраний, то посилання на сайт буде відкритий в новому вікні."
+
+#: ../admin_settings.php:154 ../admin_settings.php:186
+#: ../admin_settings.php:218 ../admin_settings.php:250
+msgid "Country"
+msgstr "Країна"
+
+#: ../admin_settings.php:155 ../admin_settings.php:187
+#: ../admin_settings.php:219 ../admin_settings.php:251
+msgid "Active"
+msgstr "Активний"
+
+#: ../admin_settings.php:156 ../admin_settings.php:188
+#: ../admin_settings.php:220 ../admin_settings.php:252
+msgid "Alternative Name"
+msgstr "Альтернативна Ім'я"
+
+#: ../admin_settings.php:157 ../admin_settings.php:189
+#: ../admin_settings.php:221 ../admin_settings.php:253
+msgid "URL"
+msgstr "URL"
+
+#: ../admin_settings.php:169 ../admin_settings.php:201
+#: ../admin_settings.php:233 ../admin_settings.php:265
+msgid "Alternative country name. Default is: "
+msgstr "Альтернативне назва країни. За замовчуванням:"
+
+#: ../admin_settings.php:173 ../admin_settings.php:205
+#: ../admin_settings.php:237 ../admin_settings.php:269
+msgid "URL address where link should point to."
+msgstr "Адреса сайту, де посилання повинне вказувати на."
+
+#: ../admin_settings.php:278
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: ../countries.php:85
+msgid "Austria"
+msgstr "Австрія"
+
+#: ../countries.php:86
+msgid "Albania"
+msgstr "Албанія"
+
+#: ../countries.php:87
+msgid "Belgium"
+msgstr "Бельгія"
+
+#: ../countries.php:88
+msgid "Bulgaria"
+msgstr "Болгарія"
+
+#: ../countries.php:89
+msgid "Belarus"
+msgstr "Білорусь"
+
+#: ../countries.php:90
+msgid "Switzerland"
+msgstr "Швейцарія"
+
+#: ../countries.php:91
+msgid "Czech Republic"
+msgstr "Чеська республіка"
+
+#: ../countries.php:92
+msgid "Germany"
+msgstr "Німеччина"
+
+#: ../countries.php:93
+msgid "Denmark"
+msgstr "Данія"
+
+#: ../countries.php:94
+msgid "Estonia"
+msgstr "Естонія"
+
+#: ../countries.php:95
+msgid "Spain"
+msgstr "Іспанія"
+
+#: ../countries.php:96
+msgid "Finland"
+msgstr "Фінляндія"
+
+#: ../countries.php:97
+msgid "France"
+msgstr "Франція"
+
+#: ../countries.php:98
+msgid "Greece"
+msgstr "Греція"
+
+#: ../countries.php:99
+msgid "Croatia"
+msgstr "Хорватія"
+
+#: ../countries.php:100
+msgid "Hungary"
+msgstr "Угорщина"
+
+#: ../countries.php:101
+msgid "Ireland"
+msgstr "Ірландія"
+
+#: ../countries.php:102
+msgid "Iceland"
+msgstr "Ісландія"
+
+#: ../countries.php:103
+msgid "Italy"
+msgstr "Італія"
+
+#: ../countries.php:104
+msgid "Liechtenstein"
+msgstr "Ліхтенштейн"
+
+#: ../countries.php:105
+msgid "Lithuania"
+msgstr "Литва"
+
+#: ../countries.php:106
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+#: ../countries.php:107
+msgid "Latvia"
+msgstr "Латвія"
+
+#: ../countries.php:108
+msgid "Montenegro"
+msgstr "Чорногорія"
+
+#: ../countries.php:109
+msgid "Malta"
+msgstr "Мальта"
+
+#: ../countries.php:110
+msgid "Netherlands"
+msgstr "Нідерланди"
+
+#: ../countries.php:111
+msgid "Norway"
+msgstr "Норвегія"
+
+#: ../countries.php:112
+msgid "Poland"
+msgstr "Польща"
+
+#: ../countries.php:113
+msgid "Portugal"
+msgstr "Португалія"
+
+#: ../countries.php:114
+msgid "Romania"
+msgstr "Румунія"
+
+#: ../countries.php:115
+msgid "Serbia"
+msgstr "Сербія"
+
+#: ../countries.php:116
+msgid "Russian Federation"
+msgstr "Російський Федерація"
+
+#: ../countries.php:117
+msgid "Sweden"
+msgstr "Швеція"
+
+#: ../countries.php:118
+msgid "Slovenia"
+msgstr "Словенія"
+
+#: ../countries.php:119
+msgid "Slovakia"
+msgstr "Словаччина"
+
+#: ../countries.php:120
+msgid "Turkey"
+msgstr "Туреччина"
+
+#: ../countries.php:121
+msgid "Ukraine"
+msgstr "Україна"
+
+#: ../countries.php:122
+msgid "United Kingdom"
+msgstr "Великобританія"
+
+#: ../countries.php:215
+msgid "Argentina"
+msgstr "Аргентина"
+
+#: ../countries.php:216
+msgid "Bahamas"
+msgstr "Багамські острови"
+
+#: ../countries.php:217
+msgid "Barbados"
+msgstr "Барбадос"
+
+#: ../countries.php:218
+msgid "Belize"
+msgstr "Беліз"
+
+#: ../countries.php:219
+msgid "Bolivia"
+msgstr "Болівія"
+
+#: ../countries.php:220
+msgid "Brazil"
+msgstr "Бразилія"
+
+#: ../countries.php:221
+msgid "Canada"
+msgstr "Канада"
+
+#: ../countries.php:222
+msgid "Chile"
+msgstr "Чилі"
+
+#: ../countries.php:223
+msgid "Colombia"
+msgstr "Колумбія"
+
+#: ../countries.php:224
+msgid "Costa Rica"
+msgstr "Коста-Ріка"
+
+#: ../countries.php:225
+msgid "Cuba"
+msgstr "Куба"
+
+#: ../countries.php:226
+msgid "Dominica"
+msgstr "Домініка"
+
+#: ../countries.php:227
+msgid "Dominican Republic"
+msgstr "Домініканська Республіка"
+
+#: ../countries.php:228
+msgid "Ecuador"
+msgstr "Еквадор"
+
+#: ../countries.php:229
+msgid "El Salvador"
+msgstr "Сальвадор"
+
+#: ../countries.php:230
+msgid "Grenada"
+msgstr "Гренада"
+
+#: ../countries.php:231
+msgid "Guatemala"
+msgstr "Гватемала"
+
+#: ../countries.php:232
+msgid "Guyana"
+msgstr "Гайана"
+
+#: ../countries.php:233
+msgid "Haiti"
+msgstr "Гаїті"
+
+#: ../countries.php:234
+msgid "Honduras"
+msgstr "Гондурас"
+
+#: ../countries.php:235
+msgid "Jamaica"
+msgstr "Ямайка"
+
+#: ../countries.php:236
+msgid "Mexico"
+msgstr "Мексика"
+
+#: ../countries.php:237
+msgid "Nicaragua"
+msgstr "Нікарагуа"
+
+#: ../countries.php:238
+msgid "Panama"
+msgstr "Панама"
+
+#: ../countries.php:239
+msgid "Paraguay"
+msgstr "Парагвай"
+
+#: ../countries.php:240
+msgid "Peru"
+msgstr "Перу"
+
+#: ../countries.php:241
+msgid "Puerto Rico"
+msgstr "Пуерто-Ріко"
+
+#: ../countries.php:242
+msgid "Suriname"
+msgstr "Суринам"
+
+#: ../countries.php:243
+msgid "Trinidad and Tobago"
+msgstr "Тринідад і Тобаго"
+
+#: ../countries.php:244
+msgid "United States"
+msgstr "США"
+
+#: ../countries.php:245
+msgid "Uruguay"
+msgstr "Уругвай"
+
+#: ../countries.php:246
+msgid "Venezuela"
+msgstr "Венесуела"
+
+#: ../countries.php:368
+msgid "Afghanistan"
+msgstr "Афганістан"
+
+#: ../countries.php:369
+msgid "Armenia"
+msgstr "Вірменія"
+
+#: ../countries.php:370
+msgid "Australia"
+msgstr "Австралія"
+
+#: ../countries.php:371
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+#: ../countries.php:372
+msgid "Bahrain"
+msgstr "Бахрейн"
+
+#: ../countries.php:373
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+#: ../countries.php:374
+msgid "Bhutan"
+msgstr "Бутан"
+
+#: ../countries.php:375
+msgid "Brunei"
+msgstr "Бруней"
+
+#: ../countries.php:376
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+#: ../countries.php:377
+msgid "China"
+msgstr "Китай"
+
+#: ../countries.php:378
+msgid "Cyprus"
+msgstr "Кіпр"
+
+#: ../countries.php:379
+msgid "Georgia"
+msgstr "Грузія"
+
+#: ../countries.php:380
+msgid "Hong Kong"
+msgstr "Гонконг"
+
+#: ../countries.php:381
+msgid "India"
+msgstr "Індія"
+
+#: ../countries.php:382
+msgid "Indonesia"
+msgstr "Індонезія"
+
+#: ../countries.php:383
+msgid "Iran"
+msgstr "Іран"
+
+#: ../countries.php:384
+msgid "Iraq"
+msgstr "Ірак"
+
+#: ../countries.php:385
+msgid "Israel"
+msgstr "Ізраїль"
+
+#: ../countries.php:386
+msgid "Japan"
+msgstr "Японія"
+
+#: ../countries.php:387
+msgid "Jordan"
+msgstr "Йорданія"
+
+#: ../countries.php:388
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+#: ../countries.php:389
+msgid "Kuwait"
+msgstr "Кувейт"
+
+#: ../countries.php:390
+msgid "Kyrgyzstan"
+msgstr "Киргизія"
+
+#: ../countries.php:391
+msgid "Laos"
+msgstr "Лаос"
+
+#: ../countries.php:392
+msgid "Lebanon"
+msgstr "Ліван"
+
+#: ../countries.php:393
+msgid "Malaysia"
+msgstr "Малайзія"
+
+#: ../countries.php:394
+msgid "Maldives"
+msgstr "Мальдіви"
+
+#: ../countries.php:395
+msgid "Mongolia"
+msgstr "Монголія"
+
+#: ../countries.php:396
+msgid "Myanmar"
+msgstr "М'янма"
+
+#: ../countries.php:397
+msgid "Nepal"
+msgstr "Непал"
+
+#: ../countries.php:398
+msgid "New Zealand"
+msgstr "Нова Зеландія"
+
+#: ../countries.php:399
+msgid "North Korea"
+msgstr "Північна Корея"
+
+#: ../countries.php:400
+msgid "Oman"
+msgstr "Оман"
+
+#: ../countries.php:401
+msgid "Pakistan"
+msgstr "Пакистан"
+
+#: ../countries.php:402
+msgid "Papua New Guinea"
+msgstr "Папуа-Нова Гвінея"
+
+#: ../countries.php:403
+msgid "Philippines"
+msgstr "Філіппіни"
+
+#: ../countries.php:404
+msgid "Qatar"
+msgstr "Катар"
+
+#: ../countries.php:405
+msgid "Saudi Arabia"
+msgstr "Саудівська Аравія"
+
+#: ../countries.php:406
+msgid "Singapore"
+msgstr "Сінгапур"
+
+#: ../countries.php:407
+msgid "South Korea"
+msgstr "Південна Корея"
+
+#: ../countries.php:408
+msgid "Sri Lanka"
+msgstr "Шрі Ланка"
+
+#: ../countries.php:409
+msgid "Syria"
+msgstr "Сирія"
+
+#: ../countries.php:410
+msgid "Taiwan"
+msgstr "Тайвань"
+
+#: ../countries.php:411
+msgid "Tajikistan"
+msgstr "Таджикистан"
+
+#: ../countries.php:412
+msgid "Thailand"
+msgstr "Таїланд"
+
+#: ../countries.php:413
+msgid "Timor-Leste"
+msgstr "Тимор-Лешті"
+
+#: ../countries.php:414
+msgid "Turkmenistan"
+msgstr "Туркменистан"
+
+#: ../countries.php:415
+msgid "United Arab Emirates"
+msgstr "Об'єднані Арабські Емірати"
+
+#: ../countries.php:416
+msgid "Uzbekistan"
+msgstr "Узбекистан"
+
+#: ../countries.php:417
+msgid "Vietnam"
+msgstr "В'єтнам"
+
+#: ../countries.php:418
+msgid "Yemen"
+msgstr "Ємен"
+
+#: ../countries.php:524
+msgid "Algeria"
+msgstr "Алжир"
+
+#: ../countries.php:525
+msgid "Angola"
+msgstr "Ангола"
+
+#: ../countries.php:526
+msgid "Benin"
+msgstr "Бенін"
+
+#: ../countries.php:527
+msgid "Botswana"
+msgstr "Ботсвана"
+
+#: ../countries.php:528
+msgid "Burkina Faso"
+msgstr "Буркіна-Фасо"
+
+#: ../countries.php:529
+msgid "Burundi"
+msgstr "Бурунді"
+
+#: ../countries.php:530
+msgid "Cameroon"
+msgstr "Камерун"
+
+#: ../countries.php:531
+msgid "Cape Verde"
+msgstr "Кабо-Верде"
+
+#: ../countries.php:532
+msgid "Central African Republic"
+msgstr "Центрально-Африканська Республіка"
+
+#: ../countries.php:533
+msgid "Chad"
+msgstr "Чад"
+
+#: ../countries.php:534
+msgid "Comoros"
+msgstr "Коморські острови"
+
+#: ../countries.php:535
+msgid "Republic of the Congo"
+msgstr "Республіка Конго"
+
+#: ../countries.php:536
+msgid "Democratic Republic of the Congo"
+msgstr "Демократична Республіка Конго"
+
+#: ../countries.php:537
+msgid "Côte d'Ivoire"
+msgstr "Берег Слонової Кістки"
+
+#: ../countries.php:538
+msgid "Djibouti"
+msgstr "Джібуті"
+
+#: ../countries.php:539
+msgid "Egypt"
+msgstr "Єгипет"
+
+#: ../countries.php:540
+msgid "Equatorial Guinea"
+msgstr "Екваторіальна Гвінея"
+
+#: ../countries.php:541
+msgid "Eritrea"
+msgstr "Еритрея"
+
+#: ../countries.php:542
+msgid "Ethiopia"
+msgstr "Ефіопія"
+
+#: ../countries.php:543
+msgid "Gabon"
+msgstr "Габон"
+
+#: ../countries.php:544
+msgid "Gambia"
+msgstr "Гамбія"
+
+#: ../countries.php:545
+msgid "Ghana"
+msgstr "Гана"
+
+#: ../countries.php:546
+msgid "Guinea"
+msgstr "Гвінея"
+
+#: ../countries.php:547
+msgid "Guinea-Bissau"
+msgstr "Гвінея-Бісау"
+
+#: ../countries.php:548
+msgid "Kenya"
+msgstr "Кенія"
+
+#: ../countries.php:549
+msgid "Lesotho"
+msgstr "Лесото"
+
+#: ../countries.php:550
+msgid "Liberia"
+msgstr "Ліберія"
+
+#: ../countries.php:551
+msgid "Libya"
+msgstr "Лівія"
+
+#: ../countries.php:552
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+#: ../countries.php:553
+msgid "Malawi"
+msgstr "Малаві"
+
+#: ../countries.php:554
+msgid "Mali"
+msgstr "Малі"
+
+#: ../countries.php:555
+msgid "Mauritania"
+msgstr "Мавританія"
+
+#: ../countries.php:556
+msgid "Mauritius"
+msgstr "Маврикій"
+
+#: ../countries.php:557
+msgid "Morocco"
+msgstr "Марокко"
+
+#: ../countries.php:558
+msgid "Mozambique"
+msgstr "Мозамбік"
+
+#: ../countries.php:559
+msgid "Namibia"
+msgstr "Намібія"
+
+#: ../countries.php:560
+msgid "Niger"
+msgstr "Нігер"
+
+#: ../countries.php:561
+msgid "Nigeria"
+msgstr "Нігерія"
+
+#: ../countries.php:562
+msgid "Rwanda"
+msgstr "Руанда"
+
+#: ../countries.php:563
+msgid "São Tomé and Príncipe"
+msgstr "Сан-Томе і Прінсіпі"
+
+#: ../countries.php:564
+msgid "Senegal"
+msgstr "Сенегал"
+
+#: ../countries.php:565
+msgid "Seychelles"
+msgstr "Сейшельські острови"
+
+#: ../countries.php:566
+msgid "Sierra Leone"
+msgstr "Сьєрра-Леоне"
+
+#: ../countries.php:567
+msgid "Somalia"
+msgstr "Сомалі"
+
+#: ../countries.php:568
+msgid "South Africa"
+msgstr "ПАР"
+
+#: ../countries.php:569
+msgid "Sudan"
+msgstr "Судан"
+
+#: ../countries.php:570
+msgid "Swaziland"
+msgstr "Свазіленд"
+
+#: ../countries.php:571
+msgid "Tanzania"
+msgstr "Танзанія"
+
+#: ../countries.php:572
+msgid "Togo"
+msgstr "Того"
+
+#: ../countries.php:573
+msgid "Tunisia"
+msgstr "Туніс"
+
+#: ../countries.php:574
+msgid "Uganda"
+msgstr "Уганда"
+
+#: ../countries.php:575
+msgid "Zambia"
+msgstr "Замбія"
+
+#: ../countries.php:576
+msgid "Zimbabwe"
+msgstr "Зімбабве"
+
+#: ../language-bar-flags.php:226
+msgid "Language Bar Flags"
+msgstr "Мова Бар Прапори"
+
+#: ../language-bar-flags.php:252
+msgid ""
+"You are not using any of AppThemes Premium Themes, check what You are "
+"missing."
+msgstr ""
+"Ви не використовуєте будь-який з AppThemes преміум теми, перевірити, що Ви "
+
+#: ../language-bar-flags.php:253 ../language-bar-flags.php:261
+#, php-format
+msgid " <a target=\"_blank\" href=\" %s\">Show me themes!</a>"
+msgstr "<a target=\"_blank\" href=\" %s\">Покажіть мені теми!</a>"
+
+#: ../language-bar-flags.php:260
+msgid ""
+"You are not using any of Elegant Premium Themes, check what You are missing."
+msgstr ""
+"Ви не використовуєте будь-який з Elegant преміум теми, перевірити, що вас не "
+"вистачає."
+
+#: ../includes/wp-app-store.php:155
+msgid ""
+"Sorry, we could not reach the WP App Store to setup the auto installer. "
+"Please try again later."
+msgstr ""
+"На жаль, ми не могли дістатися до WP App Store для установки автоматичної "
+"установки. Будь ласка, спробуйте пізніше."
+
+#: ../includes/wp-app-store.php:156
+msgid ""
+"In the meantime, you can try checking us out at <a href=\"http://wpappstore."
+"com/\">http://wpappstore.com/</a>."
+msgstr ""
+"У той же час, ви можете спробувати перевірки нас на <a href=\"http://"
+"wpappstore.com/\">http://wpappstore.com/</a> . "

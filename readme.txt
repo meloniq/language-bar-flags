@@ -28,9 +28,10 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 = Available languages =
 * English
 * French (by Frédéric Serva)
+* Polish
 * Serbo-Croatian (by Borisa Djuraskovic from <a href="http://www.webhostinghub.com/">WebHostingHub</a>)
 * Slovak (by Branco Radenovich from <a href="http://webhostinggeeks.com/user-reviews/">WebHostingGeeks</a>)
-* Polish
+* Ukrainian (by Michael Yunat from <a href="http://getvoip.com/blog/">Get VoIP</a>)
 
 If You translated plugin to Your native language, please send it to me, and will attach it to next release.
 E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">contact page</a>.
