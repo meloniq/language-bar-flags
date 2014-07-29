@@ -4,7 +4,7 @@
 	Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
 	Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
 	Author: MELONIQ.NET
-	Version: 1.0.6
+	Version: 1.0.7
 	Author URI: http://blog.meloniq.net
 */
 

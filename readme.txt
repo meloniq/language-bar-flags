@@ -3,8 +3,8 @@ Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 1.0.6
+Tested up to: 3.9.1
+Stable tag: 1.0.7
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -29,12 +29,12 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 * English
 * French (by Frédéric Serva)
 * Polish
-* Serbo-Croatian (by Borisa Djuraskovic from <a href="http://www.webhostinghub.com/">WebHostingHub</a>)
-* Slovak (by Branco Radenovich from <a href="http://webhostinggeeks.com/user-reviews/">WebHostingGeeks</a>)
-* Ukrainian (by Michael Yunat from <a href="http://getvoip.com/blog/">Get VoIP</a>)
+* Serbo-Croatian (by Borisa Djuraskovic from [WebHostingHub](http://www.webhostinghub.com/))
+* Slovak (by Branco Radenovich from [WebHostingGeeks](http://webhostinggeeks.com/user-reviews/))
+* Ukrainian (by Michael Yunat from [IP Host Monitor](http://www.iphostmonitor.com/))
 
 If You translated plugin to Your native language, please send it to me, and will attach it to next release.
-E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">contact page</a>.
+E-mail address You will find on [contact page](http://blog.meloniq.net/kontakt/).
 
 
 
@@ -45,6 +45,9 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.0.7 =
+* Added Ukrainian translation
 
 = 1.0.6 =
 * Added Serbo-Croatian translation
@@ -93,16 +96,20 @@ E-mail address You will find on <a href="http://blog.meloniq.net/kontakt/">conta
 
 = Why my country is not supported? =
 
-Report it with details on <a href="http://wordpress.org/tags/language-bar-flags">support forum</a>.
+Report it with details on [support forum](http://wordpress.org/tags/language-bar-flags).
 
 = My country name is translated wrong, what to do? =
 
-Report it with details on <a href="http://wordpress.org/tags/language-bar-flags">support forum</a>.
+Report it with details on [support forum](http://wordpress.org/tags/language-bar-flags).
 
 = Will this plugin translate my website? =
 
 No, this plugin help to create cute links with flags to other versions of Your website.
 For multilanguage content support, check plugins like qTranslate, mLanguage etc.
+
+= How can I contribute? =
+
+Fork repo from [GitHub](https://github.com/meloniq/language-bar-flags) and open PR.
 
 
 == Screenshots ==
