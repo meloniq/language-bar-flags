@@ -54,8 +54,10 @@ if ( is_admin() ) {
  * Load front-end scripts
  */
 function langbf_load_scripts() {
-	wp_register_script( 'langbf_tooltip', plugins_url( '/js/tooltip.slide.js', __FILE__ ), array( 'jquery' ) );
-	wp_enqueue_script( 'langbf_tooltip' );
+	if ( ! wp_is_mobile() ) {
+		wp_register_script( 'langbf_tooltip', plugins_url( '/js/tooltip.slide.js', __FILE__ ), array( 'jquery' ) );
+		wp_enqueue_script( 'langbf_tooltip' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'langbf_load_scripts' );
 
@@ -226,12 +228,14 @@ function langbf_load_js() {
 	<script type="text/javascript">
 	// <![CDATA[
 	jQuery(document).ready( function(){
-		jQuery("#langbf_bar a[title]").tooltip( {
-			offset: [<?php echo esc_js( $tooltip['offset'] ); ?>],
-			position: '<?php echo esc_js( $tooltip['position'] ); ?>',
-			effect: '<?php echo esc_js( $tooltip['effect'] ); ?>',
-			tipClass: '<?php echo esc_js( $tooltip['class'] ); ?>'
-		} );
+		if ( jQuery.isFunction( jQuery.fn.tooltip ) ) {
+			jQuery("#langbf_bar a[title]").tooltip( {
+				offset: [<?php echo esc_js( $tooltip['offset'] ); ?>],
+				position: '<?php echo esc_js( $tooltip['position'] ); ?>',
+				effect: '<?php echo esc_js( $tooltip['effect'] ); ?>',
+				tipClass: '<?php echo esc_js( $tooltip['class'] ); ?>'
+			} );
+		}
 	} );
 	// ]]>
 	</script>
