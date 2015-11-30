@@ -1,9 +1,15 @@
 /* EUROPE */
+.langbf_ad { background: url("images/flag_ad.png") no-repeat scroll center top transparent; }
+.langbf_ad:hover { background: url("images/flag_ad.png") no-repeat scroll center bottom transparent; }
+
 .langbf_al { background: url("images/flag_al.png") no-repeat scroll center top transparent; }
 .langbf_al:hover { background: url("images/flag_al.png") no-repeat scroll center bottom transparent; }
 
 .langbf_at { background: url("images/flag_at.png") no-repeat scroll center top transparent; }
 .langbf_at:hover { background: url("images/flag_at.png") no-repeat scroll center bottom transparent; }
+
+.langbf_ba { background: url("images/flag_ba.png") no-repeat scroll center top transparent; }
+.langbf_ba:hover { background: url("images/flag_ba.png") no-repeat scroll center bottom transparent; }
 
 .langbf_be { background: url("images/flag_be.png") no-repeat scroll center top transparent; }
 .langbf_be:hover { background: url("images/flag_be.png") no-repeat scroll center bottom transparent; }
@@ -35,8 +41,17 @@
 .langbf_fi { background: url("images/flag_fi.png") no-repeat scroll center top transparent; }
 .langbf_fi:hover { background: url("images/flag_fi.png") no-repeat scroll center bottom transparent; }
 
+.langbf_fo { background: url("images/flag_fo.png") no-repeat scroll center top transparent; }
+.langbf_fo:hover { background: url("images/flag_fo.png") no-repeat scroll center bottom transparent; }
+
 .langbf_fr { background: url("images/flag_fr.png") no-repeat scroll center top transparent; }
 .langbf_fr:hover { background: url("images/flag_fr.png") no-repeat scroll center bottom transparent; }
+
+.langbf_gg { background: url("images/flag_gg.png") no-repeat scroll center top transparent; }
+.langbf_gg:hover { background: url("images/flag_gg.png") no-repeat scroll center bottom transparent; }
+
+.langbf_gi { background: url("images/flag_gi.png") no-repeat scroll center top transparent; }
+.langbf_gi:hover { background: url("images/flag_gi.png") no-repeat scroll center bottom transparent; }
 
 .langbf_gr { background: url("images/flag_gr.png") no-repeat scroll center top transparent; }
 .langbf_gr:hover { background: url("images/flag_gr.png") no-repeat scroll center bottom transparent; }
@@ -50,11 +65,17 @@
 .langbf_ie { background: url("images/flag_ie.png") no-repeat scroll center top transparent; }
 .langbf_ie:hover { background: url("images/flag_ie.png") no-repeat scroll center bottom transparent; }
 
+.langbf_im { background: url("images/flag_im.png") no-repeat scroll center top transparent; }
+.langbf_im:hover { background: url("images/flag_im.png") no-repeat scroll center bottom transparent; }
+
 .langbf_is { background: url("images/flag_is.png") no-repeat scroll center top transparent; }
 .langbf_is:hover { background: url("images/flag_is.png") no-repeat scroll center bottom transparent; }
 
 .langbf_it { background: url("images/flag_it.png") no-repeat scroll center top transparent; }
 .langbf_it:hover { background: url("images/flag_it.png") no-repeat scroll center bottom transparent; }
+
+.langbf_je { background: url("images/flag_je.png") no-repeat scroll center top transparent; }
+.langbf_je:hover { background: url("images/flag_je.png") no-repeat scroll center bottom transparent; }
 
 .langbf_li { background: url("images/flag_li.png") no-repeat scroll center top transparent; }
 .langbf_li:hover { background: url("images/flag_li.png") no-repeat scroll center bottom transparent; }
@@ -68,11 +89,23 @@
 .langbf_lv { background: url("images/flag_lv.png") no-repeat scroll center top transparent; }
 .langbf_lv:hover { background: url("images/flag_lv.png") no-repeat scroll center bottom transparent; }
 
+.langbf_mc { background: url("images/flag_mc.png") no-repeat scroll center top transparent; }
+.langbf_mc:hover { background: url("images/flag_mc.png") no-repeat scroll center bottom transparent; }
+
+.langbf_md { background: url("images/flag_md.png") no-repeat scroll center top transparent; }
+.langbf_md:hover { background: url("images/flag_md.png") no-repeat scroll center bottom transparent; }
+
 .langbf_me { background: url("images/flag_me.png") no-repeat scroll center top transparent; }
 .langbf_me:hover { background: url("images/flag_me.png") no-repeat scroll center bottom transparent; }
 
+.langbf_mk { background: url("images/flag_mk.png") no-repeat scroll center top transparent; }
+.langbf_mk:hover { background: url("images/flag_mk.png") no-repeat scroll center bottom transparent; }
+
 .langbf_mt { background: url("images/flag_mt.png") no-repeat scroll center top transparent; }
 .langbf_mt:hover { background: url("images/flag_mt.png") no-repeat scroll center bottom transparent; }
+
+.langbf_nc-tr { background: url("images/flag_nc-tr.png") no-repeat scroll center top transparent; }
+.langbf_nc-tr:hover { background: url("images/flag_nc-tr.png") no-repeat scroll center bottom transparent; }
 
 .langbf_nl { background: url("images/flag_nl.png") no-repeat scroll center top transparent; }
 .langbf_nl:hover { background: url("images/flag_nl.png") no-repeat scroll center bottom transparent; }
@@ -104,6 +137,9 @@
 .langbf_sk { background: url("images/flag_sk.png") no-repeat scroll center top transparent; }
 .langbf_sk:hover { background: url("images/flag_sk.png") no-repeat scroll center bottom transparent; }
 
+.langbf_sm { background: url("images/flag_sm.png") no-repeat scroll center top transparent; }
+.langbf_sm:hover { background: url("images/flag_sm.png") no-repeat scroll center bottom transparent; }
+
 .langbf_tr { background: url("images/flag_tr.png") no-repeat scroll center top transparent; }
 .langbf_tr:hover { background: url("images/flag_tr.png") no-repeat scroll center bottom transparent; }
 
@@ -113,13 +149,31 @@
 .langbf_uk { background: url("images/flag_uk.png") no-repeat scroll center top transparent; }
 .langbf_uk:hover { background: url("images/flag_uk.png") no-repeat scroll center bottom transparent; }
 
+.langbf_va { background: url("images/flag_va.png") no-repeat scroll center top transparent; }
+.langbf_va:hover { background: url("images/flag_va.png") no-repeat scroll center bottom transparent; }
+
+.langbf_xk { background: url("images/flag_xk.png") no-repeat scroll center top transparent; }
+.langbf_xk:hover { background: url("images/flag_xk.png") no-repeat scroll center bottom transparent; }
+
 
 /* AMERICAS */
+.langbf_ag { background: url("images/flag_ag.png") no-repeat scroll center top transparent; }
+.langbf_ag:hover { background: url("images/flag_ag.png") no-repeat scroll center bottom transparent; }
+
+.langbf_ai { background: url("images/flag_ai.png") no-repeat scroll center top transparent; }
+.langbf_ai:hover { background: url("images/flag_ai.png") no-repeat scroll center bottom transparent; }
+
 .langbf_ar { background: url("images/flag_ar.png") no-repeat scroll center top transparent; }
 .langbf_ar:hover { background: url("images/flag_ar.png") no-repeat scroll center bottom transparent; }
 
+.langbf_aw { background: url("images/flag_aw.png") no-repeat scroll center top transparent; }
+.langbf_aw:hover { background: url("images/flag_aw.png") no-repeat scroll center bottom transparent; }
+
 .langbf_bb { background: url("images/flag_bb.png") no-repeat scroll center top transparent; }
 .langbf_bb:hover { background: url("images/flag_bb.png") no-repeat scroll center bottom transparent; }
+
+.langbf_bm { background: url("images/flag_bm.png") no-repeat scroll center top transparent; }
+.langbf_bm:hover { background: url("images/flag_bm.png") no-repeat scroll center bottom transparent; }
 
 .langbf_bo { background: url("images/flag_bo.png") no-repeat scroll center top transparent; }
 .langbf_bo:hover { background: url("images/flag_bo.png") no-repeat scroll center bottom transparent; }
@@ -160,6 +214,9 @@
 .langbf_gd { background: url("images/flag_gd.png") no-repeat scroll center top transparent; }
 .langbf_gd:hover { background: url("images/flag_gd.png") no-repeat scroll center bottom transparent; }
 
+.langbf_gl { background: url("images/flag_gl.png") no-repeat scroll center top transparent; }
+.langbf_gl:hover { background: url("images/flag_gl.png") no-repeat scroll center bottom transparent; }
+
 .langbf_gt { background: url("images/flag_gt.png") no-repeat scroll center top transparent; }
 .langbf_gt:hover { background: url("images/flag_gt.png") no-repeat scroll center bottom transparent; }
 
@@ -174,6 +231,18 @@
 
 .langbf_jm { background: url("images/flag_jm.png") no-repeat scroll center top transparent; }
 .langbf_jm:hover { background: url("images/flag_jm.png") no-repeat scroll center bottom transparent; }
+
+.langbf_kn { background: url("images/flag_kn.png") no-repeat scroll center top transparent; }
+.langbf_kn:hover { background: url("images/flag_kn.png") no-repeat scroll center bottom transparent; }
+
+.langbf_ky { background: url("images/flag_ky.png") no-repeat scroll center top transparent; }
+.langbf_ky:hover { background: url("images/flag_ky.png") no-repeat scroll center bottom transparent; }
+
+.langbf_lc { background: url("images/flag_lc.png") no-repeat scroll center top transparent; }
+.langbf_lc:hover { background: url("images/flag_lc.png") no-repeat scroll center bottom transparent; }
+
+.langbf_ms { background: url("images/flag_ms.png") no-repeat scroll center top transparent; }
+.langbf_ms:hover { background: url("images/flag_ms.png") no-repeat scroll center bottom transparent; }
 
 .langbf_mx { background: url("images/flag_mx.png") no-repeat scroll center top transparent; }
 .langbf_mx:hover { background: url("images/flag_mx.png") no-repeat scroll center bottom transparent; }
@@ -199,6 +268,9 @@
 .langbf_sv { background: url("images/flag_sv.png") no-repeat scroll center top transparent; }
 .langbf_sv:hover { background: url("images/flag_sv.png") no-repeat scroll center bottom transparent; }
 
+.langbf_tc { background: url("images/flag_tc.png") no-repeat scroll center top transparent; }
+.langbf_tc:hover { background: url("images/flag_tc.png") no-repeat scroll center bottom transparent; }
+
 .langbf_tt { background: url("images/flag_tt.png") no-repeat scroll center top transparent; }
 .langbf_tt:hover { background: url("images/flag_tt.png") no-repeat scroll center bottom transparent; }
 
@@ -208,8 +280,17 @@
 .langbf_uy { background: url("images/flag_uy.png") no-repeat scroll center top transparent; }
 .langbf_uy:hover { background: url("images/flag_uy.png") no-repeat scroll center bottom transparent; }
 
+.langbf_vc { background: url("images/flag_vc.png") no-repeat scroll center top transparent; }
+.langbf_vc:hover { background: url("images/flag_vc.png") no-repeat scroll center bottom transparent; }
+
 .langbf_ve { background: url("images/flag_ve.png") no-repeat scroll center top transparent; }
 .langbf_ve:hover { background: url("images/flag_ve.png") no-repeat scroll center bottom transparent; }
+
+.langbf_vg { background: url("images/flag_vg.png") no-repeat scroll center top transparent; }
+.langbf_vg:hover { background: url("images/flag_vg.png") no-repeat scroll center bottom transparent; }
+
+.langbf_vi { background: url("images/flag_vi.png") no-repeat scroll center top transparent; }
+.langbf_vi:hover { background: url("images/flag_vi.png") no-repeat scroll center bottom transparent; }
 
 
 /* ASIA + OCEANIA */
@@ -221,6 +302,9 @@
 
 .langbf_am { background: url("images/flag_am.png") no-repeat scroll center top transparent; }
 .langbf_am:hover { background: url("images/flag_am.png") no-repeat scroll center bottom transparent; }
+
+.langbf_as { background: url("images/flag_as.png") no-repeat scroll center top transparent; }
+.langbf_as:hover { background: url("images/flag_as.png") no-repeat scroll center bottom transparent; }
 
 .langbf_au { background: url("images/flag_au.png") no-repeat scroll center top transparent; }
 .langbf_au:hover { background: url("images/flag_au.png") no-repeat scroll center bottom transparent; }
@@ -240,14 +324,29 @@
 .langbf_bt { background: url("images/flag_bt.png") no-repeat scroll center top transparent; }
 .langbf_bt:hover { background: url("images/flag_bt.png") no-repeat scroll center bottom transparent; }
 
+.langbf_ck { background: url("images/flag_ck.png") no-repeat scroll center top transparent; }
+.langbf_ck:hover { background: url("images/flag_ck.png") no-repeat scroll center bottom transparent; }
+
+.langbf_cl { background: url("images/flag_cl.png") no-repeat scroll center top transparent; }
+.langbf_cl:hover { background: url("images/flag_cl.png") no-repeat scroll center bottom transparent; }
+
 .langbf_cn { background: url("images/flag_cn.png") no-repeat scroll center top transparent; }
 .langbf_cn:hover { background: url("images/flag_cn.png") no-repeat scroll center bottom transparent; }
 
 .langbf_cy { background: url("images/flag_cy.png") no-repeat scroll center top transparent; }
 .langbf_cy:hover { background: url("images/flag_cy.png") no-repeat scroll center bottom transparent; }
 
+.langbf_fj { background: url("images/flag_fj.png") no-repeat scroll center top transparent; }
+.langbf_fj:hover { background: url("images/flag_fj.png") no-repeat scroll center bottom transparent; }
+
+.langbf_fm { background: url("images/flag_fm.png") no-repeat scroll center top transparent; }
+.langbf_fm:hover { background: url("images/flag_fm.png") no-repeat scroll center bottom transparent; }
+
 .langbf_ge { background: url("images/flag_ge.png") no-repeat scroll center top transparent; }
 .langbf_ge:hover { background: url("images/flag_ge.png") no-repeat scroll center bottom transparent; }
+
+.langbf_gu { background: url("images/flag_gu.png") no-repeat scroll center top transparent; }
+.langbf_gu:hover { background: url("images/flag_gu.png") no-repeat scroll center bottom transparent; }
 
 .langbf_hk { background: url("images/flag_hk.png") no-repeat scroll center top transparent; }
 .langbf_hk:hover { background: url("images/flag_hk.png") no-repeat scroll center bottom transparent; }
@@ -276,6 +375,9 @@
 .langbf_kg { background: url("images/flag_kg.png") no-repeat scroll center top transparent; }
 .langbf_kg:hover { background: url("images/flag_kg.png") no-repeat scroll center bottom transparent; }
 
+.langbf_ki { background: url("images/flag_ki.png") no-repeat scroll center top transparent; }
+.langbf_ki:hover { background: url("images/flag_ki.png") no-repeat scroll center bottom transparent; }
+
 .langbf_kh { background: url("images/flag_kh.png") no-repeat scroll center top transparent; }
 .langbf_kh:hover { background: url("images/flag_kh.png") no-repeat scroll center bottom transparent; }
 
@@ -300,11 +402,17 @@
 .langbf_lk { background: url("images/flag_lk.png") no-repeat scroll center top transparent; }
 .langbf_lk:hover { background: url("images/flag_lk.png") no-repeat scroll center bottom transparent; }
 
+.langbf_mh { background: url("images/flag_mh.png") no-repeat scroll center top transparent; }
+.langbf_mh:hover { background: url("images/flag_mh.png") no-repeat scroll center bottom transparent; }
+
 .langbf_mm { background: url("images/flag_mm.png") no-repeat scroll center top transparent; }
 .langbf_mm:hover { background: url("images/flag_mm.png") no-repeat scroll center bottom transparent; }
 
 .langbf_mn { background: url("images/flag_mn.png") no-repeat scroll center top transparent; }
 .langbf_mn:hover { background: url("images/flag_mn.png") no-repeat scroll center bottom transparent; }
+
+.langbf_mo { background: url("images/flag_mo.png") no-repeat scroll center top transparent; }
+.langbf_mo:hover { background: url("images/flag_mo.png") no-repeat scroll center bottom transparent; }
 
 .langbf_mv { background: url("images/flag_mv.png") no-repeat scroll center top transparent; }
 .langbf_mv:hover { background: url("images/flag_mv.png") no-repeat scroll center bottom transparent; }
@@ -312,14 +420,23 @@
 .langbf_my { background: url("images/flag_my.png") no-repeat scroll center top transparent; }
 .langbf_my:hover { background: url("images/flag_my.png") no-repeat scroll center bottom transparent; }
 
+.langbf_nc { background: url("images/flag_nc.png") no-repeat scroll center top transparent; }
+.langbf_nc:hover { background: url("images/flag_nc.png") no-repeat scroll center bottom transparent; }
+
 .langbf_np { background: url("images/flag_np.png") no-repeat scroll center top transparent; }
 .langbf_np:hover { background: url("images/flag_np.png") no-repeat scroll center bottom transparent; }
+
+.langbf_nr { background: url("images/flag_nr.png") no-repeat scroll center top transparent; }
+.langbf_nr:hover { background: url("images/flag_nr.png") no-repeat scroll center bottom transparent; }
 
 .langbf_nz { background: url("images/flag_nz.png") no-repeat scroll center top transparent; }
 .langbf_nz:hover { background: url("images/flag_nz.png") no-repeat scroll center bottom transparent; }
 
 .langbf_om { background: url("images/flag_om.png") no-repeat scroll center top transparent; }
 .langbf_om:hover { background: url("images/flag_om.png") no-repeat scroll center bottom transparent; }
+
+.langbf_pf { background: url("images/flag_pf.png") no-repeat scroll center top transparent; }
+.langbf_pf:hover { background: url("images/flag_pf.png") no-repeat scroll center bottom transparent; }
 
 .langbf_pg { background: url("images/flag_pg.png") no-repeat scroll center top transparent; }
 .langbf_pg:hover { background: url("images/flag_pg.png") no-repeat scroll center bottom transparent; }
@@ -330,11 +447,20 @@
 .langbf_pk { background: url("images/flag_pk.png") no-repeat scroll center top transparent; }
 .langbf_pk:hover { background: url("images/flag_pk.png") no-repeat scroll center bottom transparent; }
 
+.langbf_ps { background: url("images/flag_ps.png") no-repeat scroll center top transparent; }
+.langbf_ps:hover { background: url("images/flag_ps.png") no-repeat scroll center bottom transparent; }
+
+.langbf_pw { background: url("images/flag_pw.png") no-repeat scroll center top transparent; }
+.langbf_pw:hover { background: url("images/flag_pw.png") no-repeat scroll center bottom transparent; }
+
 .langbf_qa { background: url("images/flag_qa.png") no-repeat scroll center top transparent; }
 .langbf_qa:hover { background: url("images/flag_qa.png") no-repeat scroll center bottom transparent; }
 
 .langbf_sa { background: url("images/flag_sa.png") no-repeat scroll center top transparent; }
 .langbf_sa:hover { background: url("images/flag_sa.png") no-repeat scroll center bottom transparent; }
+
+.langbf_sb { background: url("images/flag_sb.png") no-repeat scroll center top transparent; }
+.langbf_sb:hover { background: url("images/flag_sb.png") no-repeat scroll center bottom transparent; }
 
 .langbf_sg { background: url("images/flag_sg.png") no-repeat scroll center top transparent; }
 .langbf_sg:hover { background: url("images/flag_sg.png") no-repeat scroll center bottom transparent; }
@@ -354,6 +480,12 @@
 .langbf_tm { background: url("images/flag_tm.png") no-repeat scroll center top transparent; }
 .langbf_tm:hover { background: url("images/flag_tm.png") no-repeat scroll center bottom transparent; }
 
+.langbf_to { background: url("images/flag_to.png") no-repeat scroll center top transparent; }
+.langbf_to:hover { background: url("images/flag_to.png") no-repeat scroll center bottom transparent; }
+
+.langbf_tv { background: url("images/flag_tv.png") no-repeat scroll center top transparent; }
+.langbf_tv:hover { background: url("images/flag_tv.png") no-repeat scroll center bottom transparent; }
+
 .langbf_tw { background: url("images/flag_tw.png") no-repeat scroll center top transparent; }
 .langbf_tw:hover { background: url("images/flag_tw.png") no-repeat scroll center bottom transparent; }
 
@@ -362,6 +494,12 @@
 
 .langbf_vn { background: url("images/flag_vn.png") no-repeat scroll center top transparent; }
 .langbf_vn:hover { background: url("images/flag_vn.png") no-repeat scroll center bottom transparent; }
+
+.langbf_vu { background: url("images/flag_vu.png") no-repeat scroll center top transparent; }
+.langbf_vu:hover { background: url("images/flag_vu.png") no-repeat scroll center bottom transparent; }
+
+.langbf_ws { background: url("images/flag_ws.png") no-repeat scroll center top transparent; }
+.langbf_ws:hover { background: url("images/flag_ws.png") no-repeat scroll center bottom transparent; }
 
 .langbf_ye { background: url("images/flag_ye.png") no-repeat scroll center top transparent; }
 .langbf_ye:hover { background: url("images/flag_ye.png") no-repeat scroll center bottom transparent; }
@@ -409,6 +547,9 @@
 
 .langbf_eg { background: url("images/flag_eg.png") no-repeat scroll center top transparent; }
 .langbf_eg:hover { background: url("images/flag_eg.png") no-repeat scroll center bottom transparent; }
+
+.langbf_eh { background: url("images/flag_eh.png") no-repeat scroll center top transparent; }
+.langbf_eh:hover { background: url("images/flag_eh.png") no-repeat scroll center bottom transparent; }
 
 .langbf_er { background: url("images/flag_er.png") no-repeat scroll center top transparent; }
 .langbf_er:hover { background: url("images/flag_er.png") no-repeat scroll center bottom transparent; }
@@ -478,6 +619,9 @@
 
 .langbf_ng { background: url("images/flag_ng.png") no-repeat scroll center top transparent; }
 .langbf_ng:hover { background: url("images/flag_ng.png") no-repeat scroll center bottom transparent; }
+
+.langbf_re { background: url("images/flag_re.png") no-repeat scroll center top transparent; }
+.langbf_re:hover { background: url("images/flag_re.png") no-repeat scroll center bottom transparent; }
 
 .langbf_rw { background: url("images/flag_rw.png") no-repeat scroll center top transparent; }
 .langbf_rw:hover { background: url("images/flag_rw.png") no-repeat scroll center bottom transparent; }

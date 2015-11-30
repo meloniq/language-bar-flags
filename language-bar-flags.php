@@ -1,16 +1,20 @@
 <?php
 /*
-	Plugin Name: Language Bar Flags
-	Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
-	Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
-	Author: MELONIQ.NET
-	Version: 1.0.7
-	Author URI: http://blog.meloniq.net
+Plugin Name: Language Bar Flags
+Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
+Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
+
+Version: 1.0.8
+
+Author: MELONIQ.NET
+Author URI: http://blog.meloniq.net
+Text Domain: language-bar-flags
+Domain Path: /languages
 */
 
 
 /**
- * Avoid calling file directly
+ * Avoid calling file directly.
  */
 if ( ! function_exists( 'add_action' ) ) {
 	die( 'Whoops! You shouldn\'t be doing that.' );
@@ -18,32 +22,32 @@ if ( ! function_exists( 'add_action' ) ) {
 
 
 /**
- * Plugin version and textdomain constants
+ * Plugin version and textdomain constants.
  */
-define( 'LANGBF_VERSION', '1.0.6' );
+define( 'LANGBF_VERSION', '1.0.8' );
 define( 'LANGBF_TD', 'language-bar-flags' );
 
 
 /**
- * Process actions on plugin activation
+ * Process actions on plugin activation.
  */
 register_activation_hook( plugin_basename( __FILE__ ), 'langbf_activate' );
 
 
 /**
- * Load Text-Domain
+ * Load Text-Domain.
  */
 load_plugin_textdomain( LANGBF_TD, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 
 /**
- * Load Countries arrays
+ * Load Countries arrays.
  */
 include_once( dirname( __FILE__ ) . '/countries.php' );
 
 
 /**
- * Initialize admin menu
+ * Initialize admin menu.
  */
 if ( is_admin() ) {
 	add_action( 'admin_menu', 'langbf_add_menu_links' );
@@ -51,7 +55,9 @@ if ( is_admin() ) {
 
 
 /**
- * Load front-end scripts
+ * Load front-end scripts.
+ *
+ * @return void
  */
 function langbf_load_scripts() {
 	if ( ! wp_is_mobile() ) {
@@ -63,7 +69,9 @@ add_action( 'wp_enqueue_scripts', 'langbf_load_scripts' );
 
 
 /**
- * Load back-end scripts
+ * Load back-end scripts.
+ *
+ * @return void
  */
 function langbf_load_admin_scripts() {
   wp_enqueue_script( 'jquery-ui-tabs' );
@@ -72,7 +80,9 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_scripts' );
 
 
 /**
- * Load front-end styles
+ * Load front-end styles.
+ *
+ * @return void
  */
 function langbf_load_styles() {
 	wp_register_style( 'langbf_style', plugins_url( 'style.css', __FILE__ ) );
@@ -82,7 +92,9 @@ add_action( 'wp_enqueue_scripts', 'langbf_load_styles' );
 
 
 /**
- * Load back-end styles
+ * Load back-end styles.
+ *
+ * @return void
  */
 function langbf_load_admin_styles() {
 	wp_register_style( 'langbf_admin_style', plugins_url( 'admin-style.css', __FILE__ ) );
@@ -92,7 +104,9 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_styles' );
 
 
 /**
- * Print code in footer
+ * Print code in footer.
+ *
+ * @return void
  */
 function langbf_load_html() {
 
@@ -132,11 +146,14 @@ add_action( 'wp_footer', 'langbf_load_html' );
 
 
 /**
- * Print css in footer
+ * Print css in footer.
+ *
+ * @return void
  */
 function langbf_load_css() {
-	if ( get_option( 'langbf_active' ) != 'yes' )
+	if ( get_option( 'langbf_active' ) != 'yes' ) {
 		return;
+	}
 
 	if ( get_option( 'langbf_position' ) == 'top' ) {
 
@@ -201,7 +218,9 @@ add_action( 'wp_footer', 'langbf_load_css' );
 
 
 /**
- * Print css in footer
+ * Print css in footer.
+ *
+ * @return void
  */
 function langbf_load_js() {
 	if ( get_option( 'langbf_active' ) != 'yes' ) {
@@ -245,7 +264,9 @@ add_action( 'wp_footer', 'langbf_load_js' );
 
 
 /**
- * Populate administration menu of the plugin
+ * Populate administration menu of the plugin.
+ *
+ * @return void
  */
 function langbf_add_menu_links() {
 
@@ -254,7 +275,9 @@ function langbf_add_menu_links() {
 
 
 /**
- * Create settings page in admin
+ * Create settings page in admin.
+ *
+ * @return void
  */
 function langbf_menu_settings() {
 
@@ -263,7 +286,9 @@ function langbf_menu_settings() {
 
 
 /**
- * Disable WP admin bar
+ * Disable WP admin bar.
+ *
+ * @return void
  */
 function langbf_disable_admin_bar() {
 
@@ -280,7 +305,9 @@ add_action( 'init', 'langbf_disable_admin_bar' );
 
 
 /**
- * Create announcement on langbf setting page
+ * Create announcement on langbf setting page.
+ *
+ * @return void
  */
 function langbf_announcement() {
 
@@ -311,7 +338,11 @@ function langbf_announcement() {
 
 
 /**
- * Check theme provider, used for announcement
+ * Check theme provider, used for announcement.
+ *
+ * @param string $provider
+ *
+ * @return bool
  */
 function langbf_is_theme_provider( $provider ) {
 
@@ -328,7 +359,9 @@ function langbf_is_theme_provider( $provider ) {
 
 
 /**
- * Action on plugin activate
+ * Action on plugin activate.
+ *
+ * @return void
  */
 function langbf_activate() {
 	// install default options
@@ -337,7 +370,9 @@ function langbf_activate() {
 
 
 /**
- * Install default options
+ * Install default options.
+ *
+ * @return void
  */
 function langbf_install_options() {
 

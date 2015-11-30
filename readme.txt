@@ -2,28 +2,31 @@
 Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
-Requires at least: 3.5
-Tested up to: 3.9.1
-Stable tag: 1.0.7
+Requires at least: 4.0
+Tested up to: 4.3.1
+Stable tag: 1.0.8
 
 Displays bar with configurable language flags to other language versions of Your website.
 
 == Description ==
 
-This plugin disable standard WordPress bar in the top of website, and display similar bar but with configurable language flags to other language versions of Your website (or display both bars). 
+This plugin disable standard WordPress bar in the top of website, and display similar bar but with configurable language flags to other language versions of your website (or display both bars). 
 
-In administrative panel You see names of countries in English (or Your native language), but on Your website names of countries are displayed in thier native language.
+In administrative panel you see names of countries in English (or your native language), but on your website names of countries are displayed in thier native language.
 Example: Germany (in backend), Deutschland (in frontend)
 
 = Supported countries =
 * Europe:
-Albania, Austria, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Estonia, Spain, Finland, France, Greece, Croatia, Hungary, Ireland, Iceland, Italy, Liechtenstein, Lithuania, Luxembourg, Latvia, Montenegro, Malta, Netherlands, Norway, Poland, Portugal, Romania, Serbia, Russian Federation, Sweden, Slovenia, Slovakia, Turkey, Ukraine, United Kingdom
+Albania, Andorra, Austria, Belgium, Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia, Malta, Moldova, Monaco, Montenegro, Netherlands, Northern Cyprus, Norway, Poland, Portugal, Romania, Russian Federation, San Marino, Serbia, Slovenia, Slovakia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican
+
 * America:
-Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Cuba, Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Suriname, Trinidad and Tobago, United States, Uruguay, Venezuela
+Anguilla, Antigua and Barbuda, Argentina, Aruba, Bahamas, Barbados, Belize, Bermuda, Bolivia, Brazil, British Virgin Islands, Canada, Cayman Islands, Chile, Colombia, Costa Rica, Cuba, Dominica, Dominican Republic, Ecuador, El Salvador, Greenland, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Montserrat, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Suriname, Trinidad and Tobago, Turks and Caicos Islands, United States, United States Virgin Islands, Uruguay, Venezuela
+
 * Asia + Oceania:
-Afghanistan, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh, Bhutan, Brunei, Cambodia, China, Cyprus, Georgia, Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan, Kazakhstan, Kuwait, Kyrgyzstan, Laos, Lebanon, Malaysia, Maldives, Mongolia, Myanmar, Nepal, New Zealand, North Korea, Oman, Pakistan, Papua New Guinea, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Syria, Taiwan, Tajikistan, Thailand, Timor-Leste, Turkmenistan, United Arab Emirates, Uzbekistan, Vietnam, Yemen
+Afghanistan, American Samoa, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh, Bhutan, Brunei, Cambodia, China, Cook Islands, Cyprus, Easter Island, Federated States of Micronesia, Fiji, French Polynesia, Georgia, Guam, Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan, Kazakhstan, Kiribati, Kuwait, Kyrgyzstan, Laos, Lebanon, Macau, Malaysia, Maldives, Marshall Islands, Mongolia, Myanmar, Nauru, Nepal, New Caledonia, New Zealand, North Korea, Oman, Pakistan, Palau, Palestine, Papua New Guinea, Philippines, Qatar, Samoa, Saudi Arabia, Singapore, Solomon Islands, South Korea, Sri Lanka, Syria, Taiwan, Tajikistan, Thailand, Timor-Leste, Tonga, Turkmenistan, Tuvalu, United Arab Emirates, Uzbekistan, Vanuatu, Vietnam, Yemen
+
 * Africa:
-Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Republic of the Congo, Democratic Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe
+Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Republic of the Congo, Democratic Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Réunion, Rwanda, Sahrawi Arab Democratic Republic, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe
 
 = Available languages =
 * English
@@ -33,8 +36,8 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 * Slovak (by Branco Radenovich from [WebHostingGeeks](http://webhostinggeeks.com/user-reviews/))
 * Ukrainian (by Michael Yunat from [IP Host Monitor](http://www.iphostmonitor.com/))
 
-If You translated plugin to Your native language, please send it to me, and will attach it to next release.
-E-mail address You will find on [contact page](http://blog.meloniq.net/kontakt/).
+If you translated plugin to your native language, please send it to me, and will attach it to next release.
+E-mail address you will find on [contact page](http://blog.meloniq.net/kontakt/).
 
 
 
@@ -45,6 +48,9 @@ E-mail address You will find on [contact page](http://blog.meloniq.net/kontakt/)
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.0.8 =
+* Added 47 new flags/countries
 
 = 1.0.7 =
 * Added Ukrainian translation
