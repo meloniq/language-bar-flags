@@ -3,7 +3,7 @@ Contributors: meloniq
 Donate link: http://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 4.0
-Tested up to: 4.3.1
+Tested up to: 4.5.3
 Stable tag: 1.0.8
 
 Displays bar with configurable language flags to other language versions of Your website.
@@ -30,6 +30,7 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 
 = Available languages =
 * English
+* Belarusian (by Natasha Dyatko from [UStarCash](https://www.ustarcash.com))
 * French (by Frédéric Serva)
 * Polish
 * Serbo-Croatian (by Borisa Djuraskovic from [WebHostingHub](http://www.webhostinghub.com/))
@@ -48,6 +49,9 @@ E-mail address you will find on [contact page](http://blog.meloniq.net/kontakt/)
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.0.9 =
+* Added Belarusian translation
 
 = 1.0.8 =
 * Added 47 new flags/countries

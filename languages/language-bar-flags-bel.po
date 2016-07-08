@@ -1,0 +1,1074 @@
+# Translation of Development (trunk) in Belarusian
+# This file is distributed under the same license as the Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-07-06 16:25+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.8\n"
+"Project-Id-Version: Development (trunk)\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: be_BY\n"
+
+#: admin_settings.php:4
+msgid "You do not have sufficient permissions to access this page."
+msgstr "У вас няма дастатковых правоў для доступу да гэтай старонцы."
+
+#: admin_settings.php:32
+msgid "Settings saved"
+msgstr "Налады захаваны"
+
+#: admin_settings.php:66
+msgid "General Settings"
+msgstr "Агульныя налады"
+
+#: admin_settings.php:72 admin_settings.php:84
+msgid "General"
+msgstr "Агульны"
+
+#: admin_settings.php:73
+msgid "Europe"
+msgstr "Еўропа"
+
+#: admin_settings.php:74
+msgid "America"
+msgstr "Амерыка"
+
+#: admin_settings.php:75
+msgid "Asia + Oceania"
+msgstr "Азія + Акіянія"
+
+#: admin_settings.php:76
+msgid "Africa"
+msgstr "Афрыка"
+
+#: admin_settings.php:90
+msgid "Activate bar?"
+msgstr "Актываваць бар?"
+
+#: admin_settings.php:93 admin_settings.php:130 admin_settings.php:140
+msgid "No"
+msgstr "Не"
+
+#: admin_settings.php:94 admin_settings.php:131 admin_settings.php:141
+msgid "Yes"
+msgstr "Да"
+
+#: admin_settings.php:96
+msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
+msgstr "Калі абраны \"ДА\", то убудова будзе дадаваць панэль са сцягамі мовы."
+
+#: admin_settings.php:100
+msgid "Title of bar"
+msgstr "Назва бара"
+
+#: admin_settings.php:103
+msgid "Title will be displayed on a bar, right before flags."
+msgstr "Назва будзе адлюстроўвацца на панэлі, прама перад сцягамі."
+
+#: admin_settings.php:107
+msgid "Position of bar"
+msgstr "Становішча бара"
+
+#: admin_settings.php:110
+msgid "Top"
+msgstr "Уверсе"
+
+#: admin_settings.php:111
+msgid "Bottom"
+msgstr "Унізе"
+
+#: admin_settings.php:113
+msgid "Choose position where the bar should appear. The top of page or on the bottom."
+msgstr "Абярыце пазіцыю, дзе павінен з'явіцца бар. У верхняй частцы старонкі або на дне."
+
+#: admin_settings.php:117
+msgid "Side of flags"
+msgstr "Бакавыя сцягі"
+
+#: admin_settings.php:120
+msgid "Left"
+msgstr "Левы"
+
+#: admin_settings.php:121
+msgid "Right"
+msgstr "Правы"
+
+#: admin_settings.php:123
+msgid "Choose side of the bar where flags should appear. Left or right side of bar."
+msgstr "Абярыце бок бара, дзе павінены з'явіцца сцягі. Левая ці правая панэлі бара."
+
+#: admin_settings.php:127
+msgid "Disable WP bar?"
+msgstr "Адключыць бар WP?"
+
+#: admin_settings.php:133
+msgid "If \"YES\" is selected, then plugin will disable WordPress Admin bar."
+msgstr "Калі абраны \"ДА\" , то ўбудова будзе адключаць панэль WordPress Admin."
+
+#: admin_settings.php:137
+msgid "Open links in new window?"
+msgstr "Адкрываць спасылкі ў новым акне?"
+
+#: admin_settings.php:143
+msgid "If \"YES\" is selected, then links on site will be open in new window."
+msgstr "Калі выбрана \"ДА\", то спасылкі на сайт будуць адкрыты ў новым акне."
+
+#: admin_settings.php:155 admin_settings.php:187 admin_settings.php:219
+#: admin_settings.php:251
+msgid "Country"
+msgstr "Краіна"
+
+#: admin_settings.php:156 admin_settings.php:188 admin_settings.php:220
+#: admin_settings.php:252
+msgid "Active"
+msgstr "Актыўны"
+
+#: admin_settings.php:157 admin_settings.php:189 admin_settings.php:221
+#: admin_settings.php:253
+msgid "Alternative Name"
+msgstr "Альтэрнатыўная назва"
+
+#: admin_settings.php:158 admin_settings.php:190 admin_settings.php:222
+#: admin_settings.php:254
+msgid "URL"
+msgstr "URL"
+
+#: admin_settings.php:170 admin_settings.php:202 admin_settings.php:234
+#: admin_settings.php:266
+msgid "Alternative country name. Default is: "
+msgstr "Альтэрнатыўная назва краіны. Значэнне па змаўчанні:"
+
+#: admin_settings.php:174 admin_settings.php:206 admin_settings.php:238
+#: admin_settings.php:270
+msgid "URL address where link should point to."
+msgstr "URL-адрас, па якім павінна паказваць спасылка."
+
+#: admin_settings.php:279
+msgid "Save Changes"
+msgstr "Захаваць змены"
+
+#: countries.php:86
+msgid "Andorra"
+msgstr "Андора"
+
+#: countries.php:87
+msgid "Austria"
+msgstr "Аўстрыя"
+
+#: countries.php:88
+msgid "Albania"
+msgstr "Албанія"
+
+#: countries.php:89
+msgid "Bosnia and Herzegovina"
+msgstr "Боснія і Герцагавіна"
+
+#: countries.php:90
+msgid "Belgium"
+msgstr "Бельгія"
+
+#: countries.php:91
+msgid "Bulgaria"
+msgstr "Балгарыя"
+
+#: countries.php:92
+msgid "Belarus"
+msgstr "Беларусь"
+
+#: countries.php:93
+msgid "Switzerland"
+msgstr "Швейцарыя"
+
+#: countries.php:94
+msgid "Czech Republic"
+msgstr "Чэшская Рэспубліка"
+
+#: countries.php:95
+msgid "Germany"
+msgstr "Германія"
+
+#: countries.php:96
+msgid "Denmark"
+msgstr "Данія"
+
+#: countries.php:97
+msgid "Estonia"
+msgstr "Эстонія"
+
+#: countries.php:98
+msgid "Spain"
+msgstr "Іспанія"
+
+#: countries.php:99
+msgid "Finland"
+msgstr "Фінляндыя"
+
+#: countries.php:100
+msgid "Faroe Islands"
+msgstr "Фарэрскія выспы"
+
+#: countries.php:101
+msgid "France"
+msgstr "Францыя"
+
+#: countries.php:102
+msgid "Guernsey"
+msgstr "Востраў Гернсі"
+
+#: countries.php:103
+msgid "Gibraltar"
+msgstr "Гібралтар"
+
+#: countries.php:104
+msgid "Greece"
+msgstr "Грэцыя"
+
+#: countries.php:105
+msgid "Croatia"
+msgstr "Харватыя / Хрватска"
+
+#: countries.php:106
+msgid "Hungary"
+msgstr "Венгрыя"
+
+#: countries.php:107
+msgid "Ireland"
+msgstr "Ірландыя"
+
+#: countries.php:108
+msgid "Isle of Man"
+msgstr "Востраў Мэн"
+
+#: countries.php:109
+msgid "Iceland"
+msgstr "Ісландыя"
+
+#: countries.php:110
+msgid "Italy"
+msgstr "Італія"
+
+#: countries.php:111
+msgid "Jersey"
+msgstr "Востраў Джэрсі"
+
+#: countries.php:112
+msgid "Liechtenstein"
+msgstr "Ліхтэнштэйн"
+
+#: countries.php:113
+msgid "Lithuania"
+msgstr "Літва"
+
+#: countries.php:114
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+#: countries.php:115
+msgid "Latvia"
+msgstr "Латвія"
+
+#: countries.php:116
+msgid "Monaco"
+msgstr "Манака"
+
+#: countries.php:117
+msgid "Moldova"
+msgstr "Малдова"
+
+#: countries.php:118
+msgid "Montenegro"
+msgstr "Чарнагорыя"
+
+#: countries.php:119
+msgid "Macedonia"
+msgstr "Македонія"
+
+#: countries.php:120
+msgid "Malta"
+msgstr "Мальта"
+
+#: countries.php:121
+msgid "Northern Cyprus"
+msgstr "Паўночны Кіпр"
+
+#: countries.php:122
+msgid "Netherlands"
+msgstr "Нідэрланды"
+
+#: countries.php:123
+msgid "Norway"
+msgstr "Нарвегія"
+
+#: countries.php:124
+msgid "Poland"
+msgstr "Польшча"
+
+#: countries.php:125
+msgid "Portugal"
+msgstr "Партугалія"
+
+#: countries.php:126
+msgid "Romania"
+msgstr "Румынія"
+
+#: countries.php:127
+msgid "Serbia"
+msgstr "Сербія"
+
+#: countries.php:128
+msgid "Russian Federation"
+msgstr "Расія"
+
+#: countries.php:129
+msgid "Sweden"
+msgstr "Швецыя"
+
+#: countries.php:130
+msgid "Slovenia"
+msgstr "Славенія"
+
+#: countries.php:131
+msgid "Slovakia"
+msgstr "Славакія"
+
+#: countries.php:132
+msgid "San Marino"
+msgstr "Сан-Марына"
+
+#: countries.php:133
+msgid "Turkey"
+msgstr "Турцыя"
+
+#: countries.php:134
+msgid "Ukraine"
+msgstr "Украіна"
+
+#: countries.php:135
+msgid "United Kingdom"
+msgstr "Вялікабрытанія"
+
+#: countries.php:136
+msgid "Vatican"
+msgstr "Ватыкан"
+
+#: countries.php:137
+msgid "Kosovo"
+msgstr "Косава"
+
+#: countries.php:216
+msgid "Antigua and Barbuda"
+msgstr "Антыгуа і Барбуда"
+
+#: countries.php:217
+msgid "Anguilla"
+msgstr "Ангілья"
+
+#: countries.php:218
+msgid "Argentina"
+msgstr "Аргентына"
+
+#: countries.php:219
+msgid "Aruba"
+msgstr "Аруба"
+
+#: countries.php:220
+msgid "Barbados"
+msgstr "Барбадос"
+
+#: countries.php:221
+msgid "Bermuda"
+msgstr "Бэрмудзкія выспы"
+
+#: countries.php:222
+msgid "Bolivia"
+msgstr "Балівія"
+
+#: countries.php:223
+msgid "Brazil"
+msgstr "Бразілія"
+
+#: countries.php:224
+msgid "Bahamas"
+msgstr "Багамскія а-вы"
+
+#: countries.php:225
+msgid "Belize"
+msgstr "Беліз"
+
+#: countries.php:226
+msgid "Canada"
+msgstr "Канада"
+
+#: countries.php:227
+msgid "Chile"
+msgstr "Чылі"
+
+#: countries.php:228
+msgid "Colombia"
+msgstr "Калумбія"
+
+#: countries.php:229
+msgid "Costa Rica"
+msgstr "Коста-Рыка"
+
+#: countries.php:230
+msgid "Cuba"
+msgstr "Куба"
+
+#: countries.php:231
+msgid "Dominica"
+msgstr "Дамініка"
+
+#: countries.php:232
+msgid "Dominican Republic"
+msgstr "Дамініканская Рэспубліка"
+
+#: countries.php:233
+msgid "Ecuador"
+msgstr "Эквадор"
+
+#: countries.php:234
+msgid "Grenada"
+msgstr "Грэнада"
+
+#: countries.php:235
+msgid "Greenland"
+msgstr "Грэнландыя"
+
+#: countries.php:236
+msgid "Guatemala"
+msgstr "Гватэмала"
+
+#: countries.php:237
+msgid "Guyana"
+msgstr "Гаяна"
+
+#: countries.php:238
+msgid "Honduras"
+msgstr "Гандурас"
+
+#: countries.php:239
+msgid "Haiti"
+msgstr "Гаіці"
+
+#: countries.php:240
+msgid "Jamaica"
+msgstr "Ямайка"
+
+#: countries.php:241
+msgid "Saint Kitts and Nevis"
+msgstr "Сэнт-Кітс і Нэвіс"
+
+#: countries.php:242
+msgid "Cayman Islands"
+msgstr "Кайманавы выспы"
+
+#: countries.php:243
+msgid "Saint Lucia"
+msgstr "Сэнт-Люсія"
+
+#: countries.php:244
+msgid "Montserrat"
+msgstr "Мантсерат"
+
+#: countries.php:245
+msgid "Mexico"
+msgstr "Мексіка"
+
+#: countries.php:246
+msgid "Nicaragua"
+msgstr "Нікарагуа"
+
+#: countries.php:247
+msgid "Panama"
+msgstr "Панама"
+
+#: countries.php:248
+msgid "Peru"
+msgstr "Перу"
+
+#: countries.php:249
+msgid "Puerto Rico"
+msgstr "Пуэрта-Рыка"
+
+#: countries.php:250
+msgid "Paraguay"
+msgstr "Парагвай"
+
+#: countries.php:251
+msgid "Suriname"
+msgstr "Сурынам"
+
+#: countries.php:252
+msgid "El Salvador"
+msgstr "Сальвадор"
+
+#: countries.php:253
+msgid "Turks and Caicos Islands"
+msgstr "Астравы Тэркс і Кайкас"
+
+#: countries.php:254
+msgid "Trinidad and Tobago"
+msgstr "Трынідад і Табага"
+
+#: countries.php:255
+msgid "United States"
+msgstr "ЗША"
+
+#: countries.php:256
+msgid "Uruguay"
+msgstr "Уругвай"
+
+#: countries.php:257
+msgid "Saint Vincent and the Grenadines"
+msgstr "Сэнт-Вінсэнт і Грэнадыны"
+
+#: countries.php:258
+msgid "Venezuela"
+msgstr "Венесуэла"
+
+#: countries.php:259
+msgid "British Virgin Islands"
+msgstr "Брытанскія Віргінскія выспы"
+
+#: countries.php:260
+msgid "United States Virgin Islands"
+msgstr "Віргінскія астравы Злучаных Штатаў"
+
+#: countries.php:369
+msgid "United Arab Emirates"
+msgstr "Аб'яднаныя Арабскія Эміраты"
+
+#: countries.php:370
+msgid "Afghanistan"
+msgstr "Афганістан"
+
+#: countries.php:371
+msgid "Armenia"
+msgstr "Арменія"
+
+#: countries.php:372
+msgid "American Samoa"
+msgstr "Амерыканскае Самоа"
+
+#: countries.php:373
+msgid "Australia"
+msgstr "Аўстралія"
+
+#: countries.php:374
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+#: countries.php:375
+msgid "Bangladesh"
+msgstr "Бангладэш"
+
+#: countries.php:376
+msgid "Bahrain"
+msgstr "Бахрэйн"
+
+#: countries.php:377
+msgid "Brunei"
+msgstr "Бруней"
+
+#: countries.php:378
+msgid "Bhutan"
+msgstr "Бутан"
+
+#: countries.php:379
+msgid "Cook Islands"
+msgstr "Выспы Кука"
+
+#: countries.php:380
+msgid "Easter Island"
+msgstr "Востраў пасхі"
+
+#: countries.php:381
+msgid "China"
+msgstr "Кітай"
+
+#: countries.php:382
+msgid "Cyprus"
+msgstr "Кіпр"
+
+#: countries.php:383
+msgid "Fiji"
+msgstr "Фіджы"
+
+#: countries.php:384
+msgid "Federated States of Micronesia"
+msgstr "Фэдэратыўныя Штаты Мікранэзіі"
+
+#: countries.php:385
+msgid "Georgia"
+msgstr "Грузія"
+
+#: countries.php:386
+msgid "Guam"
+msgstr "Гуам"
+
+#: countries.php:387
+msgid "Hong Kong"
+msgstr "Гонг-Конг"
+
+#: countries.php:388
+msgid "Indonesia"
+msgstr "Інданезія"
+
+#: countries.php:389
+msgid "Israel"
+msgstr "Ізраіль"
+
+#: countries.php:390
+msgid "India"
+msgstr "Індыя"
+
+#: countries.php:391
+msgid "Iraq"
+msgstr "Ірак"
+
+#: countries.php:392
+msgid "Iran"
+msgstr "Іран"
+
+#: countries.php:393
+msgid "Jordan"
+msgstr "Іярданія"
+
+#: countries.php:394
+msgid "Japan"
+msgstr "Японія"
+
+#: countries.php:395
+msgid "Kyrgyzstan"
+msgstr "Кіргізія"
+
+#: countries.php:396
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+#: countries.php:397
+msgid "Kiribati"
+msgstr "Кірыбаці"
+
+#: countries.php:398
+msgid "North Korea"
+msgstr "Паўночная Карэя"
+
+#: countries.php:399
+msgid "South Korea"
+msgstr "Паўднёвая Карэя"
+
+#: countries.php:400
+msgid "Kuwait"
+msgstr "Кувейт"
+
+#: countries.php:401
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+#: countries.php:402
+msgid "Laos"
+msgstr "Лаос"
+
+#: countries.php:403
+msgid "Lebanon"
+msgstr "Ліван"
+
+#: countries.php:404
+msgid "Sri Lanka"
+msgstr "Шры-Ланка"
+
+#: countries.php:405
+msgid "Marshall Islands"
+msgstr "Маршалавы выспы"
+
+#: countries.php:406
+msgid "Mongolia"
+msgstr "Манголія"
+
+#: countries.php:407
+msgid "Myanmar"
+msgstr "М'янма"
+
+#: countries.php:408
+msgid "Macau"
+msgstr "Макаа"
+
+#: countries.php:409
+msgid "Maldives"
+msgstr "Мальдывы"
+
+#: countries.php:410
+msgid "Malaysia"
+msgstr "Малайзія"
+
+#: countries.php:411
+msgid "New Caledonia"
+msgstr "Новая Каледонія"
+
+#: countries.php:412
+msgid "Nepal"
+msgstr "Непал"
+
+#: countries.php:413
+msgid "Nauru"
+msgstr "Науру"
+
+#: countries.php:414
+msgid "New Zealand"
+msgstr "Новая Зеландыя"
+
+#: countries.php:415
+msgid "Oman"
+msgstr "Аман"
+
+#: countries.php:416
+msgid "French Polynesia"
+msgstr "Французская Палінезія"
+
+#: countries.php:417
+msgid "Papua New Guinea"
+msgstr "Папуа-Новая Гвінея"
+
+#: countries.php:418
+msgid "Philippines"
+msgstr "Філіпіны"
+
+#: countries.php:419
+msgid "Pakistan"
+msgstr "Пакістан"
+
+#: countries.php:420
+msgid "Palestine"
+msgstr "Палестына"
+
+#: countries.php:421
+msgid "Palau"
+msgstr "выспы Палаў"
+
+#: countries.php:422
+msgid "Qatar"
+msgstr "Катар"
+
+#: countries.php:423
+msgid "Saudi Arabia"
+msgstr "Саўдаўская Аравія"
+
+#: countries.php:424
+msgid "Solomon Islands"
+msgstr "Саламонавы выспы"
+
+#: countries.php:425
+msgid "Singapore"
+msgstr "Сінгапур"
+
+#: countries.php:426
+msgid "Syria"
+msgstr "Сірыя"
+
+#: countries.php:427
+msgid "Tajikistan"
+msgstr "Таджыкістан"
+
+#: countries.php:428
+msgid "Thailand"
+msgstr "Тайланд"
+
+#: countries.php:429
+msgid "Timor-Leste"
+msgstr "Тымор-Лешці"
+
+#: countries.php:430
+msgid "Turkmenistan"
+msgstr "Туркменія"
+
+#: countries.php:431
+msgid "Tonga"
+msgstr "Тонга"
+
+#: countries.php:432
+msgid "Tuvalu"
+msgstr "Тувалу"
+
+#: countries.php:433
+msgid "Taiwan"
+msgstr "Тайвань"
+
+#: countries.php:434
+msgid "Uzbekistan"
+msgstr "Узбекістан"
+
+#: countries.php:435
+msgid "Vietnam"
+msgstr "В'етнам"
+
+#: countries.php:436
+msgid "Vanuatu"
+msgstr "Вануату"
+
+#: countries.php:437
+msgid "Samoa"
+msgstr "Самоа"
+
+#: countries.php:438
+msgid "Yemen"
+msgstr "Емен"
+
+#: countries.php:525
+msgid "Angola"
+msgstr "Ангола"
+
+#: countries.php:526
+msgid "Burkina Faso"
+msgstr "Буркіна-Фасо"
+
+#: countries.php:527
+msgid "Burundi"
+msgstr "Бурундзі"
+
+#: countries.php:528
+msgid "Benin"
+msgstr "Бенін"
+
+#: countries.php:529
+msgid "Botswana"
+msgstr "Батсвана"
+
+#: countries.php:530
+msgid "Democratic Republic of the Congo"
+msgstr "Дэмакратычная Рэспубліка Конга"
+
+#: countries.php:531
+msgid "Central African Republic"
+msgstr "Цэнтральна-Афрыканская Рэспубліка"
+
+#: countries.php:532
+msgid "Republic of the Congo"
+msgstr "Рэспубліка Конга"
+
+#: countries.php:533
+msgid "Côte d'Ivoire"
+msgstr "Бераг Слановай Косці"
+
+#: countries.php:534
+msgid "Cameroon"
+msgstr "Камерун"
+
+#: countries.php:535
+msgid "Cape Verde"
+msgstr "Каба-Вэрдэ"
+
+#: countries.php:536
+msgid "Djibouti"
+msgstr "Джыбуці"
+
+#: countries.php:537
+msgid "Algeria"
+msgstr "Алжыр"
+
+#: countries.php:538
+msgid "Egypt"
+msgstr "Егіпет"
+
+#: countries.php:539
+msgid "Sahrawi Arab Democratic Republic"
+msgstr "Арабская Дэмакратычная Рэспубліка Сахраві"
+
+#: countries.php:540
+msgid "Eritrea"
+msgstr "Эрытрэя"
+
+#: countries.php:541
+msgid "Ethiopia"
+msgstr "Эфіёпія"
+
+#: countries.php:542
+msgid "Gabon"
+msgstr "Габон"
+
+#: countries.php:543
+msgid "Ghana"
+msgstr "Гана"
+
+#: countries.php:544
+msgid "Gambia"
+msgstr "Гамбія"
+
+#: countries.php:545
+msgid "Guinea"
+msgstr "Гвінея"
+
+#: countries.php:546
+msgid "Equatorial Guinea"
+msgstr "Экватарыяльная Гвінея"
+
+#: countries.php:547
+msgid "Guinea-Bissau"
+msgstr "Гвінея-Бісау"
+
+#: countries.php:548
+msgid "Kenya"
+msgstr "Кенія"
+
+#: countries.php:549
+msgid "Comoros"
+msgstr "Каморы"
+
+#: countries.php:550
+msgid "Liberia"
+msgstr "Ліберыя"
+
+#: countries.php:551
+msgid "Lesotho"
+msgstr "Лесота"
+
+#: countries.php:552
+msgid "Libya"
+msgstr "Лівія"
+
+#: countries.php:553
+msgid "Morocco"
+msgstr "Марока"
+
+#: countries.php:554
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+#: countries.php:555
+msgid "Mali"
+msgstr "Малі"
+
+#: countries.php:556
+msgid "Mauritania"
+msgstr "Маўрытанія"
+
+#: countries.php:557
+msgid "Mauritius"
+msgstr "Маўрыкій"
+
+#: countries.php:558
+msgid "Malawi"
+msgstr "Малаві"
+
+#: countries.php:559
+msgid "Mozambique"
+msgstr "Мазамбік"
+
+#: countries.php:560
+msgid "Namibia"
+msgstr "Намібія"
+
+#: countries.php:561
+msgid "Niger"
+msgstr "Нігер"
+
+#: countries.php:562
+msgid "Nigeria"
+msgstr "Нігерыя"
+
+#: countries.php:563
+msgid "Réunion"
+msgstr "Рэюньён"
+
+#: countries.php:564
+msgid "Rwanda"
+msgstr "Руанда"
+
+#: countries.php:565
+msgid "Seychelles"
+msgstr "Сейшэлы"
+
+#: countries.php:566
+msgid "Sudan"
+msgstr "Судан"
+
+#: countries.php:567
+msgid "Sierra Leone"
+msgstr "Сьера-Леонэ"
+
+#: countries.php:568
+msgid "Senegal"
+msgstr "Сенегал"
+
+#: countries.php:569
+msgid "Somalia"
+msgstr "Самалі"
+
+#: countries.php:570
+msgid "São Tomé and Príncipe"
+msgstr "Сан-Томе і Прынсэп"
+
+#: countries.php:571
+msgid "Swaziland"
+msgstr "Свазіленд"
+
+#: countries.php:572
+msgid "Chad"
+msgstr "Чад"
+
+#: countries.php:573
+msgid "Togo"
+msgstr "Таго"
+
+#: countries.php:574
+msgid "Tunisia"
+msgstr "Туніс"
+
+#: countries.php:575
+msgid "Tanzania"
+msgstr "Танзанія"
+
+#: countries.php:576
+msgid "Uganda"
+msgstr "Уганда"
+
+#: countries.php:577
+msgid "South Africa"
+msgstr "Паўднёвая Афрыка"
+
+#: countries.php:578
+msgid "Zambia"
+msgstr "Замбія"
+
+#: countries.php:579
+msgid "Zimbabwe"
+msgstr "Зімбабвэ"
+
+#. Plugin Name of the plugin/theme
+#: language-bar-flags.php:273
+msgid "Language Bar Flags"
+msgstr "Моўны бар сцягаў"
+
+#: language-bar-flags.php:323
+msgid "You are not using any of AppThemes Premium Themes, check what You are missing."
+msgstr "Вы не выкарыстоўваеце  тэмы  з AppThemes Premium Themes, праверце, што вас не хапае."
+
+#: language-bar-flags.php:324 language-bar-flags.php:332
+msgid " <a target=\"_blank\" href=\"%s\">Show me themes!</a>"
+msgstr "<a target=\"_blank\" href=\"%s\"> Пакажыце мне тэмы! </a>"
+
+#: language-bar-flags.php:331
+msgid "You are not using any of Elegant Premium Themes, check what You are missing."
+msgstr "Вы не выкарыстоўваеце нічога з  Elegant Premium Themes, праверце, што вас не хапае."
+
+#. Plugin URI of the plugin/theme
+msgid "http://blog.meloniq.net/2011/11/28/language-bar-flags/"
+msgstr "http://blog.meloniq.net/2011/11/28/language-bar-flags/"
+
+#. Description of the plugin/theme
+msgid "Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website."
+msgstr "Замяніць або адключыць стандартную WordPress панэль у верхняй частцы вэб-сайта і адлюструецца падобнаю панэль, але з наладжвальнымі сцягамі мовы на іншыя моўныя версіі сайта."
+
+#. Author of the plugin/theme
+msgid "MELONIQ.NET"
+msgstr "MELONIQ.NET"
+
+#. Author URI of the plugin/theme
+msgid "http://blog.meloniq.net"
+msgstr "http://blog.meloniq.net"
