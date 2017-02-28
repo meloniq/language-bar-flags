@@ -414,3 +414,19 @@ function langbf_install_options() {
 	delete_option( 'langbf_announcement' );
 }
 
+
+/**
+ * Load WP-CLI command.
+ *
+ * @return void
+ */
+function langbf_load_wp_cli() {
+	if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
+		return;
+	}
+
+	require_once( dirname( __FILE__ ) . '/wp-cli.php' );
+	\WP_CLI::add_command( 'langbf', 'LangBF_WP_CLI_Command' );
+}
+add_action( 'init', 'langbf_load_wp_cli' );
+
