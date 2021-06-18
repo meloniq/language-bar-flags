@@ -7,12 +7,29 @@
 
 	// update options
 	if ( isset( $_POST['options_update'] ) ) {
-		update_option( 'langbf_active', stripslashes( $_POST['langbf_active'] ) );
-		update_option( 'langbf_title', stripslashes( $_POST['langbf_title'] ) );
-		update_option( 'langbf_disable_wpbar', stripslashes( $_POST['langbf_disable_wpbar'] ) );
-		update_option( 'langbf_new_window', stripslashes( $_POST['langbf_new_window'] ) );
-		update_option( 'langbf_position', stripslashes( $_POST['langbf_position'] ) );
-		update_option( 'langbf_side', stripslashes( $_POST['langbf_side'] ) );
+		if ( isset( $_POST['langbf_active'] ) && in_array( $_POST['langbf_active'], array( 'yes', 'no' ) ) ) {
+			update_option( 'langbf_active', wp_kses_data( $_POST['langbf_active'] ) );
+		}
+
+		if ( isset( $_POST['langbf_title'] ) ) {
+			update_option( 'langbf_title', wp_kses_data( $_POST['langbf_title'] ) );
+		}
+
+		if ( isset( $_POST['langbf_disable_wpbar'] ) && in_array( $_POST['langbf_disable_wpbar'], array( 'yes', 'no' ) ) ) {
+			update_option( 'langbf_disable_wpbar', wp_kses_data( $_POST['langbf_disable_wpbar'] ) );
+		}
+
+		if ( isset( $_POST['langbf_new_window'] ) && in_array( $_POST['langbf_new_window'], array( 'yes', 'no' ) ) ) {
+			update_option( 'langbf_new_window', wp_kses_data( $_POST['langbf_new_window'] ) );
+		}
+
+		if ( isset( $_POST['langbf_position'] ) && in_array( $_POST['langbf_position'], array( 'top', 'bottom' ) ) ) {
+			update_option( 'langbf_position', wp_kses_data( $_POST['langbf_position'] ) );
+		}
+
+		if ( isset( $_POST['langbf_side'] ) && in_array( $_POST['langbf_side'], array( 'left', 'right' ) ) ) {
+			update_option( 'langbf_side', wp_kses_data( $_POST['langbf_side'] ) );
+		}
 
 		$langs_array = array();
 		$english_names = langbf_get_countries( 'all', 'english' );
@@ -24,7 +41,7 @@
 				$langs_array[ $code ]['active'] = 'no';
 			}
 			$langs_array[ $code ]['url'] = trim( stripslashes( $_POST[ $code ]['url'] ) );
-			$langs_array[ $code ]['country'] = trim( stripslashes( $_POST[ $code ]['country'] ) );
+			$langs_array[ $code ]['country'] = wp_kses_data( trim( stripslashes( $_POST[ $code ]['country'] ) ) );
 		}
 
 		update_option( 'langbf_langs', $langs_array );

@@ -1,11 +1,12 @@
-# Copyright (C) 2015 MELONIQ.NET
+# Copyright (C) 2021 MELONIQ.NET
 # This file is distributed under the same license as the Language Bar Flags package.
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Language Bar Flags 1.0.8\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/language-bar-flags\n"
-"POT-Creation-Date: 2015-11-30 17:04+0100\n"
+"Project-Id-Version: Language Bar Flags\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/language-bar-"
+"flags/\n"
+"POT-Creation-Date: 2021-06-18 13:00+0200\n"
 "PO-Revision-Date: 2013-02-03 18:45+0100\n"
 "Last-Translator: MELONIQ.NET\n"
 "Language-Team: MELONIQ.NET\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_nx:1,2;_x:1,2c;_ex:1,2c;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:1,2,3c\n"
@@ -26,140 +27,142 @@ msgstr ""
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: ../admin_settings.php:32
+#: ../admin_settings.php:49
 msgid "Settings saved"
 msgstr ""
 
-#: ../admin_settings.php:66
+#: ../admin_settings.php:83
 msgid "General Settings"
 msgstr ""
 
-#: ../admin_settings.php:72 ../admin_settings.php:84
+#: ../admin_settings.php:89 ../admin_settings.php:101
 msgid "General"
 msgstr ""
 
-#: ../admin_settings.php:73
+#: ../admin_settings.php:90
 msgid "Europe"
 msgstr ""
 
-#: ../admin_settings.php:74
+#: ../admin_settings.php:91
 msgid "America"
 msgstr ""
 
-#: ../admin_settings.php:75
+#: ../admin_settings.php:92
 msgid "Asia + Oceania"
 msgstr ""
 
-#: ../admin_settings.php:76
+#: ../admin_settings.php:93
 msgid "Africa"
 msgstr ""
 
-#: ../admin_settings.php:90
+#: ../admin_settings.php:107
 msgid "Activate bar?"
 msgstr ""
 
-#: ../admin_settings.php:93 ../admin_settings.php:130 ../admin_settings.php:140
+#: ../admin_settings.php:110 ../admin_settings.php:147
+#: ../admin_settings.php:157
 msgid "No"
 msgstr ""
 
-#: ../admin_settings.php:94 ../admin_settings.php:131 ../admin_settings.php:141
+#: ../admin_settings.php:111 ../admin_settings.php:148
+#: ../admin_settings.php:158
 msgid "Yes"
 msgstr ""
 
-#: ../admin_settings.php:96
+#: ../admin_settings.php:113
 msgid "If \"YES\" is selected, then plugin will add a bar with language flags."
 msgstr ""
 
-#: ../admin_settings.php:100
+#: ../admin_settings.php:117
 msgid "Title of bar"
 msgstr ""
 
-#: ../admin_settings.php:103
+#: ../admin_settings.php:120
 msgid "Title will be displayed on a bar, right before flags."
 msgstr ""
 
-#: ../admin_settings.php:107
+#: ../admin_settings.php:124
 msgid "Position of bar"
 msgstr ""
 
-#: ../admin_settings.php:110
+#: ../admin_settings.php:127
 msgid "Top"
 msgstr ""
 
-#: ../admin_settings.php:111
+#: ../admin_settings.php:128
 msgid "Bottom"
 msgstr ""
 
-#: ../admin_settings.php:113
+#: ../admin_settings.php:130
 msgid ""
 "Choose position where the bar should appear. The top of page or on the "
 "bottom."
 msgstr ""
 
-#: ../admin_settings.php:117
+#: ../admin_settings.php:134
 msgid "Side of flags"
 msgstr ""
 
-#: ../admin_settings.php:120
+#: ../admin_settings.php:137
 msgid "Left"
 msgstr ""
 
-#: ../admin_settings.php:121
+#: ../admin_settings.php:138
 msgid "Right"
 msgstr ""
 
-#: ../admin_settings.php:123
+#: ../admin_settings.php:140
 msgid ""
 "Choose side of the bar where flags should appear. Left or right side of bar."
 msgstr ""
 
-#: ../admin_settings.php:127
+#: ../admin_settings.php:144
 msgid "Disable WP bar?"
 msgstr ""
 
-#: ../admin_settings.php:133
+#: ../admin_settings.php:150
 msgid "If \"YES\" is selected, then plugin will disable WordPress Admin bar."
 msgstr ""
 
-#: ../admin_settings.php:137
+#: ../admin_settings.php:154
 msgid "Open links in new window?"
 msgstr ""
 
-#: ../admin_settings.php:143
+#: ../admin_settings.php:160
 msgid "If \"YES\" is selected, then links on site will be open in new window."
 msgstr ""
 
-#: ../admin_settings.php:155 ../admin_settings.php:187
-#: ../admin_settings.php:219 ../admin_settings.php:251
+#: ../admin_settings.php:172 ../admin_settings.php:204
+#: ../admin_settings.php:236 ../admin_settings.php:268
 msgid "Country"
 msgstr ""
 
-#: ../admin_settings.php:156 ../admin_settings.php:188
-#: ../admin_settings.php:220 ../admin_settings.php:252
+#: ../admin_settings.php:173 ../admin_settings.php:205
+#: ../admin_settings.php:237 ../admin_settings.php:269
 msgid "Active"
-msgstr ""
-
-#: ../admin_settings.php:157 ../admin_settings.php:189
-#: ../admin_settings.php:221 ../admin_settings.php:253
-msgid "Alternative Name"
-msgstr ""
-
-#: ../admin_settings.php:158 ../admin_settings.php:190
-#: ../admin_settings.php:222 ../admin_settings.php:254
-msgid "URL"
-msgstr ""
-
-#: ../admin_settings.php:170 ../admin_settings.php:202
-#: ../admin_settings.php:234 ../admin_settings.php:266
-msgid "Alternative country name. Default is: "
 msgstr ""
 
 #: ../admin_settings.php:174 ../admin_settings.php:206
 #: ../admin_settings.php:238 ../admin_settings.php:270
+msgid "Alternative Name"
+msgstr ""
+
+#: ../admin_settings.php:175 ../admin_settings.php:207
+#: ../admin_settings.php:239 ../admin_settings.php:271
+msgid "URL"
+msgstr ""
+
+#: ../admin_settings.php:187 ../admin_settings.php:219
+#: ../admin_settings.php:251 ../admin_settings.php:283
+msgid "Alternative country name. Default is: "
+msgstr ""
+
+#: ../admin_settings.php:191 ../admin_settings.php:223
+#: ../admin_settings.php:255 ../admin_settings.php:287
 msgid "URL address where link should point to."
 msgstr ""
 
-#: ../admin_settings.php:279
+#: ../admin_settings.php:296
 msgid "Save Changes"
 msgstr ""
 
@@ -1051,22 +1054,80 @@ msgstr ""
 msgid "Zimbabwe"
 msgstr ""
 
-#: ../language-bar-flags.php:273
+#: ../language-bar-flags.php:252
 msgid "Language Bar Flags"
 msgstr ""
 
-#: ../language-bar-flags.php:323
+#: ../language-bar-flags.php:302
 msgid ""
 "You are not using any of AppThemes Premium Themes, check what You are "
 "missing."
 msgstr ""
 
-#: ../language-bar-flags.php:324 ../language-bar-flags.php:332
+#: ../language-bar-flags.php:303 ../language-bar-flags.php:311
 #, php-format
 msgid " <a target=\"_blank\" href=\"%s\">Show me themes!</a>"
 msgstr ""
 
-#: ../language-bar-flags.php:331
+#: ../language-bar-flags.php:310
 msgid ""
 "You are not using any of Elegant Premium Themes, check what You are missing."
+msgstr ""
+
+#: ../wp-cli.php:17
+msgid "Enables bar with lanuages"
+msgstr ""
+
+#: ../wp-cli.php:18
+msgid "Disables bar with lanuages"
+msgstr ""
+
+#: ../wp-cli.php:19
+#, php-format
+msgid "Sets position of bar where <option> can be: %s"
+msgstr ""
+
+#: ../wp-cli.php:20
+#, php-format
+msgid "Sets side of flags where <option> can be: %s"
+msgstr ""
+
+#: ../wp-cli.php:21
+#, php-format
+msgid "Sets if links should be opened in new window where <option> can be: %s"
+msgstr ""
+
+#: ../wp-cli.php:36
+msgid "Enabled bar with lanuages!"
+msgstr ""
+
+#: ../wp-cli.php:52
+msgid "Disabled bar with lanuages!"
+msgstr ""
+
+#: ../wp-cli.php:69
+#, php-format
+msgid "Missing or invalid position param! Valid are: %s"
+msgstr ""
+
+#: ../wp-cli.php:76
+msgid "Updated position of bar with lanuages!"
+msgstr ""
+
+#: ../wp-cli.php:93
+#, php-format
+msgid "Missing or invalid side param! Valid are: %s"
+msgstr ""
+
+#: ../wp-cli.php:100
+msgid "Updated side of language flags on the bar!"
+msgstr ""
+
+#: ../wp-cli.php:117
+#, php-format
+msgid "Missing or invalid new window param! Valid are: %s"
+msgstr ""
+
+#: ../wp-cli.php:124
+msgid "Updated new window option for opening links!"
 msgstr ""

@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Language Bar Flags
-Plugin URI: http://blog.meloniq.net/2011/11/28/language-bar-flags/
+Plugin URI: https://blog.meloniq.net/2011/11/28/language-bar-flags/
 Description: Replace or disable standard WordPress bar in the top of website and display similar bar but with configurable language flags to other language versions of Your website.
 
-Version: 1.0.8
+Version: 1.1.0
 
 Author: MELONIQ.NET
-Author URI: http://blog.meloniq.net
+Author URI: https://blog.meloniq.net
 Text Domain: language-bar-flags
 Domain Path: /languages
 */
@@ -24,7 +24,7 @@ if ( ! function_exists( 'add_action' ) ) {
 /**
  * Plugin version and textdomain constants.
  */
-define( 'LANGBF_VERSION', '1.0.8' );
+define( 'LANGBF_VERSION', '1.1.0' );
 define( 'LANGBF_TD', 'language-bar-flags' );
 
 
@@ -60,10 +60,7 @@ if ( is_admin() ) {
  * @return void
  */
 function langbf_load_scripts() {
-	if ( ! wp_is_mobile() ) {
-		wp_register_script( 'langbf_tooltip', plugins_url( '/js/tooltip.slide.js', __FILE__ ), array( 'jquery' ) );
-		wp_enqueue_script( 'langbf_tooltip' );
-	}
+	wp_enqueue_script( 'langbf_bootstrap-js-bundle', plugins_url( '/js/bootstrap.bundle.min.js', __FILE__ ), array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'langbf_load_scripts' );
 
@@ -74,7 +71,7 @@ add_action( 'wp_enqueue_scripts', 'langbf_load_scripts' );
  * @return void
  */
 function langbf_load_admin_scripts() {
-  wp_enqueue_script( 'jquery-ui-tabs' );
+	wp_enqueue_script( 'jquery-ui-tabs' );
 }
 add_action( 'admin_enqueue_scripts', 'langbf_load_admin_scripts' );
 
@@ -85,6 +82,8 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_scripts' );
  * @return void
  */
 function langbf_load_styles() {
+	wp_enqueue_style( 'langbf_bootstrap-css', plugins_url( '/css/bootstrap.min.css', __FILE__ ) );
+
 	wp_register_style( 'langbf_style', plugins_url( 'style.css', __FILE__ ) );
 	wp_enqueue_style( 'langbf_style' );
 }
@@ -115,8 +114,9 @@ function langbf_load_html() {
 	}
 
 	$side_class = ( get_option( 'langbf_side' ) == 'left' ) ? 'langbf_left' : 'langbf_right';
-	$target = ( get_option( 'langbf_new_window' ) == 'yes' ) ? 'target="_blank"' : '';
-	$bar_title = get_option( 'langbf_title' );
+	$target     = ( get_option( 'langbf_new_window' ) == 'yes' ) ? 'target="_blank"' : '';
+	$placement  = ( get_option( 'langbf_position' ) == 'top' ) ? 'bottom' : 'top';
+	$bar_title  = get_option( 'langbf_title' );
 
 	$langs = get_option( 'langbf_langs' );
 	$native_names = langbf_get_countries( 'all', 'native' );
@@ -126,14 +126,14 @@ function langbf_load_html() {
 			if ( ! empty( $langs[ $code ]['country'] ) ) {
 				$country = $langs[ $code ]['country'];
 			}
-			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' title="' . $country . '" class="langbf_' . $code . '">' . $country . '</a></li>';
+			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' data-toggle="tooltip" data-placement="' . esc_attr( $placement ) . '" data-title="' . esc_attr( $country ) . '" class="langbf_' . $code . '">' . esc_html( $country ) . '</a></li>';
 		}
 	}
 ?>
 	<div id="langbf_bar">
 		<div class="langbf_links">
 			<div class="<?php echo $side_class; ?>">
-				<?php if ( ! empty( $bar_title ) ) { echo '<span class="langbf_title">' . $bar_title . '</span>'; } ?>
+				<?php if ( ! empty( $bar_title ) ) { echo '<span class="langbf_title">' . esc_html( $bar_title ) . '</span>'; } ?>
 				<ul>
 					<?php echo $output; ?>
 				</ul>
@@ -227,33 +227,12 @@ function langbf_load_js() {
 		return;
 	}
 
-	if ( get_option( 'langbf_position' ) == 'top' ) {
-		$tooltip = array(
-			'offset' => '10, 0',
-			'position' => 'bottom center',
-			'effect' => 'slide',
-			'class' => 'langbf_tooltip_top',
-		);
-	} else {
-		$tooltip = array(
-			'offset' => '10, 0',
-			'position' => 'top center',
-			'effect' => 'slide',
-			'class' => 'langbf_tooltip_bottom',
-		);
-	}
-	$tooltip = apply_filters( 'langbf_tooltip', $tooltip, get_option( 'langbf_position' ) );
 ?>
 	<script type="text/javascript">
 	// <![CDATA[
 	jQuery(document).ready( function(){
 		if ( jQuery.isFunction( jQuery.fn.tooltip ) ) {
-			jQuery("#langbf_bar a[title]").tooltip( {
-				offset: [<?php echo esc_js( $tooltip['offset'] ); ?>],
-				position: '<?php echo esc_js( $tooltip['position'] ); ?>',
-				effect: '<?php echo esc_js( $tooltip['effect'] ); ?>',
-				tipClass: '<?php echo esc_js( $tooltip['class'] ); ?>'
-			} );
+			jQuery('[data-toggle="tooltip"]').tooltip();
 		}
 	} );
 	// ]]>

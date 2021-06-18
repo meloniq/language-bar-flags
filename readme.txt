@@ -1,10 +1,10 @@
 === Language Bar Flags ===
 Contributors: meloniq
-Donate link: http://blog.meloniq.net/donate/
+Donate link: https://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
-Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 1.0.8
+Requires at least: 4.9
+Tested up to: 5.7.2
+Stable tag: 1.1.0
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -28,19 +28,6 @@ Afghanistan, American Samoa, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh
 * Africa:
 Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Republic of the Congo, Democratic Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Réunion, Rwanda, Sahrawi Arab Democratic Republic, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe
 
-= Available languages =
-* English
-* Belarusian (by Natasha Dyatko from [UStarCash](https://www.ustarcash.com))
-* French (by Frédéric Serva)
-* Polish
-* Serbo-Croatian (by Borisa Djuraskovic from [WebHostingHub](http://www.webhostinghub.com/))
-* Slovak (by Branco Radenovich from [WebHostingGeeks](http://webhostinggeeks.com/user-reviews/))
-* Ukrainian (by Michael Yunat from [IP Host Monitor](http://www.iphostmonitor.com/))
-
-If you translated plugin to your native language, please send it to me, and will attach it to next release.
-E-mail address you will find on [contact page](http://blog.meloniq.net/kontakt/).
-
-
 
 == Installation ==
 
@@ -49,6 +36,11 @@ E-mail address you will find on [contact page](http://blog.meloniq.net/kontakt/)
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added WP CLI support
+* Fixed tooltips on flags
+* Fixed XSS issue
 
 = 1.0.9 =
 * Added Belarusian translation
@@ -106,11 +98,11 @@ E-mail address you will find on [contact page](http://blog.meloniq.net/kontakt/)
 
 = Why my country is not supported? =
 
-Report it with details on [support forum](http://wordpress.org/tags/language-bar-flags).
+Report it with details on [support forum](https://wordpress.org/support/plugin/language-bar-flags/).
 
 = My country name is translated wrong, what to do? =
 
-Report it with details on [support forum](http://wordpress.org/tags/language-bar-flags).
+Report it with details on [support forum](https://wordpress.org/support/plugin/language-bar-flags/).
 
 = Will this plugin translate my website? =
 
