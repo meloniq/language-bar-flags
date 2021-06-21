@@ -39,6 +39,7 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 
 = 1.1.1 =
 * Updated Bootstrap lib from 4.5 to 5.0
+* Validate & escape entered by admin url
 
 = 1.1.0 =
 * Added WP CLI support

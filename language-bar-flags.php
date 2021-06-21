@@ -60,7 +60,7 @@ if ( is_admin() ) {
  * @return void
  */
 function langbf_load_scripts() {
-	wp_enqueue_script( 'langbf_bootstrap-js-bundle', plugins_url( '/js/bootstrap.bundle.min.js', __FILE__ ), array( 'jquery' ) );
+	wp_enqueue_script( 'langbf_bootstrap-js-bundle', plugins_url( '/js/bootstrap.bundle.min.js', __FILE__ ), array( 'jquery' ), '5.0.1' );
 }
 add_action( 'wp_enqueue_scripts', 'langbf_load_scripts' );
 
@@ -82,9 +82,9 @@ add_action( 'admin_enqueue_scripts', 'langbf_load_admin_scripts' );
  * @return void
  */
 function langbf_load_styles() {
-	wp_enqueue_style( 'langbf_bootstrap-css', plugins_url( '/css/bootstrap.min.css', __FILE__ ) );
+	wp_enqueue_style( 'langbf_bootstrap-css', plugins_url( '/css/bootstrap.min.css', __FILE__ ), array(), '5.0.1' );
 
-	wp_register_style( 'langbf_style', plugins_url( 'style.css', __FILE__ ) );
+	wp_register_style( 'langbf_style', plugins_url( 'style.css', __FILE__ ), array(), LANGBF_VERSION );
 	wp_enqueue_style( 'langbf_style' );
 }
 add_action( 'wp_enqueue_scripts', 'langbf_load_styles' );
@@ -96,7 +96,7 @@ add_action( 'wp_enqueue_scripts', 'langbf_load_styles' );
  * @return void
  */
 function langbf_load_admin_styles() {
-	wp_register_style( 'langbf_admin_style', plugins_url( 'admin-style.css', __FILE__ ) );
+	wp_register_style( 'langbf_admin_style', plugins_url( 'admin-style.css', __FILE__ ), array(), LANGBF_VERSION );
 	wp_enqueue_style( 'langbf_admin_style' );
 }
 add_action( 'admin_enqueue_scripts', 'langbf_load_admin_styles' );
@@ -126,7 +126,7 @@ function langbf_load_html() {
 			if ( ! empty( $langs[ $code ]['country'] ) ) {
 				$country = $langs[ $code ]['country'];
 			}
-			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' data-bs-toggle="tooltip" data-bs-placement="' . esc_attr( $placement ) . '" data-bs-title="' . esc_attr( $country ) . '" class="langbf_' . $code . '">' . esc_html( $country ) . '</a></li>';
+			$output .= '<li><a href="' . esc_attr( $langs[ $code ]['url'] ) . '" ' . $target . ' data-bs-toggle="tooltip" data-bs-placement="' . esc_attr( $placement ) . '" data-bs-title="' . esc_attr( $country ) . '" class="langbf_' . $code . '">' . esc_html( $country ) . '</a></li>';
 		}
 	}
 ?>

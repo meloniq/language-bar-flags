@@ -40,7 +40,7 @@
 			} else {
 				$langs_array[ $code ]['active'] = 'no';
 			}
-			$langs_array[ $code ]['url'] = trim( stripslashes( $_POST[ $code ]['url'] ) );
+			$langs_array[ $code ]['url'] = esc_url_raw( trim( stripslashes( $_POST[ $code ]['url'] ) ) );
 			$langs_array[ $code ]['country'] = wp_kses_data( trim( stripslashes( $_POST[ $code ]['country'] ) ) );
 		}
 
