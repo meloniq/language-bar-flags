@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Language Bar Flags\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/language-bar-"
 "flags/\n"
-"POT-Creation-Date: 2021-06-18 13:00+0200\n"
+"POT-Creation-Date: 2021-06-21 16:28+0200\n"
 "PO-Revision-Date: 2013-02-03 18:45+0100\n"
 "Last-Translator: MELONIQ.NET\n"
 "Language-Team: MELONIQ.NET\n"
@@ -1054,24 +1054,17 @@ msgstr ""
 msgid "Zimbabwe"
 msgstr ""
 
-#: ../language-bar-flags.php:252
+#: ../language-bar-flags.php:255
 msgid "Language Bar Flags"
 msgstr ""
 
-#: ../language-bar-flags.php:302
-msgid ""
-"You are not using any of AppThemes Premium Themes, check what You are "
-"missing."
+#: ../language-bar-flags.php:297
+msgid "Check out what you are missing."
 msgstr ""
 
-#: ../language-bar-flags.php:303 ../language-bar-flags.php:311
+#: ../language-bar-flags.php:298
 #, php-format
-msgid " <a target=\"_blank\" href=\"%s\">Show me themes!</a>"
-msgstr ""
-
-#: ../language-bar-flags.php:310
-msgid ""
-"You are not using any of Elegant Premium Themes, check what You are missing."
+msgid " <a target=\"_blank\" href=\"%s\">Show me recommended themes!</a>"
 msgstr ""
 
 #: ../wp-cli.php:17

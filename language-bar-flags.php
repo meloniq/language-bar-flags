@@ -293,50 +293,10 @@ add_action( 'init', 'langbf_disable_admin_bar' );
  */
 function langbf_announcement() {
 
-	if ( get_option( 'langbf_announcement' ) ) {
-		return;
-	}
-
-	$enabled = array( true, false );
-	shuffle( $enabled );
-
-	if ( ! langbf_is_theme_provider( 'appthemes' ) && $enabled[0] ) {
-		echo '<div class="update-nag">';
-		_e( 'You are not using any of AppThemes Premium Themes, check what You are missing.', LANGBF_TD );
-		printf( __( ' <a target="_blank" href="%s">Show me themes!</a>', LANGBF_TD ), 'http://bit.ly/s23oNj' );
-		echo '</div>';
-		return;
-	}
-
-	if ( ! langbf_is_theme_provider( 'elegantthemes' ) && $enabled[1] ) {
-		echo '<div class="update-nag">';
-		_e( 'You are not using any of Elegant Premium Themes, check what You are missing.', LANGBF_TD );
-		printf( __( ' <a target="_blank" href="%s">Show me themes!</a>', LANGBF_TD ), 'http://bit.ly/11A8EmR' );
-		echo '</div>';
-		return;
-	}
-
-}
-
-
-/**
- * Check theme provider, used for announcement.
- *
- * @param string $provider
- *
- * @return bool
- */
-function langbf_is_theme_provider( $provider ) {
-
-	if ( $provider == 'appthemes' ) {
-		return ( function_exists( 'appthemes_init' ) );
-	}
-
-	if ( $provider == 'elegantthemes' ) {
-		return ( function_exists( 'et_setup_theme' ) );
-	}
-
-	return false;
+	echo '<div class="notice notice-info is-dismissible"><p>';
+	_e( 'Check out what you are missing.', LANGBF_TD );
+	printf( __( ' <a target="_blank" href="%s">Show me recommended themes!</a>', LANGBF_TD ), 'https://blog.meloniq.net/premium-themes' );
+	echo '</p></div>';
 }
 
 
