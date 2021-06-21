@@ -126,7 +126,7 @@ function langbf_load_html() {
 			if ( ! empty( $langs[ $code ]['country'] ) ) {
 				$country = $langs[ $code ]['country'];
 			}
-			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' data-toggle="tooltip" data-placement="' . esc_attr( $placement ) . '" data-title="' . esc_attr( $country ) . '" class="langbf_' . $code . '">' . esc_html( $country ) . '</a></li>';
+			$output .= '<li><a href="' . $langs[ $code ]['url'] . '" ' . $target . ' data-bs-toggle="tooltip" data-bs-placement="' . esc_attr( $placement ) . '" data-bs-title="' . esc_attr( $country ) . '" class="langbf_' . $code . '">' . esc_html( $country ) . '</a></li>';
 		}
 	}
 ?>
@@ -231,8 +231,11 @@ function langbf_load_js() {
 	<script type="text/javascript">
 	// <![CDATA[
 	jQuery(document).ready( function(){
-		if ( jQuery.isFunction( jQuery.fn.tooltip ) ) {
-			jQuery('[data-toggle="tooltip"]').tooltip();
+		if ( jQuery.isFunction( bootstrap.Tooltip ) ) {
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				return new bootstrap.Tooltip(tooltipTriggerEl)
+			});
 		}
 	} );
 	// ]]>

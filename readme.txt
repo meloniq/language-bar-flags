@@ -37,6 +37,9 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 
 == Changelog ==
 
+= 1.1.1 =
+* Updated Bootstrap lib from 4.5 to 5.0
+
 = 1.1.0 =
 * Added WP CLI support
 * Fixed tooltips on flags
