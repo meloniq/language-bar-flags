@@ -3,8 +3,8 @@ Contributors: meloniq
 Donate link: https://blog.meloniq.net/donate/
 Tags: bar, language, language bar, flags, europe, americas, asia, australia, africa, language selector
 Requires at least: 4.9
-Tested up to: 5.7.2
-Stable tag: 1.1.1
+Tested up to: 5.8
+Stable tag: 1.2.0
 
 Displays bar with configurable language flags to other language versions of Your website.
 
@@ -36,6 +36,9 @@ Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, C
 3. Go to "Settings->Language Bar Flags" menu and fill settings.
 
 == Changelog ==
+
+= 1.2.0 =
+* Refactoring (settings page and frontend functions packed into classes)
 
 = 1.1.1 =
 * Updated Bootstrap lib from 4.5 to 5.0
