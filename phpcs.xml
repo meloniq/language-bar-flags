@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="Language Bar Flags">
+	<description>Language Bar Flags rules for PHP_CodeSniffer</description>
+
+	<rule ref="WordPress">
+	</rule>
+</ruleset>
